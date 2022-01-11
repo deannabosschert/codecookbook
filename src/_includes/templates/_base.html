@@ -1,0 +1,20 @@
+---
+pagePath: "{{parent}}/{{pageName}}"
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% include "sections/_head.html" %}
+</head>
+
+<body>
+  {%- from "system/component.njk" import component -%}
+  {% include "sections/_header.html" %}
+  <main>
+    {{ content | safe }}
+  </main>
+  {% include "sections/_footer.html" %}
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+# This line should *not* be indented
+local_backend: true # Whether to use the local backend (optional; defaults to false)
+publish_mode: editorial_workflow
+# This line should *not* be indented
+media_folder: "assets/img/uploads" # Media files will be stored in the repo under assets/images/uploads
+public_folder: "/assets/img/uploads" # Media files will be served from /assets/images/uploads
+collections:   
+  - label: "Design"
+    name: "design"
+    preview_path: "https://code-cookbook.nl/design/"
+    files:
+      - label: "Things list"
+        name: "things"
+        file: "src/_data/pages/design/content.json"
+        fields:
+          - label: "Things"
+            name: "things"
+            widget: "list"
+            create: true
+            collapsed: false
+            fields:
+              - {label: Title, name: "title", widget: string}
+              - {label: Description, name: "description", widget: text}
+              - label: "List items"
+                name: listItems
+                widget: "list"
+                create: true
+                collapsed: false
+                fields:
+                  - {label: Text, name: "text", widget: string}
+          - label: "Cover image"
+            name: "coverImage"
+            widget: "object"
+            fields:
+              - label: Image
+                name: "src"
+                widget: "image"
+              - {label: Width, name: "width", widget: number}
+              - {label: Height, name: "height", widget: number}
+              - {label: Alt-text, name: "alt", widget: string}
+  # - label: "Posts"
+  #   name: posts
+  #   folder: "src/posts"
+  #   create: true
+  #   editor:
+  #     preview: true
+  #   fields:
+  #     - { label: "Paginatitel", name: "title", widget: "string" }
+  #     - { label: "Auteur", name: "auteur", widget: "string" }
+  #     - { label: "Publish Date", name: "date", widget: "datetime" }
+  #     - { label: "Featured Image", name: "thumbnail", widget: "image" }
+  #     - { label: "Body", name: "body", widget: "markdown" }
+  #     - label: "Content blocks"
+  #       name: "content"
+  #       widget: "list"
+  #       collapsed: false
+  #       fields:
+  #         - label: "Content blocks"
+  #           name: "contentBlock" # this is [0], [1] or [2]
+  #           widget: "list"
+  #           collapsed: false
+  #           create: true
+  #           fields:
+  #             - {label: "Paragraph", name: "text", widget: "markdown"} 
+  #             - {label: "Heading", name: "heading", widget: "hidden"}
+  #     - widget: select
+  #       label: "tags"
+  #       name: "tags"
+  #       multiple: true
+  #       create: true
+  #       options: ["post"]

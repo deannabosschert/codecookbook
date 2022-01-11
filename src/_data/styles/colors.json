@@ -1,0 +1,45 @@
+{"colors": [
+    {
+      "name": "gray2",
+      "red": 135,
+      "green": 138,
+      "blue": 141,
+      "alpha": 1
+    },
+    {
+      "name": "gray1",
+      "red": 49,
+      "green": 49,
+      "blue": 49,
+      "alpha": 1
+    },
+    {
+      "name": "black",
+      "red": 32,
+      "green": 32,
+      "blue": 32,
+      "alpha": 1
+    },
+    {
+      "name": "brand",
+      "red": 103,
+      "green": 200,
+      "blue": 242,
+      "alpha": 1
+    },
+    {
+      "name": "gray3",
+      "red": 246,
+      "green": 246,
+      "blue": 246,
+      "alpha": 1
+    },
+    {
+      "name": "white",
+      "red": 255,
+      "green": 255,
+      "blue": 255,
+      "alpha": 1
+    }
+  ]
+}

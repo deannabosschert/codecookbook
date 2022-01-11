@@ -1,0 +1,20 @@
+// GENERIC STYLING FOR CMS
+#preview-pane {
+    border: 1px solid lightpink;
+}
+
+#nc-root label {
+    background-color: darkblue;
+    font-weight: 700;
+    color: #ffffff;
+    border-radius: 0 0.2rem 0.2rem 0;
+    height: 100%;
+}
+
+#nc-root button {
+    color: #ffffff;
+    background: darkblue ;
+    border: 0.1rem solid ;
+    border-radius: 0.2rem;
+    padding: 0.6rem 1.2rem;
+}

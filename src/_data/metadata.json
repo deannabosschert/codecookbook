@@ -1,0 +1,20 @@
+{
+    "pages": {
+        "/": {
+            "metatitle": "Code Cookbook | Een gestandaardiseerde workflow voor het maken van een webapplicatie",
+            "metadescription": "Een gestandaardiseerde workflow voor het maken van een webapplicatie, met een eenvoudige interface en een gedetailleerde documentatie."
+        },
+        "research": {
+            "metatitle": "Onderzoek naar het standaardiseren van een workflow",
+            "metadescription": "Onderzoek naar een gestandaardiseerde workflow voor het maken van een webapplicatie waarop de komende guidelines zijn gebaseerd."
+        },
+        "design": {
+            "metatitle": "Vastgestelde standaarden en documentatie voor het design van een webapplicatie.",
+            "metadescription": "Vastgestelde standaarden en projectspecifieke informatie voor het design van een webapplicatie."
+        },
+        "development": {
+            "metatitle": "Vastgestelde standaarden en code conventions voor het ontwikkelen van een webapplicatie.",
+            "metadescription": "Vastgestelde standaarden en projectspecifieke informatie voor het ontwikkelen van een webapplicatie."
+        }
+    }
+}

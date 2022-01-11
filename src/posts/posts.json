@@ -1,0 +1,7 @@
+{
+    "layout": "templates/_post.html",
+    "tags": [
+        "posts",
+        "post"
+    ]
+}
