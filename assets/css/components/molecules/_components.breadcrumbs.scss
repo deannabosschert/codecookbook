@@ -1,0 +1,67 @@
+.c-breadcrumbs {
+  width: 100%;
+  max-width: 1075px;
+  margin: 40px 0 70px 0;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: max-content;
+  width: fit-content;
+}
+
+.breadcrumbs__list__listItem {
+  padding: 0 0.5rem;
+
+  &::after {
+    content: ">";
+    margin-left: 1rem;
+  }
+
+  &:first-child {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  &:last-child {
+    a {
+      color: black;
+    }
+
+    border: none;
+
+    &::after {
+      content: "";
+      margin: 0;
+    }
+  }
+}
+
+.breadcrumbs__list__listItem__link {
+  // color: $color-grey-2;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  text-transform: initial;
+
+  &::after {
+    content: "";
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .c-breadcrumbs {
+    margin-top: 32px;
+    margin-bottom: 33px
+  }
+
+  .careers .breadcrumbs__list__listItem__link {
+    color: white;
+
+    &:last-child {
+      color: white;
+    }
+  }
+}

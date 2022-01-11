@@ -1,0 +1,233 @@
+.c-header-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  // margin-bottom: 1.25rem;
+  width: 100%;
+  max-width: 1075px;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      margin: 0 1rem;
+    }
+  }
+}
+
+.header-nav__logo__img {
+  max-width: 50vw;
+}
+
+.menu-btn {
+  visibility: hidden;
+}
+
+.header-nav__logoColorSwitch__img {
+  display: none;
+}
+
+body.Home a.home:link,
+body.services a.services:link,
+body.industries a.industries:link,
+body.cases a.cases:link,
+body.about a.about:link,
+body.careers a.careers:link,
+body.contact a.contact:link {
+  // color: $color-black;
+  text-decoration: underline;
+}
+
+// TYPOGRAPHY
+.c-header-nav a {
+  color: $color-grey-2;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+// HAMBURGER MENU
+@media screen and (max-width: 900px) {
+  .Home .c-header-nav .menu-icon .navicon {
+    background: $color-white;
+    color: $color-black;
+
+    &:before,
+    &:after {
+      background: $color-white;
+    }
+  }
+
+  .c-header-nav {
+    z-index: 3;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+
+      li {
+        height: 48px;
+      }
+    }
+
+    li a:hover,
+    .menu-btn:hover {
+      background-color: #f4f4f4;
+      color: $color-black;
+    }
+
+    .menu {
+      clear: both;
+      max-height: 0;
+      transition: max-height .2s ease-out;
+      flex-direction: row;
+      justify-content: flex-end;
+      display: none;
+    }
+
+    .menu-icon {
+      cursor: pointer;
+      padding: 28px 20px;
+      position: relative;
+      user-select: none;
+      z-index: 5;
+
+      .navicon {
+        background: $color-black;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+      }
+    }
+  }
+
+  .c-header-nav .menu-icon .navicon {
+
+    &:before,
+    &:after {
+      background: $color-black;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+    }
+  }
+
+  .c-header-nav .menu-icon .navicon:before {
+    top: 5px;
+  }
+
+  .c-header-nav .menu-icon .navicon:after {
+    top: -5px;
+  }
+
+  .c-header-nav .menu-btn {
+    display: none;
+
+    &:checked~.menu {
+      display: flex;
+      max-height: 5rem;
+      max-height: fit-content;
+      width: 100%;
+      min-width: 100%;
+      align-content: flex-start;
+      align-items: flex-end;
+    }
+
+    &:checked~.menu-icon .navicon {
+      background: transparent;
+      position: fixed;
+
+      &:before {
+        transform: rotate(-45deg);
+      }
+
+      &:after {
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  .c-header-nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+  .c-header-nav .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+    background: $color-white;
+  }
+}
+
+
+@media (min-width: 900px) {
+  .c-header-nav {
+    flex-direction: row;
+
+    .menu {
+      flex-direction: row;
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+
+    li {
+      float: left;
+
+      a {
+        // padding: 20px 30px;
+      }
+
+      .menu-icon {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .c-header-nav {
+    ul li a {
+      color: $color-grey-3;
+      font-size: 22px;
+      line-height: 40px;
+      font-weight: bold;
+    }
+
+    .menu-btn:checked~body {
+      max-height: 100vh;
+    }
+
+    .menu-btn:checked~.menu-icon {
+      z-index: 5;
+    }
+
+    .menu-btn:checked~.menu {
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $color-black;
+      width: 100vw;
+      min-height: 100vh;
+      height: 100vh;
+      max-height: 100vh;
+      overflow: hidden;
+      align-content: flex-start;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 5rem 3rem 3rem 1rem;
+      z-index: 2;
+    }
+  }
+}
+
+
+

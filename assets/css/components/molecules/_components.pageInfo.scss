@@ -1,0 +1,22 @@
+    .c-page-info {}
+
+    .page-info__article__heading {
+      color: $color-grey-1;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-info__article__text,
+    .page-info__article__link {
+      margin-bottom: 0.5rem;
+    }
+
+    .page-info__article__text,
+    .page-info__article__link {
+      color: $color-grey-2;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 26px;
+    }

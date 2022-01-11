@@ -1,0 +1,45 @@
+// GENERIC
+@import "generic/generic.box-sizing";
+// @import "generic/generic.normalize";
+@import "generic/generic.reset";
+
+// SETTINGS
+@import "settings/settings.variables";
+
+// ELEMENTS
+@import "elements/elements.page";
+@import "elements/elements.typography";
+@import "elements/elements.images";
+@import "elements/elements.icons";
+@import "elements/elements.buttons";
+
+// COMPONENTS
+// sections
+@import "components/sections/components.footer";
+@import "components/sections/components.header";
+@import "components/sections/components.page-header";
+
+// organisms
+@import "components/organisms/components.header-nav";
+
+// molecules
+@import "components/molecules/components.article";
+@import "components/molecules/components.breadcrumbs";
+@import "components/molecules/components.pageInfo";
+
+// atoms
+@import "components/atoms/components.callToAction";
+@import "components/atoms/components.image";
+@import "components/atoms/components.pageHeaderStripe";
+
+// UTILITIES
+@import "utilities/utilities.hide";
+
+
+// PAGE-SPECIFIC STYLING
+@import "pages/pages.home";
+@import "pages/pages.subpage";
+@import "pages/pages.detail";
+
+// CMS STYLING FOR PREVIEW
+@import "admin/admin.preview";

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Manager</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body>
+  <!-- Include the script that builds the page and powers Netlify CMS -->
+  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  <script>
+    CMS.registerPreviewStyle("/main.css");
+  </script>
+  <style>
+    /* hacky solution for applying some styles to NetlifyCMS's editor */
+    #preview-pane {
+      border: 1px solid lightpink;
+    }
+
+    body, body #nc-root div, body  #nc-root a, #nc-root div input, #nc-root div textarea, #nc-root div select {
+      color: #202020;
+    }
+
+    #nc-root label {
+      background-color: #67C8F2;
+      font-weight: 700;
+      color: #ffffff;
+      border-radius: 0.2rem 0.2rem 0 0;
+      height: 100%;
+    }
+
+    #nc-root button {
+      color: #ffffff;
+      background: #313131;
+      /* border: 0.1rem solid #54b4cf; */
+      border-radius: 0.2rem;
+    }
+
+    body #nc-root label ~ div {
+      /* background-color: #FFFFFF; */
+    }
+
+    body #nc-root label ~ div>div:first-child {
+      background-color: #878A8D;
+      color: #ffffff;
+    }
+
+   body #nc-root label ~ div>div:first-child div {
+      color: #ffffff;
+    }
+
+    body #nc-root>div:last-of-type>div>aside {
+      border: 3px solid #67C8F2;
+      border-radius: 0.2rem;
+    }
+
+    body #nc-root>div:last-of-type ul li a {
+      /* background-color: lightpink; */
+    }
+    
+    body #nc-root main>div>div>h1 ~ a {
+      color: #ffffff;
+    }
+    
+    /* body #nc-root>div:last-of-type ul li a div h2 {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 28px;
+    } */
+
+   
+
+  </style>
+</body>
+
+</html>

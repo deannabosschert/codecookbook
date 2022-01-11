@@ -1,0 +1,38 @@
+.c-page-coverimage {
+  background: $color-black;
+  background: -moz-linear-gradient(90deg, rgba(32, 32, 32, 1) 0%, rgba(49, 49, 49, 1) 15%, rgba(135, 138, 141, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(32, 32, 32, 1) 0%, rgba(49, 49, 49, 1) 15%, rgba(135, 138, 141, 1) 100%);
+  background: linear-gradient(90deg, rgba(32, 32, 32, 1) 0%, rgba(49, 49, 49, 1) 15%, rgba(135, 138, 141, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#202020", endColorstr="#878a8d", GradientType=1);
+  filter: gradient(startColorstr="#202020", endColorstr="#878a8d", GradientType=1);
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 128px;
+  margin-right: calc(-12.5rem + 28px);
+  z-index: 1;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .c-page-coverimage {
+    object-fit: cover;
+    height: fit-content;
+    width: calc(100% + 28px);
+    max-width: calc(100% + 28px);
+    margin-right: -28px;
+    margin-bottom: 32px;
+  }
+}
+
+
+
+@media screen and (min-width: 450px) and (max-width: 959px) {
+  .c-page-coverimage {
+    margin-bottom: 4rem;
+    margin-right: -28px;
+    width: calc(100% + 28px);
+    max-width: calc(100% + 28px);
+    height: auto;
+  }
+}

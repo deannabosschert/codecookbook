@@ -1,0 +1,13 @@
+.c-page-cta {
+  font-weight: bold;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+ 
+  &::after {
+    content: "⭢";
+    font-size: 2rem;
+    vertical-align: middle;
+    margin-left: 0.75rem;
+}
+}

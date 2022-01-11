@@ -1,0 +1,19 @@
+<h3 class="listItem__heading">{{ params.heading }}</h3>
+<address class="listItem__address">
+    {% if params.infoType == 'address' %}
+    {{ params.data | safe }}
+    {% endif %}
+    {% if params.infoType == 'telephone' %}
+    <a class="listItem__address__link" href="tel:{{params.data | trim}}">{{ params.data }}</a>
+    {% endif %}
+    {% if params.infoType == 'email' %}
+    <a class="listItem__address__link" href="mailto:{{params.data}}">{{params.data}}</a>
+    {% elseif params.infoType == 'jobs' %}
+    <a class="listItem__address__link" href="mailto:{{params.data}}">{{params.data}}</a>
+    {% endif %}
+    {% if params.infoType == 'legal' %}
+    <p class="listItem__address__text">KVK: {{params.data.kvk}}</p>
+    <p class="listItem__address__text">BTW: {{params.data.btw}}</p>
+    {% endif %}
+
+</address>
