@@ -1,5 +1,7 @@
 # 11ty CMS boilerplate
- ... [link to live demo]()-->
+[![Netlify Status](https://api.netlify.com/api/v1/badges/817f5d6e-e0e5-4400-aa9d-5e2c7fbac983/deploy-status)](https://app.netlify.com/sites/code-cookbook/deploys)
+
+ ... [link to live demo](https://code-cookbook.netlify.app/)-->
 ![screenshot of website]()
 
 ## Table of Contents
@@ -40,23 +42,25 @@ npm run dev
 #### Dependencies
 
 ```json
-"devDependencies": {
-      "@11ty/eleventy": "^0.11.0",
+ "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
     "cross-env": "^7.0.2",
     "dotenv": "^8.2.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
+    "html-minifier": "^4.0.0",
     "mkdirp": "^0.5.1",
     "node-fetch": "^2.6.1",
-    "node-sass": "^4.14.1",
-    "node-sass-glob-importer": "^5.3.2",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-  "fast-glob": "^3.2.4",
+    "fast-glob": "^3.2.4",
     "inuitcss": "^6.0.0",
-    "nodemon": "^2.0.2"
+    "netlify-cms-app": "^2.15.61",
+    "nodemon": "^2.0.2",
+    "node-sass": "^6.0.1",
+    "node-sass-glob-importer": "^5.3.2"
   }
 ```
 
@@ -65,14 +69,15 @@ npm run dev
 ```json
   "scripts": {
     "predev": "rimraf _site",
+    "dev:scripts": "node src/_data/scripts/json-to-scss.js",
     "dev:eleventy": "npx @11ty/eleventy --formats=html,njk,ejs,gif,jpg,png,css --serve --port=3000",
     "dev:css": "sass --watch assets/css:_site/",
     "dev": "cross-env ELEVENTY_ENV=development run-p dev:*",
     "debug": "DEBUG=* eleventy",
     "prebuild": "rimraf _site",
     "build": "cross-env ELEVENTY_ENV=production run-s build:*",
-    "build:eleventy": "eleventy",
-    "build:css": "node-sass --importer node_modules/node-sass-glob-importer/dist/cli.js main.scss: _site/main.css"
+    "build:eleventy": "npx @11ty/eleventy --formats=html,njk,ejs,gif,jpg,png,css --serve --port=3000",
+    "build:css": "sass --watch assets/css:_site/"
   }
 ```
 
