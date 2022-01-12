@@ -140,7 +140,6 @@ const htmlElementsArray = ["a",
     "xmp"
 ]
 
-
 toScss('color', 'variables', data)
 toScss('font', 'properties', data)
 // showAllDataTokens('font', 'all', data)  // TODO for later (see functions at end of file)
