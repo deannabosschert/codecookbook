@@ -38,6 +38,7 @@ function nameToElement(string) {
     }
 }
 
+// function refactorLater() {
 // for refactoring later..
 // module.exports = async (data) => {
 //     let sanitizedString = await replaceSpaceWithDash(data) // replace spaces with dashes
@@ -77,4 +78,5 @@ function nameToElement(string) {
 //     } else {
 //         return string
 //     }
+// }
 // }

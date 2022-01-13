@@ -20,71 +20,72 @@ async function toScss(type, output, jsonData) {
     }
 }
 
+// function toDoLater() {
+    // TODO FOR LATER
+    // note: beware of using type or output correctly..
+    // function showAllDataTokens(type, output, data) {
+    //     let dataArray = toObjectArray(output, data[type])
+    //     let scss = generateVariables(dataArray)
+    //     //  writeFile(type, scss)
+    // }
 
-// TODO FOR LATER
-// note: beware of using type or output correctly..
-// function showAllDataTokens(type, output, data) {
-//     let dataArray = toObjectArray(output, data[type])
-//     let scss = generateVariables(dataArray)
-//     //  writeFile(type, scss)
-// }
+    // map data to array of objects
+    // function toObjectArrayData(output, data) {
+    //     if (output == 'typography') {
+    //         let oneProperty = ''
+    //         let onePropertyArray = []
+    //         for (let key in data) {
+    //             let property = data[key]
+    //             for (let key in property) {
+    //                 // if (key == 'fontSize') { // example; to be replaced with a loop later
+    //                 //     oneProperty = `${sanitizeString(key)}`
+    //                 //     onePropertyArray.push(`${property[key].value}${addUnit(sanitizeString(key))}`)
+    //                 // }
+    //                 oneProperty = `${sanitizeString(key)}`
+    //                 onePropertyArray.push(`${property[key].value}${addUnit(sanitizeString(key))}`)
+    //             }
+    //         }
+    //         array.push({
+    //             [oneProperty]: onePropertyArray
+    //         })
+    //         return array
+    //     }
+    // }
 
-// map data to array of objects
-// function toObjectArrayData(output, data) {
-//     if (output == 'typography') {
-//         let oneProperty = ''
-//         let onePropertyArray = []
-//         for (let key in data) {
-//             let property = data[key]
-//             for (let key in property) {
-//                 // if (key == 'fontSize') { // example; to be replaced with a loop later
-//                 //     oneProperty = `${sanitizeString(key)}`
-//                 //     onePropertyArray.push(`${property[key].value}${addUnit(sanitizeString(key))}`)
-//                 // }
-//                 oneProperty = `${sanitizeString(key)}`
-//                 onePropertyArray.push(`${property[key].value}${addUnit(sanitizeString(key))}`)
-//             }
-//         }
-//         array.push({
-//             [oneProperty]: onePropertyArray
-//         })
-//         return array
-//     }
-// }
-
-// function generateVariables(data) {
-//     // probleem hierbij is dat alles continu overschreven wordt --> leuk om later nog eens naar te kijken maar atm niet relevant voor dit project
-//     let listWithAll = ''
-//     let dinges = data.map(item => {
-//         Object.keys(item).map(key => {
-//             console.log(key)
-//             console.log(item[key])
-//         })
-//         for (let key in item) {
-//             listWithAll += `$${key}: ${item[key]};\n`
-//         }
-//     })
-//     data.forEach(variable => {
-//         let listWithNames = ''
-//         let theKey = ''
-//         let bonusKey = ''
-//         let listOfValues = []
-//         theKey = Object.keys(variable)[0]
-//         for (let key in variable) {
-//             bonusKey = key
-//             listOfValues.push(variable[key])
-//         }
-//         //    listOfValues.flat().sort().forEach(value => {
-//         //         listWithNames+= `$font-size-large: ${value}; \n`
-//         //         return value
-//         //     })
-//         let cleanList = listOfValues.flat().sort()
-//         let uniqueList = removeDuplicates(cleanList) // remove duplicates from cleanList
-//         // for loop with index
-//         for (let i = 0; i < uniqueList.length; i++) {
-//             listWithNames += `$${bonusKey}-${varablePres[i]}: ${uniqueList[i]}; \n`
-//         }
-//         listWithAll += listWithNames
-//     })
-//     return listWithAll
+    // function generateVariables(data) {
+    //     // probleem hierbij is dat alles continu overschreven wordt --> leuk om later nog eens naar te kijken maar atm niet relevant voor dit project
+    //     let listWithAll = ''
+    //     let dinges = data.map(item => {
+    //         Object.keys(item).map(key => {
+    //             console.log(key)
+    //             console.log(item[key])
+    //         })
+    //         for (let key in item) {
+    //             listWithAll += `$${key}: ${item[key]};\n`
+    //         }
+    //     })
+    //     data.forEach(variable => {
+    //         let listWithNames = ''
+    //         let theKey = ''
+    //         let bonusKey = ''
+    //         let listOfValues = []
+    //         theKey = Object.keys(variable)[0]
+    //         for (let key in variable) {
+    //             bonusKey = key
+    //             listOfValues.push(variable[key])
+    //         }
+    //         //    listOfValues.flat().sort().forEach(value => {
+    //         //         listWithNames+= `$font-size-large: ${value}; \n`
+    //         //         return value
+    //         //     })
+    //         let cleanList = listOfValues.flat().sort()
+    //         let uniqueList = removeDuplicates(cleanList) // remove duplicates from cleanList
+    //         // for loop with index
+    //         for (let i = 0; i < uniqueList.length; i++) {
+    //             listWithNames += `$${bonusKey}-${varablePres[i]}: ${uniqueList[i]}; \n`
+    //         }
+    //         listWithAll += listWithNames
+    //     })
+    //     return listWithAll
+    // }
 // }
