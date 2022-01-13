@@ -1,11 +1,16 @@
-#dropdown-options {
-    display: none;
-}
+// might be better off placed directly inside components/organisms/_toggle.html
+@for $i from 1 through 10 {
+    .c-toggle-#{$i} {
+        .dropdown-options-#{$i} {
+            display: none;
+        }
 
-#dropdown-toggle-button {
-    display: none;
-}
+        .dropdown-toggle-button-#{$i} {
+            display: none;
+        }
 
-#dropdown-toggle-button:checked~#dropdown-options {
-    display: block;
+        .dropdown-toggle-button-#{$i}:checked~.dropdown-options-#{$i} {
+            display: block;
+        }
+    }
 }

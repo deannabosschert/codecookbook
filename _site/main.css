@@ -409,6 +409,10 @@ a {
   line-height: 24px;
 }
 
+.c-sidebar h2 {
+  color: #878a8dff;
+}
+
 /* ========================================================================== */
 /* ELEMENTS- PAGE */
 header *, main *, footer * {
@@ -502,12 +506,12 @@ img {
 .c-sidebar {
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: sticky;
   top: 0;
   left: 0;
   bottom: 0;
   height: 100%;
+  padding: 0 20px;
 }
 
 .c-page-header {
@@ -714,15 +718,103 @@ body.contact a.contact:link {
     z-index: 2;
   }
 }
-#dropdown-options {
+.c-toggle-1 .dropdown-options-1 {
   display: none;
 }
-
-#dropdown-toggle-button {
+.c-toggle-1 .dropdown-toggle-button-1 {
   display: none;
 }
+.c-toggle-1 .dropdown-toggle-button-1:checked ~ .dropdown-options-1 {
+  display: block;
+}
 
-#dropdown-toggle-button:checked ~ #dropdown-options {
+.c-toggle-2 .dropdown-options-2 {
+  display: none;
+}
+.c-toggle-2 .dropdown-toggle-button-2 {
+  display: none;
+}
+.c-toggle-2 .dropdown-toggle-button-2:checked ~ .dropdown-options-2 {
+  display: block;
+}
+
+.c-toggle-3 .dropdown-options-3 {
+  display: none;
+}
+.c-toggle-3 .dropdown-toggle-button-3 {
+  display: none;
+}
+.c-toggle-3 .dropdown-toggle-button-3:checked ~ .dropdown-options-3 {
+  display: block;
+}
+
+.c-toggle-4 .dropdown-options-4 {
+  display: none;
+}
+.c-toggle-4 .dropdown-toggle-button-4 {
+  display: none;
+}
+.c-toggle-4 .dropdown-toggle-button-4:checked ~ .dropdown-options-4 {
+  display: block;
+}
+
+.c-toggle-5 .dropdown-options-5 {
+  display: none;
+}
+.c-toggle-5 .dropdown-toggle-button-5 {
+  display: none;
+}
+.c-toggle-5 .dropdown-toggle-button-5:checked ~ .dropdown-options-5 {
+  display: block;
+}
+
+.c-toggle-6 .dropdown-options-6 {
+  display: none;
+}
+.c-toggle-6 .dropdown-toggle-button-6 {
+  display: none;
+}
+.c-toggle-6 .dropdown-toggle-button-6:checked ~ .dropdown-options-6 {
+  display: block;
+}
+
+.c-toggle-7 .dropdown-options-7 {
+  display: none;
+}
+.c-toggle-7 .dropdown-toggle-button-7 {
+  display: none;
+}
+.c-toggle-7 .dropdown-toggle-button-7:checked ~ .dropdown-options-7 {
+  display: block;
+}
+
+.c-toggle-8 .dropdown-options-8 {
+  display: none;
+}
+.c-toggle-8 .dropdown-toggle-button-8 {
+  display: none;
+}
+.c-toggle-8 .dropdown-toggle-button-8:checked ~ .dropdown-options-8 {
+  display: block;
+}
+
+.c-toggle-9 .dropdown-options-9 {
+  display: none;
+}
+.c-toggle-9 .dropdown-toggle-button-9 {
+  display: none;
+}
+.c-toggle-9 .dropdown-toggle-button-9:checked ~ .dropdown-options-9 {
+  display: block;
+}
+
+.c-toggle-10 .dropdown-options-10 {
+  display: none;
+}
+.c-toggle-10 .dropdown-toggle-button-10 {
+  display: none;
+}
+.c-toggle-10 .dropdown-toggle-button-10:checked ~ .dropdown-options-10 {
   display: block;
 }
 
@@ -871,7 +963,6 @@ body.contact a.contact:link {
 
 h2 {
   color: #313131ff;
-  z-index: 999;
 }
 
 /* ==========================================================================

@@ -1,9 +1,12 @@
-<label class="c-toggle" id="dropdown-toggle-label" for="dropdown-toggle-button"><span>{{params.text}}</span></label>
-<input type="checkbox" id="dropdown-toggle-button" name="dropdown-toggle-button">
-<ul id="dropdown-options">
-    {% for item in params.items %}
+<div class="c-toggle-{{params.id}}">
+    <label class="dropdown-toggle-label-{{params.id}}" for="dropdown-toggle-button">
+        <span>{{params.text}}</span></label>
+    <input class="dropdown-toggle-button-{{params.id}}" type="checkbox" id="dropdown-toggle-button" name="dropdown-toggle-button">
+    <ul class="dropdown-options-{{params.id}}">
+        {% for item in params.items %}
         <li>
             {{ item }}
         </li>
-    {% endfor %}
-</ul>
+        {% endfor %}
+    </ul>
+</div>

@@ -1,12 +1,13 @@
 .c-sidebar {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
   // background-color: lightpink;
   position: sticky;
   top: 0;
   left: 0;
   bottom: 0;
   height: 100%;
+  padding: 0 $desktop-xs;
   // width: $width-default;
 }

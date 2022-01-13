@@ -1,11 +1,12 @@
     <nav class="c-sidebar">
         {% include 'organisms/_searchBar.html' %}
         <section>
-            <h2>Getting started</h2>
+            <h2 class="tag">Code Cookbook</h2>
             <ul>
                 <li>Introduction</li>
                 <li>
                     {{ component('organisms', '_toggle', {
+                        id: '1',
                         text: 'yeet',
                         items: ['aaa', 'nnnn', 'eeee']
                         }) }}
@@ -13,22 +14,91 @@
             </ul>
         </section>
         <section>
-            <h2>Research</h2>
+            <h2 class="tag">Research</h2>
             <ul>
                 <li>Introduction</li>
                 <li>
                     {{ component('organisms', '_toggle', {
+                        id: '2',
                         text: 'Projects',
+                        icon: '>',
                         items: ['aaa', 'nnnn', 'eeee']
                         }) }}
                 </li>
                 <li>
                     {{ component('organisms', '_toggle', {
+                        id: '3',
                         text: 'Time schedule',
+                        icon: '>',
+                        items: ['aaa', 'nnnn', 'eeee']
+                        }) }}
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="tag">Design</h2>
+            <ul>
+                <li>Introduction</li>
+                <li>
+                    {{ component('organisms', '_toggle', {
+                        id: '4',
+                        text: 'Projects',
+                        icon: '>',
+                        items: ['aaa', 'nnnn', 'eeee']
+                        }) }}
+                </li>
+                <li>
+                    {{ component('organisms', '_toggle', {
+                        id: '5',
+                        text: 'Time schedule',
+                        icon: '>',
+                        items: ['aaa', 'nnnn', 'eeee']
+                        }) }}
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="tag">Development</h2>
+            <ul>
+                <li>Introduction</li>
+                <li>
+                    {{ component('organisms', '_toggle', {
+                        id: '6',
+                        text: 'Projects',
+                        icon: '>',
+                        items: ["Axes", "Brushes", "Chords", "Collections", "Colors", "Color", "Schemes", "Contours"]
+                        }) }}
+                </li>
+                <li>
+                    {{ component('organisms', '_toggle', {
+                        id: '7',
+                        text: 'Time schedule',
+                        icon: '>',
+                        items:  ["Dispatches", "Dragging", "Delimiter-Separated", "Values", "Easings", "Fetches", "Forces", "Number", "Formats", "Geographies", "Hierarchies"]
+                        }) }}
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="tag">Projects</h2>
+            <ul>
+                <li>Intern</li>
+                <li>
+                    {{ component('organisms', '_toggle', {
+                        id: '8',
+                        text: 'Projects',
+                        icon: '>',
+                        items: ['aaa', 'nnnn', 'eeee']
+                        }) }}
+                </li>
+                <li>
+                    {{ component('organisms', '_toggle', {
+                        id: '9',
+                        text: 'Time schedule',
+                        icon: '>',
                         items: ['aaa', 'nnnn', 'eeee']
                         }) }}
                 </li>
             </ul>
         </section>
     </nav>
-
