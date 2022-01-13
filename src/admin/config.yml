@@ -8,6 +8,73 @@ publish_mode: editorial_workflow
 media_folder: "assets/img/uploads" # Media files will be stored in the repo under assets/images/uploads
 public_folder: "/assets/img/uploads" # Media files will be served from /assets/images/uploads
 collections:   
+
+  - label: "Styles variables"
+    name: "styles"
+    description: "Styles variables used for this website"
+    files:
+      # - label: "Variable naming"
+      #   name: "variable_naming"
+      #   widget: "object"
+      #   required: true
+      #   hint: "Add your variable namings here, e.g. medium, x-large, page etc."
+      - label: "Variables"
+        name: "variables"
+        file: "src/_data/styles/variables.json"
+        widget: "object"
+        required: true
+        hint: "Add your variables here"
+        collapsed: true
+        fields:
+          - label: Spacing
+            name: "spacing"
+            widget: "list"
+            fields:
+              - label: "width"
+                name: "width"
+                widget: "list"
+                collapsed: true
+                required: true
+                hint: "Add your width spacing variables here"
+                fields:
+                  - label: "px"
+                    name: "px"
+                    widget: "number"
+              - label: "height"
+                name: "height"
+                collapsed: true
+                required: true
+                widget: "list"
+                fields:
+                  - label: "px"
+                    name: "px"
+                    widget: "number"
+          - label: Layout
+            name: "layout"
+            widget: "list"
+            fields:
+              - label: "width"
+                name: "width"
+                widget: "list"
+                collapsed: true
+                required: true
+                hint: "Add your width layout variables here"
+                fields:
+                  - label: "px"
+                    name: "px"
+                    widget: "number"
+              - label: "height"
+                name: "height"
+                widget: "list"
+                collapsed: true
+                required: true
+                hint: "Add your height layout variables here"
+                fields:
+                  - label: "px"
+                    name: "px"
+                    widget: "number"
+ 
+
   - label: "Design"
     name: "design"
     preview_path: "https://code-cookbook.nl/design/"
