@@ -1,0 +1,11 @@
+#dropdown-options {
+    display: none;
+}
+
+#dropdown-toggle-button {
+    display: none;
+}
+
+#dropdown-toggle-button:checked~#dropdown-options {
+    display: block;
+}

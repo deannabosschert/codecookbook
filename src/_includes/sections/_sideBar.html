@@ -1,0 +1,33 @@
+    <nav class="c-sidebar">
+        {% include 'organisms/_searchBar.html' %}
+        <section>
+            <h2>Getting started</h2>
+            <ul>
+                <li>Introduction</li>
+                <li>
+                    {{ component('organisms', '_toggle', {
+                        text: 'yeet',
+                        items: ['aaa', 'nnnn', 'eeee']
+                        }) }}
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Research</h2>
+            <ul>
+                <li>Introduction</li>
+                <li>
+                    {{ component('organisms', '_toggle', {
+                        text: 'Projects',
+                        items: ['aaa', 'nnnn', 'eeee']
+                        }) }}
+                </li>
+                <li>
+                    {{ component('organisms', '_toggle', {
+                        text: 'Time schedule',
+                        items: ['aaa', 'nnnn', 'eeee']
+                        }) }}
+                </li>
+            </ul>
+        </section>
+    </nav>

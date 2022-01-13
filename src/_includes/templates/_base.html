@@ -11,6 +11,7 @@ pagePath: "{{parent}}/{{pageName}}"
 <body>
   {%- from "system/component.njk" import component -%}
   {% include "sections/_header.html" %}
+  {% include "sections/_sideBar.html" %}
   <main>
     {{ content | safe }}
   </main>
