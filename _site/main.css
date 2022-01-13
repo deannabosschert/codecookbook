@@ -411,7 +411,7 @@ a {
 
 /* ========================================================================== */
 /* ELEMENTS- PAGE */
-* {
+header *, main *, footer * {
   display: flex;
   flex-direction: column;
 }
@@ -503,7 +503,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: lightpink;
   position: sticky;
   top: 0;
   left: 0;
@@ -568,7 +567,7 @@ body.contact a.contact:link {
   line-height: 24px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 400px) {
   .Home .c-header-nav .menu-icon .navicon {
     background: #ffffffff;
     color: #202020ff;
@@ -868,6 +867,11 @@ body.contact a.contact:link {
 .c-header {
   background-color: lightblue;
   padding: 20px 0;
+}
+
+h2 {
+  color: #313131ff;
+  z-index: 999;
 }
 
 /* ==========================================================================

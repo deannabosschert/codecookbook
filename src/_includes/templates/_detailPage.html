@@ -5,7 +5,4 @@ breadcrumbs: [{ name: "Home", link: "/" }, { name: "{{ parent }}", link: "/{{ pa
 ---
 {%- from "system/component.njk" import component -%}
 
-{% include "sections/_pageHeader.html" %}
-
-
 {{ content | safe }}
