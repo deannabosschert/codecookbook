@@ -1,6 +1,6 @@
 const generateVariableNames = require('./filters/generate-variable-names.js')
 const sanitizeString = require('./filters/sanitize-string.js')
-const toScssVariables = require("./filters/to-scss-variables")
+// const toScssVariables = require("./filters/to-scss-variables")
 const htmlElementsArray = ["a",
     "abbr",
     "acronym",
@@ -141,14 +141,9 @@ const htmlElementsArray = ["a",
 
 module.exports = async function mapToScss(type, output, data) {
     if (output == 'list') {
-        let eindding = generateVariableNames(data)
-       
+        return generateVariableNames(data)   
     } else if (output == 'variables') {
-        // console.log(type)
-        // console.log(output)
-        // console.log(data)
-        let testen = toScssVariables(type, data)
-        console.log('maptoScss:' + testen)
+        return toScssVariables(type, data)
     } else if (output == 'selectors') {
         return toScssSelectors(data)
     } else {
@@ -157,6 +152,19 @@ module.exports = async function mapToScss(type, output, data) {
     }
 }
 
+// map array of objects to list of ready-to-use scss variables
+function toScssVariables(type, data) {
+    let scss = ''
+    data.forEach(item => {
+        for (let key in item) {
+            let selector = sanitizeString(key)
+            let properties = item[key]
+
+            scss += `$${selector}: ${properties[type]};\n`
+        }
+    })
+    return scss
+}
 
 // map array of objects to list of assigned properties to heading in scss
 async function toScssSelectors(data) {
@@ -175,4 +183,5 @@ async function toScssSelectors(data) {
     })
     return scss
 }
+
 
