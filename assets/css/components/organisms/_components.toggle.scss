@@ -1,16 +1,23 @@
 // might be better off placed directly inside components/organisms/_toggle.html
-@for $i from 1 through 10 {
-    .c-toggle-#{$i} {
-        .dropdown-options-#{$i} {
-            display: none;
-        }
+@for $idCategory from 1 through 5 {
+    @for $idSubcategory from 1 through 10 {
+        @for $idSubitem from 1 through 10 {
 
-        .dropdown-toggle-button-#{$i} {
-            display: none;
-        }
+            .c-toggle-#{$idCategory}-#{$idSubcategory}-#{$idSubitem} {
+                .dropdown-options-#{$idCategory}-#{$idSubcategory}-#{$idSubitem} {
+                    display: none;
+                }
 
-        .dropdown-toggle-button-#{$i}:checked~.dropdown-options-#{$i} {
-            display: block;
+                .dropdown-toggle-button-#{$idCategory}-#{$idSubcategory}-#{$idSubitem} {
+                    display: none;
+                }
+
+                .dropdown-toggle-button-#{$idCategory}-#{$idSubcategory}-#{$idSubitem}:checked~.dropdown-options-#{$idCategory}-#{$idSubcategory}-#{$idSubitem} {
+                    display: block;
+                }
+            }
+
         }
     }
+
 }

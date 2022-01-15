@@ -9,7 +9,7 @@
             ]},
             {
             "progress": [
-                {"current": ["milestones(timeline)","requirements/system overview"]},
+                {"current": ["milestones","requirements", "system overview"]},
                 {"to do": ["now", "future"]}
             ]}
         ],

@@ -1,30 +1,37 @@
     <nav class="c-sidebar clay card">
         {% include 'organisms/_searchBar.html' %}
         {% set sideBar = navigation.sidebar %}
-        {% for designtitel, design in sideBar %}
+        {% for categoryKey, category in sideBar %}
+        {% set idCategory = loop.index %}
+
         <section>
-            <h2 class="tag">{{designtitel}}</h2>
-            <!--design-->
+            <h2 class="tag">{{categoryKey}}</h2>
             <ul>
+                {% for subcategory in category %}
+                {% set idSubcategory = loop.index %}
 
-                {% for designitem in design %}
-                {% for variabelentitle, variabelencontent in designitem %}
+            
+                {% for itemKey, item in subcategory %}
 
-
-                <li class="designlist">
-                    <h3 class="variabelen">{{variabelentitle | title}}</h3> 
+                <li>
+                    <h3>{{itemKey | title}}</h3> 
                     <ul>
-                    {% for variabelenitem in variabelencontent %}
+                    {% for subitem in item %}
+                  
+                    {% set idSubitem = loop.index %}
                       <li>
                     
-                            {% for varding , someething in variabelenitem %}
+                            {% for listKey , list in subitem %}
                             {% if loop.length == 1 %}
-                                    <h4>{{varding}}</h4>
-                                    <ul>
-                                        {% for ding in someething%}
-                                            <li>{{ding}}</li>
-                                        {% endfor %}
-                                    </ul>
+            
+
+                            {{ component('organisms', '_toggle', {
+                                id: idCategory + '-' + idSubcategory + '-' + idSubitem,
+                                textelement: 'h4',
+                                text: listKey,
+                                icon: '> ',
+                                items: list
+                            }) }}
                             {% else %}
                             {% endif %}
                             {% endfor %}

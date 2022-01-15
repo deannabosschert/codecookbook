@@ -1,7 +1,7 @@
-<div class="c-toggle-{{params.id}}">
-    <label class="dropdown-toggle-label-{{params.id}}" for="dropdown-toggle-button">
-        <span>{{params.text}}</span></label>
-    <input class="dropdown-toggle-button-{{params.id}}" type="checkbox" id="dropdown-toggle-button" name="dropdown-toggle-button">
+<div class="c-toggle-{{params.id}} test">
+    <label class="dropdown-toggle-label-{{params.id}}" for="dropdown-toggle-button-{{params.id}}">
+        <span>{{params.icon}}</span>{{params.text}}</label>
+    <input class="dropdown-toggle-button-{{params.id}}" type="checkbox" id="dropdown-toggle-button-{{params.id}}" name="dropdown-toggle-button-{{params.id}}">
     <ul class="dropdown-options-{{params.id}}">
         {% for item in params.items %}
         <li>
