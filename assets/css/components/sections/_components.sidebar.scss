@@ -11,3 +11,16 @@
   padding: 0 $desktop-xs;
   // width: $width-default;
 }
+
+.card{
+  /* Modify clay.css properties */
+  --clay-background: $body-highlight-blue;
+  --clay-border-radius: 0 48px 48px 0;
+  // --clay-shadow-outset
+  // --clay-shadow-inset-primary: 
+  // var(--clay-shadow-inset-primary,-8px -8px 16px 0 rgba(0,0,0,.25))
+  // --clay-shadow-inset-secondary
+  /* Extended styles */
+  color: #f1f1f1;
+  padding: 48px;
+}

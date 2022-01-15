@@ -1,8 +1,11 @@
 ---
 layout: templates/_base.html
 pageName: /
-parent: 
+parent:
 ---
-{%- from "system/component.njk" import component -%} <!-- todo: figure out to put this in _base layout-->
-
-<h1>tests</h1>
+{%- from "system/component.njk" import component -%}
+<!-- todo: figure out to put this in _base layout-->
+{{ component('sections', '_pageHeader', {
+    title: 'Code Cookbook',
+    description: 'Guide to the best practices for building and deploying web applications.'
+    }) }}

@@ -1,7 +1,10 @@
 // to be moved to seperate modules later
 .c-header {
+    display: flex;
+    flex-direction: column;
     background-color: lightblue;
-    padding: $desktop-xs 0;
+    align-items: center;
+    padding: $desktop-s 0;
 }
 
 h2 {
