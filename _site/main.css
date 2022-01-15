@@ -516,6 +516,19 @@ img {
   padding: 48px;
 }
 
+.c-sidebar section {
+  margin-bottom: 24px;
+}
+.c-sidebar h3, .c-sidebar h4, .c-sidebar li {
+  font-size: 15px;
+  font-weight: normal;
+}
+.c-sidebar h3 {
+  font-weight: bold;
+}
+.c-sidebar label {
+  font-weight: semibold;
+}
 .c-page-header {
   display: flex;
   flex-direction: column;

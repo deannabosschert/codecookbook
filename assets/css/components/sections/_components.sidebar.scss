@@ -24,3 +24,26 @@
   /* Extended styles */
   padding: 48px;
 }
+
+.c-sidebar {
+  section {
+    margin-bottom: $desktop-s;
+  }
+
+  h3, h4, li { 
+      font-size: 15px;
+      font-weight: normal;
+  } 
+
+  h3 {
+    font-weight: bold;
+  }
+
+  label {
+    font-weight: semibold;
+  }
+
+  li {
+
+  }
+}
