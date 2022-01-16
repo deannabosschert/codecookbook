@@ -6,9 +6,17 @@
   align-content: flex-start;
   width: 100%;
   max-width: 1075px;
-  margin-bottom: 80px;
-}
 
-.c-page-header h1 {
-  line-height: 37px;
+  margin-top: $desktop-s;
+  margin-bottom: $desktop-xl;
+
+
+  .header__title {
+      margin-bottom: $desktop-xs;
+    }
+  
+
+  .page-header__info {
+    color: $gray-1;
+  }
 }

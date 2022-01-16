@@ -1,11 +1,11 @@
 <header class="c-page-header">
     {% include "atoms/_pageHeaderStripe.html" %}
     {% if params.title %}
-    <h1 class="page-header__title title--desktop">{{ params.title }}</h1>
+    <h1 class="page-header__title">{{ params.title }}</h1>
     {% endif %}
     <div class="page-header__info">
       {% if params.description %}
-        <p class="page-header__info__description description--desktop">{{ params.description }}</p>
+        <p class="page-header__info__description">{{ params.description }}</p>
       {% endif %}
     </div>
 </header>

@@ -1,11 +1,9 @@
-
   .c-header {
     align-items: center;
-
-             border-bottom: 1px solid $brand-transparent;
+    border-bottom: 1px solid $brand-transparent;
 
     .header__title {
-      font-size: 24px;
+      font-size: 22px;
       text-decoration: none;
       font-family: Helvetica Neue;
       font-weight: 400;
@@ -15,12 +13,13 @@
       text-indent: 0;
       word-spacing: 0;
       text-transform: none;
-
       line-height: unset;
       margin-right: $desktop-xs;
+      color: $gray-1;
     }
+
     .header__description {
-      font-size: 20px;
+      font-size: 22px;
       line-height: unset;
     }
   }

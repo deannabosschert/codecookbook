@@ -54,7 +54,7 @@ main {
   min-width: 100%;
   width: 100%;
   max-width: 100%;
-  padding-left: $desktop-default;
+  padding-left: $desktop-m;
   // max-width: $width-page;
 }
 
@@ -66,4 +66,14 @@ main {
 article {
   width: $width-l;
   height: $height-l;
+}
+
+
+// SPA functionality
+.categoryPage {
+  display: none;
+}
+
+.pageActive {
+  display: block;
 }

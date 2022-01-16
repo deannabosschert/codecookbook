@@ -17,7 +17,7 @@
 
                     {{ component('organisms', '_toggle', {
                         id: idCategory + '-' + idSubcategory,
-                        openPageID: itemKey,
+                        openPageID: categoryKey + '-' + itemKey,
                         text: itemKey,
                         item: item
                     }) }}

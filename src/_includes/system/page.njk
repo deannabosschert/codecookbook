@@ -1,0 +1,14 @@
+{%- from "system/component.njk" import component -%}
+
+{# category equals the folder in /pages the page is in, e.g. design, development, resources etc #}
+{%- macro page(category, page, params) -%}
+
+  <div id="{{category}}-{{page}}-page" class="categoryPage">
+    {{ component('sections', '_pageHeader', {
+    title: params.title,
+    description: params.description
+    }) }}
+
+    {% include "../../pages/" + category + "/" + page + ".html" %}
+  </div>
+{%- endmacro -%}

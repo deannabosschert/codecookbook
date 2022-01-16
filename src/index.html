@@ -3,9 +3,14 @@ layout: templates/_base.html
 pageName: /
 parent:
 ---
-{%- from "system/component.njk" import component -%}
-<!-- todo: figure out to put this in _base layout-->
-<!-- {{ component('sections', '_pageHeader', {
-    title: 'Code Cookbook',
-    description: 'Guide to the best practices for building and deploying web applications.'
-    }) }} -->
+{%- from "system/page.njk" import page -%}
+
+{{ page('design', 'ontwerp', {
+       title: 'Ontwerp',
+       description: 'Alle ontwerpen van dit project in een overzicht.'
+ }) }}
+ 
+ {{ page('development', 'checklists', {
+       title: 'Checklists',
+       description: 'Controleren of het project aan alle eisen voldoet.'
+ }) }}
