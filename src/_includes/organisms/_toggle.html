@@ -29,16 +29,10 @@
             </ul>
 </div>
 
-<script>
-document.getElementById('{{params.openPageID}}').addEventListener('click', event => {
-    let allePages = document.querySelectorAll('.categoryPage')
-    allePages.forEach(page => {
-        page.classList.remove('pageActive')
-    })
-    
-    document.getElementById('{{params.openPageID}}-page').classList.add('pageActive')
-    window.scrollTo(0, 0);
-});
- 
- 
-</script>
+<!-- import toggle-page.js -->
+{%- from "system/function.njk" import function -%}
+
+
+{{ function('toggle-page', {
+    pageID: params.openPageID
+}) }}

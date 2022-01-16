@@ -1,0 +1,10 @@
+
+{# function equals the file in assets/js #}
+{%- macro function(name, params) -%}
+
+    <script type="module">
+    import functionName from '../../../assets/js/{{name}}.js'
+    functionName('{{params.pageID}}')
+    </script>
+
+{%- endmacro -%}
