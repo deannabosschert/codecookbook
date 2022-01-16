@@ -1,0 +1,17 @@
+  .c-logo {
+      display: flex;
+      align-items: center;
+      max-width: 100%;
+      padding: 0 $desktop-default 0 $desktop-m;
+
+      .logo__img {
+          min-height: unset;
+          height: unset;
+      }
+
+      &:hover {}
+
+      &:active {}
+
+      &:focus {}
+  }

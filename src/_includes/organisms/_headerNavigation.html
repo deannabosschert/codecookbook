@@ -1,15 +1,10 @@
-<nav class="c-header-nav etc">
-    <a href="/" class="header-nav__logo u-text-invisible "><img class="header-nav__logo__img"
+<nav class="c-header-nav">
+    <!-- <a href="/" class="header-nav__logo u-text-invisible "><img class="header-nav__logo__img"
             src="/assets/img/logos/active-collective_logo_black.svg" alt="logo of Active Collective in black letters"
-            width="199" height="19">{{params.logo}}</a>
+            width="199" height="19">{{params.logo}}</a> -->
     <input class="header-nav__button menu-btn" type="checkbox" id="menu-btn" />
     <label class="header-nav__menu-icon menu-icon" for="menu-btn"><span
             class="header-nav__menu-icon__stripes navicon"></span></label>
     <ul class="header-nav__menu menu">
-        {% for item in params.items %}
-        <li class="header-nav__menu__listItem">
-            <a href="{{item}}" class="header-nav__menu__listItem__link {{item}}">{{item | title }}</a>
-        </li>
-        {% endfor %}
     </ul>
 </nav>

@@ -447,12 +447,15 @@ body {
   display: grid;
   grid-template-columns: 264px 1fr 1fr 264px;
   grid-template-rows: 100px auto;
-  grid-template-areas: "....... header  header" "sidebar main main";
+  grid-template-areas: ". header header header" "sidebar main main main";
   background-color: #fff;
 }
 
-header {
+.c-header {
+  display: flex;
+  width: 100%;
   grid-area: header;
+  padding-left: 40px;
 }
 
 .c-sidebar {
@@ -463,12 +466,11 @@ main {
   grid-area: main;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  justify-content: flex-start;
   min-width: 100%;
   width: 100%;
   max-width: 100%;
+  padding-left: 32px;
 }
 
 article {
@@ -518,21 +520,34 @@ img {
 }
 
 .c-header {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  width: 100%;
+  border-bottom: 1px solid rgba(105, 201, 242, 0.1);
+}
+.c-header .header__title {
+  font-size: 24px;
+  text-decoration: none;
+  font-family: Helvetica Neue;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.48;
+  text-indent: 0;
+  word-spacing: 0;
+  text-transform: none;
+  line-height: unset;
+  margin-right: 20px;
+}
+.c-header .header__description {
+  font-size: 20px;
+  line-height: unset;
 }
 
 .c-sidebar {
   display: flex;
   flex-direction: column;
-  position: sticky;
-  top: 0;
-  left: 0;
-  bottom: 0;
   height: 100%;
   padding: 0 24px 0 40px;
+  margin-top: 24px;
   border-right: 1px solid #f6f6f6ff;
 }
 
@@ -573,11 +588,15 @@ img {
   margin-bottom: 80px;
 }
 
+.c-page-header h1 {
+  line-height: 37px;
+}
+
 .c-header-nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   align-content: center;
   height: 100%;
@@ -590,10 +609,6 @@ img {
 }
 .c-header-nav ul li {
   margin: 0 1rem;
-}
-
-.header-nav__logo__img {
-  max-width: 50vw;
 }
 
 .menu-btn {
@@ -772,9 +787,9 @@ body.contact a.contact:link {
   flex-direction: row;
   flex-wrap: nowrap;
   max-width: 100%;
-  justify-content: center;
   align-items: center;
   align-content: center;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 .c-search-bar label {
@@ -787,6 +802,7 @@ body.contact a.contact:link {
 .c-search-bar__button {
   width: 100%;
   min-width: 15px;
+  max-width: 20px;
   height: 100%;
   margin-left: 10px;
   background-image: url("https://cdn2.iconfinder.com/data/icons/font-awesome/1792/search-512.png");
@@ -795,7 +811,7 @@ body.contact a.contact:link {
   background-position: center;
 }
 .c-search-bar__input {
-  max-width: 100%;
+  max-width: calc(100% - 40px);
   padding: 4px 16px;
 }
 
@@ -6431,16 +6447,20 @@ body.contact a.contact:link {
     height: auto;
   }
 }
+.c-logo {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  padding: 0 32px 0 40px;
+}
+.c-logo .logo__img {
+  min-height: unset;
+  height: unset;
+}
 .c-page-header-stripe {
   border-bottom: 7px solid #202020ff;
   width: 4.25rem;
   margin-bottom: 1rem;
-}
-
-.c-header {
-  display: flex;
-  flex-direction: column;
-  padding: 24px 0;
 }
 
 h2 {

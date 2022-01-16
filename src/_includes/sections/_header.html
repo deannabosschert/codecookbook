@@ -1,13 +1,11 @@
 <header class="c-header">
-    {{ component('organisms', '_headerNavigation', {
-        logo: 'Home: Code Cookbook',
-        items: [
-        'services',
-        'industries',
-        'cases',
-        'about us',
-        'careers',
-        'contact'
-        ]
-        }) }}
+    {% if params.title %}
+    <h1 class="header__title">{{ params.title }}</h1>
+    {% endif %}
+
+    {% if params.description %}
+    <p class="header__description">{{ params.description }}</p>
+    {% endif %}
+
+
 </header>

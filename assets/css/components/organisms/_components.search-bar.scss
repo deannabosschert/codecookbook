@@ -6,10 +6,11 @@
   flex-direction: row;
   flex-wrap: nowrap;
   max-width: 100%;
-  justify-content: center;
+
   align-items: center;
   align-content: center;
 
+  margin-top: $desktop-xs;
   margin-bottom: $desktop-xs;
 
   label {
@@ -26,6 +27,7 @@
   &__button {
     width: 100%;
     min-width: $width-xxxs;
+    max-width: 20px;
     height: 100%;
     margin-left: 10px;
     background-image: url("https://cdn2.iconfinder.com/data/icons/font-awesome/1792/search-512.png");
@@ -42,10 +44,7 @@
 }
 
 .c-search-bar__input {
-  max-width: 100%;
-  // padding: 0.2rem 0.5rem;
-  // margin: 0.5rem;
-
+  max-width: calc(100% - 40px);
   padding: $mobile-xxxs $desktop-xxs;
 
 }

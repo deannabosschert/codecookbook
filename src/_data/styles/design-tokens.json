@@ -44,6 +44,17 @@
         }
       }
     },
+     "brand-transparent": {
+      "description": "",
+      "type": "color",
+      "value": "rgba(105, 201, 242, 0.1)",
+      "extensions": {
+        "org.lukasoppermann.figmaDesignTokens": {
+          "styleId": "S:a03c810d7a4dbacb689a640f694ee374ba9a4c7b,",
+          "exportKey": "color"
+        }
+      }
+    },
     "gray 3": {
       "description": "",
       "type": "color",
