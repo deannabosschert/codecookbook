@@ -1,5 +1,18 @@
 .btn--primary {
-
+    box-shadow: 0 0 0 2px rgba(8, 43, 75, 0.45);
+    background-image: linear-gradient(to right, #8ebafc -10%, #8eb4fc 60%, #e0eaec 99%, #8294b5 155%);
+    color: white;
+    border-radius: 5px;
+    letter-spacing: 0.25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    transition: 0.5s;
+    background-size: 200% auto;
+    padding: 0.6rem 1rem;
+    margin: 0.2rem;
+    min-width: min-content;
 
   &:hover {
 

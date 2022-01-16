@@ -1,4 +1,4 @@
-    <nav class="c-sidebar clay card">
+    <nav class="c-sidebar">
         {% include 'organisms/_searchBar.html' %}
         {% set sideBar = navigation.sidebar %}
         {% for categoryKey, category in sideBar %}
@@ -14,30 +14,14 @@
                 {% for itemKey, item in subcategory %}
 
                 <li>
-                    <h3>{{itemKey | title}}</h3> 
-                    <ul>
-                    {% for subitem in item %}
-                  
-                    {% set idSubitem = loop.index %}
-                      <li>
-                    
-                            {% for listKey , list in subitem %}
-                            {% if loop.length == 1 %}
-            
 
-                            {{ component('organisms', '_toggle', {
-                                id: idCategory + '-' + idSubcategory + '-' + idSubitem,
-                                textelement: 'h4',
-                                text: listKey,
-                                icon: '> ',
-                                items: list
-                            }) }}
-                            {% else %}
-                            {% endif %}
-                            {% endfor %}
-                        </li>  
-                    {% endfor %}
-                    </ul>
+                    {{ component('organisms', '_toggle', {
+                        id: idCategory + '-' + idSubcategory,
+                        openPageID: itemKey,
+                        text: itemKey,
+                        item: item
+                    }) }}
+
          
 
                     

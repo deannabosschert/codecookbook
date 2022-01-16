@@ -395,6 +395,10 @@ ul li {
   line-height: 32px;
 }
 
+input {
+  font-size: 15px;
+}
+
 address {
   font-style: normal;
   font-weight: 300;
@@ -441,7 +445,7 @@ body {
   min-height: 100%;
   overflow-x: hidden;
   display: grid;
-  grid-template-columns: 345px 1fr 1fr 264px;
+  grid-template-columns: 264px 1fr 1fr 264px;
   grid-template-rows: 100px auto;
   grid-template-areas: "....... header  header" "sidebar main main";
   background-color: #fff;
@@ -472,6 +476,13 @@ article {
   height: 450px;
 }
 
+input {
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+  border: 0.2px solid #ebecf0;
+  background-color: rgba(235, 236, 240, 0.2);
+  border-radius: 5px;
+}
+
 /* ==========================================================================
    #IMAGES
    ========================================================================== */
@@ -485,6 +496,22 @@ img {
   object-fit: contain;
 }
 
+.btn--primary {
+  box-shadow: 0 0 0 2px rgba(8, 43, 75, 0.45);
+  background-image: linear-gradient(to right, #8ebafc -10%, #8eb4fc 60%, #e0eaec 99%, #8294b5 155%);
+  color: white;
+  border-radius: 5px;
+  letter-spacing: 0.25px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  transition: 0.5s;
+  background-size: 200% auto;
+  padding: 0.6rem 1rem;
+  margin: 0.2rem;
+  min-width: min-content;
+}
 .link-arrow:after {
   content: "⭢";
   vertical-align: middle;
@@ -505,7 +532,8 @@ img {
   left: 0;
   bottom: 0;
   height: 100%;
-  padding: 0 20px;
+  padding: 0 24px 0 40px;
+  border-right: 1px solid #f6f6f6ff;
 }
 
 .card {
@@ -519,15 +547,20 @@ img {
 .c-sidebar section {
   margin-bottom: 24px;
 }
-.c-sidebar h3, .c-sidebar h4, .c-sidebar li {
+.c-sidebar h3,
+.c-sidebar h4,
+.c-sidebar li {
   font-size: 15px;
   font-weight: normal;
 }
-.c-sidebar h3 {
-  font-weight: bold;
+.c-sidebar .subtoggle label {
+  margin-left: 8px;
 }
-.c-sidebar label {
-  font-weight: semibold;
+.c-sidebar .subtoggle ul {
+  margin-left: 16px;
+}
+.c-sidebar .subtoggle ul li {
+  font-weight: 300;
 }
 .c-page-header {
   display: flex;
@@ -734,6 +767,48 @@ body.contact a.contact:link {
     z-index: 2;
   }
 }
+.c-search-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 20px;
+}
+.c-search-bar label {
+  max-width: 100%;
+}
+.c-search-bar__input {
+  max-width: 85%;
+  padding: 4px 16px;
+}
+.c-search-bar__button {
+  width: 100%;
+  min-width: 15px;
+  height: 100%;
+  margin-left: 10px;
+  background-image: url("https://cdn2.iconfinder.com/data/icons/font-awesome/1792/search-512.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.c-search-bar__input {
+  max-width: 100%;
+  padding: 4px 16px;
+}
+
+.c-toggle-1-1 .dropdown-options-1-1 {
+  display: none;
+}
+.c-toggle-1-1 .dropdown-toggle-button-1-1 {
+  display: none;
+}
+.c-toggle-1-1 .dropdown-toggle-button-1-1:checked ~ .dropdown-options-1-1 {
+  display: block;
+}
+
 .c-toggle-1-1-1 .dropdown-options-1-1-1 {
   display: none;
 }
@@ -831,6 +906,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-1-1-10 .dropdown-toggle-button-1-1-10:checked ~ .dropdown-options-1-1-10 {
+  display: block;
+}
+
+.c-toggle-1-2 .dropdown-options-1-2 {
+  display: none;
+}
+.c-toggle-1-2 .dropdown-toggle-button-1-2 {
+  display: none;
+}
+.c-toggle-1-2 .dropdown-toggle-button-1-2:checked ~ .dropdown-options-1-2 {
   display: block;
 }
 
@@ -934,6 +1019,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-1-3 .dropdown-options-1-3 {
+  display: none;
+}
+.c-toggle-1-3 .dropdown-toggle-button-1-3 {
+  display: none;
+}
+.c-toggle-1-3 .dropdown-toggle-button-1-3:checked ~ .dropdown-options-1-3 {
+  display: block;
+}
+
 .c-toggle-1-3-1 .dropdown-options-1-3-1 {
   display: none;
 }
@@ -1031,6 +1126,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-1-3-10 .dropdown-toggle-button-1-3-10:checked ~ .dropdown-options-1-3-10 {
+  display: block;
+}
+
+.c-toggle-1-4 .dropdown-options-1-4 {
+  display: none;
+}
+.c-toggle-1-4 .dropdown-toggle-button-1-4 {
+  display: none;
+}
+.c-toggle-1-4 .dropdown-toggle-button-1-4:checked ~ .dropdown-options-1-4 {
   display: block;
 }
 
@@ -1134,6 +1239,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-1-5 .dropdown-options-1-5 {
+  display: none;
+}
+.c-toggle-1-5 .dropdown-toggle-button-1-5 {
+  display: none;
+}
+.c-toggle-1-5 .dropdown-toggle-button-1-5:checked ~ .dropdown-options-1-5 {
+  display: block;
+}
+
 .c-toggle-1-5-1 .dropdown-options-1-5-1 {
   display: none;
 }
@@ -1231,6 +1346,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-1-5-10 .dropdown-toggle-button-1-5-10:checked ~ .dropdown-options-1-5-10 {
+  display: block;
+}
+
+.c-toggle-1-6 .dropdown-options-1-6 {
+  display: none;
+}
+.c-toggle-1-6 .dropdown-toggle-button-1-6 {
+  display: none;
+}
+.c-toggle-1-6 .dropdown-toggle-button-1-6:checked ~ .dropdown-options-1-6 {
   display: block;
 }
 
@@ -1334,6 +1459,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-1-7 .dropdown-options-1-7 {
+  display: none;
+}
+.c-toggle-1-7 .dropdown-toggle-button-1-7 {
+  display: none;
+}
+.c-toggle-1-7 .dropdown-toggle-button-1-7:checked ~ .dropdown-options-1-7 {
+  display: block;
+}
+
 .c-toggle-1-7-1 .dropdown-options-1-7-1 {
   display: none;
 }
@@ -1431,6 +1566,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-1-7-10 .dropdown-toggle-button-1-7-10:checked ~ .dropdown-options-1-7-10 {
+  display: block;
+}
+
+.c-toggle-1-8 .dropdown-options-1-8 {
+  display: none;
+}
+.c-toggle-1-8 .dropdown-toggle-button-1-8 {
+  display: none;
+}
+.c-toggle-1-8 .dropdown-toggle-button-1-8:checked ~ .dropdown-options-1-8 {
   display: block;
 }
 
@@ -1534,6 +1679,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-1-9 .dropdown-options-1-9 {
+  display: none;
+}
+.c-toggle-1-9 .dropdown-toggle-button-1-9 {
+  display: none;
+}
+.c-toggle-1-9 .dropdown-toggle-button-1-9:checked ~ .dropdown-options-1-9 {
+  display: block;
+}
+
 .c-toggle-1-9-1 .dropdown-options-1-9-1 {
   display: none;
 }
@@ -1631,6 +1786,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-1-9-10 .dropdown-toggle-button-1-9-10:checked ~ .dropdown-options-1-9-10 {
+  display: block;
+}
+
+.c-toggle-1-10 .dropdown-options-1-10 {
+  display: none;
+}
+.c-toggle-1-10 .dropdown-toggle-button-1-10 {
+  display: none;
+}
+.c-toggle-1-10 .dropdown-toggle-button-1-10:checked ~ .dropdown-options-1-10 {
   display: block;
 }
 
@@ -1734,6 +1899,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-2-1 .dropdown-options-2-1 {
+  display: none;
+}
+.c-toggle-2-1 .dropdown-toggle-button-2-1 {
+  display: none;
+}
+.c-toggle-2-1 .dropdown-toggle-button-2-1:checked ~ .dropdown-options-2-1 {
+  display: block;
+}
+
 .c-toggle-2-1-1 .dropdown-options-2-1-1 {
   display: none;
 }
@@ -1831,6 +2006,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-2-1-10 .dropdown-toggle-button-2-1-10:checked ~ .dropdown-options-2-1-10 {
+  display: block;
+}
+
+.c-toggle-2-2 .dropdown-options-2-2 {
+  display: none;
+}
+.c-toggle-2-2 .dropdown-toggle-button-2-2 {
+  display: none;
+}
+.c-toggle-2-2 .dropdown-toggle-button-2-2:checked ~ .dropdown-options-2-2 {
   display: block;
 }
 
@@ -1934,6 +2119,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-2-3 .dropdown-options-2-3 {
+  display: none;
+}
+.c-toggle-2-3 .dropdown-toggle-button-2-3 {
+  display: none;
+}
+.c-toggle-2-3 .dropdown-toggle-button-2-3:checked ~ .dropdown-options-2-3 {
+  display: block;
+}
+
 .c-toggle-2-3-1 .dropdown-options-2-3-1 {
   display: none;
 }
@@ -2031,6 +2226,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-2-3-10 .dropdown-toggle-button-2-3-10:checked ~ .dropdown-options-2-3-10 {
+  display: block;
+}
+
+.c-toggle-2-4 .dropdown-options-2-4 {
+  display: none;
+}
+.c-toggle-2-4 .dropdown-toggle-button-2-4 {
+  display: none;
+}
+.c-toggle-2-4 .dropdown-toggle-button-2-4:checked ~ .dropdown-options-2-4 {
   display: block;
 }
 
@@ -2134,6 +2339,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-2-5 .dropdown-options-2-5 {
+  display: none;
+}
+.c-toggle-2-5 .dropdown-toggle-button-2-5 {
+  display: none;
+}
+.c-toggle-2-5 .dropdown-toggle-button-2-5:checked ~ .dropdown-options-2-5 {
+  display: block;
+}
+
 .c-toggle-2-5-1 .dropdown-options-2-5-1 {
   display: none;
 }
@@ -2231,6 +2446,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-2-5-10 .dropdown-toggle-button-2-5-10:checked ~ .dropdown-options-2-5-10 {
+  display: block;
+}
+
+.c-toggle-2-6 .dropdown-options-2-6 {
+  display: none;
+}
+.c-toggle-2-6 .dropdown-toggle-button-2-6 {
+  display: none;
+}
+.c-toggle-2-6 .dropdown-toggle-button-2-6:checked ~ .dropdown-options-2-6 {
   display: block;
 }
 
@@ -2334,6 +2559,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-2-7 .dropdown-options-2-7 {
+  display: none;
+}
+.c-toggle-2-7 .dropdown-toggle-button-2-7 {
+  display: none;
+}
+.c-toggle-2-7 .dropdown-toggle-button-2-7:checked ~ .dropdown-options-2-7 {
+  display: block;
+}
+
 .c-toggle-2-7-1 .dropdown-options-2-7-1 {
   display: none;
 }
@@ -2431,6 +2666,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-2-7-10 .dropdown-toggle-button-2-7-10:checked ~ .dropdown-options-2-7-10 {
+  display: block;
+}
+
+.c-toggle-2-8 .dropdown-options-2-8 {
+  display: none;
+}
+.c-toggle-2-8 .dropdown-toggle-button-2-8 {
+  display: none;
+}
+.c-toggle-2-8 .dropdown-toggle-button-2-8:checked ~ .dropdown-options-2-8 {
   display: block;
 }
 
@@ -2534,6 +2779,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-2-9 .dropdown-options-2-9 {
+  display: none;
+}
+.c-toggle-2-9 .dropdown-toggle-button-2-9 {
+  display: none;
+}
+.c-toggle-2-9 .dropdown-toggle-button-2-9:checked ~ .dropdown-options-2-9 {
+  display: block;
+}
+
 .c-toggle-2-9-1 .dropdown-options-2-9-1 {
   display: none;
 }
@@ -2631,6 +2886,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-2-9-10 .dropdown-toggle-button-2-9-10:checked ~ .dropdown-options-2-9-10 {
+  display: block;
+}
+
+.c-toggle-2-10 .dropdown-options-2-10 {
+  display: none;
+}
+.c-toggle-2-10 .dropdown-toggle-button-2-10 {
+  display: none;
+}
+.c-toggle-2-10 .dropdown-toggle-button-2-10:checked ~ .dropdown-options-2-10 {
   display: block;
 }
 
@@ -2734,6 +2999,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-3-1 .dropdown-options-3-1 {
+  display: none;
+}
+.c-toggle-3-1 .dropdown-toggle-button-3-1 {
+  display: none;
+}
+.c-toggle-3-1 .dropdown-toggle-button-3-1:checked ~ .dropdown-options-3-1 {
+  display: block;
+}
+
 .c-toggle-3-1-1 .dropdown-options-3-1-1 {
   display: none;
 }
@@ -2831,6 +3106,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-3-1-10 .dropdown-toggle-button-3-1-10:checked ~ .dropdown-options-3-1-10 {
+  display: block;
+}
+
+.c-toggle-3-2 .dropdown-options-3-2 {
+  display: none;
+}
+.c-toggle-3-2 .dropdown-toggle-button-3-2 {
+  display: none;
+}
+.c-toggle-3-2 .dropdown-toggle-button-3-2:checked ~ .dropdown-options-3-2 {
   display: block;
 }
 
@@ -2934,6 +3219,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-3-3 .dropdown-options-3-3 {
+  display: none;
+}
+.c-toggle-3-3 .dropdown-toggle-button-3-3 {
+  display: none;
+}
+.c-toggle-3-3 .dropdown-toggle-button-3-3:checked ~ .dropdown-options-3-3 {
+  display: block;
+}
+
 .c-toggle-3-3-1 .dropdown-options-3-3-1 {
   display: none;
 }
@@ -3031,6 +3326,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-3-3-10 .dropdown-toggle-button-3-3-10:checked ~ .dropdown-options-3-3-10 {
+  display: block;
+}
+
+.c-toggle-3-4 .dropdown-options-3-4 {
+  display: none;
+}
+.c-toggle-3-4 .dropdown-toggle-button-3-4 {
+  display: none;
+}
+.c-toggle-3-4 .dropdown-toggle-button-3-4:checked ~ .dropdown-options-3-4 {
   display: block;
 }
 
@@ -3134,6 +3439,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-3-5 .dropdown-options-3-5 {
+  display: none;
+}
+.c-toggle-3-5 .dropdown-toggle-button-3-5 {
+  display: none;
+}
+.c-toggle-3-5 .dropdown-toggle-button-3-5:checked ~ .dropdown-options-3-5 {
+  display: block;
+}
+
 .c-toggle-3-5-1 .dropdown-options-3-5-1 {
   display: none;
 }
@@ -3231,6 +3546,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-3-5-10 .dropdown-toggle-button-3-5-10:checked ~ .dropdown-options-3-5-10 {
+  display: block;
+}
+
+.c-toggle-3-6 .dropdown-options-3-6 {
+  display: none;
+}
+.c-toggle-3-6 .dropdown-toggle-button-3-6 {
+  display: none;
+}
+.c-toggle-3-6 .dropdown-toggle-button-3-6:checked ~ .dropdown-options-3-6 {
   display: block;
 }
 
@@ -3334,6 +3659,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-3-7 .dropdown-options-3-7 {
+  display: none;
+}
+.c-toggle-3-7 .dropdown-toggle-button-3-7 {
+  display: none;
+}
+.c-toggle-3-7 .dropdown-toggle-button-3-7:checked ~ .dropdown-options-3-7 {
+  display: block;
+}
+
 .c-toggle-3-7-1 .dropdown-options-3-7-1 {
   display: none;
 }
@@ -3431,6 +3766,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-3-7-10 .dropdown-toggle-button-3-7-10:checked ~ .dropdown-options-3-7-10 {
+  display: block;
+}
+
+.c-toggle-3-8 .dropdown-options-3-8 {
+  display: none;
+}
+.c-toggle-3-8 .dropdown-toggle-button-3-8 {
+  display: none;
+}
+.c-toggle-3-8 .dropdown-toggle-button-3-8:checked ~ .dropdown-options-3-8 {
   display: block;
 }
 
@@ -3534,6 +3879,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-3-9 .dropdown-options-3-9 {
+  display: none;
+}
+.c-toggle-3-9 .dropdown-toggle-button-3-9 {
+  display: none;
+}
+.c-toggle-3-9 .dropdown-toggle-button-3-9:checked ~ .dropdown-options-3-9 {
+  display: block;
+}
+
 .c-toggle-3-9-1 .dropdown-options-3-9-1 {
   display: none;
 }
@@ -3631,6 +3986,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-3-9-10 .dropdown-toggle-button-3-9-10:checked ~ .dropdown-options-3-9-10 {
+  display: block;
+}
+
+.c-toggle-3-10 .dropdown-options-3-10 {
+  display: none;
+}
+.c-toggle-3-10 .dropdown-toggle-button-3-10 {
+  display: none;
+}
+.c-toggle-3-10 .dropdown-toggle-button-3-10:checked ~ .dropdown-options-3-10 {
   display: block;
 }
 
@@ -3734,6 +4099,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-4-1 .dropdown-options-4-1 {
+  display: none;
+}
+.c-toggle-4-1 .dropdown-toggle-button-4-1 {
+  display: none;
+}
+.c-toggle-4-1 .dropdown-toggle-button-4-1:checked ~ .dropdown-options-4-1 {
+  display: block;
+}
+
 .c-toggle-4-1-1 .dropdown-options-4-1-1 {
   display: none;
 }
@@ -3831,6 +4206,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-4-1-10 .dropdown-toggle-button-4-1-10:checked ~ .dropdown-options-4-1-10 {
+  display: block;
+}
+
+.c-toggle-4-2 .dropdown-options-4-2 {
+  display: none;
+}
+.c-toggle-4-2 .dropdown-toggle-button-4-2 {
+  display: none;
+}
+.c-toggle-4-2 .dropdown-toggle-button-4-2:checked ~ .dropdown-options-4-2 {
   display: block;
 }
 
@@ -3934,6 +4319,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-4-3 .dropdown-options-4-3 {
+  display: none;
+}
+.c-toggle-4-3 .dropdown-toggle-button-4-3 {
+  display: none;
+}
+.c-toggle-4-3 .dropdown-toggle-button-4-3:checked ~ .dropdown-options-4-3 {
+  display: block;
+}
+
 .c-toggle-4-3-1 .dropdown-options-4-3-1 {
   display: none;
 }
@@ -4031,6 +4426,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-4-3-10 .dropdown-toggle-button-4-3-10:checked ~ .dropdown-options-4-3-10 {
+  display: block;
+}
+
+.c-toggle-4-4 .dropdown-options-4-4 {
+  display: none;
+}
+.c-toggle-4-4 .dropdown-toggle-button-4-4 {
+  display: none;
+}
+.c-toggle-4-4 .dropdown-toggle-button-4-4:checked ~ .dropdown-options-4-4 {
   display: block;
 }
 
@@ -4134,6 +4539,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-4-5 .dropdown-options-4-5 {
+  display: none;
+}
+.c-toggle-4-5 .dropdown-toggle-button-4-5 {
+  display: none;
+}
+.c-toggle-4-5 .dropdown-toggle-button-4-5:checked ~ .dropdown-options-4-5 {
+  display: block;
+}
+
 .c-toggle-4-5-1 .dropdown-options-4-5-1 {
   display: none;
 }
@@ -4231,6 +4646,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-4-5-10 .dropdown-toggle-button-4-5-10:checked ~ .dropdown-options-4-5-10 {
+  display: block;
+}
+
+.c-toggle-4-6 .dropdown-options-4-6 {
+  display: none;
+}
+.c-toggle-4-6 .dropdown-toggle-button-4-6 {
+  display: none;
+}
+.c-toggle-4-6 .dropdown-toggle-button-4-6:checked ~ .dropdown-options-4-6 {
   display: block;
 }
 
@@ -4334,6 +4759,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-4-7 .dropdown-options-4-7 {
+  display: none;
+}
+.c-toggle-4-7 .dropdown-toggle-button-4-7 {
+  display: none;
+}
+.c-toggle-4-7 .dropdown-toggle-button-4-7:checked ~ .dropdown-options-4-7 {
+  display: block;
+}
+
 .c-toggle-4-7-1 .dropdown-options-4-7-1 {
   display: none;
 }
@@ -4431,6 +4866,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-4-7-10 .dropdown-toggle-button-4-7-10:checked ~ .dropdown-options-4-7-10 {
+  display: block;
+}
+
+.c-toggle-4-8 .dropdown-options-4-8 {
+  display: none;
+}
+.c-toggle-4-8 .dropdown-toggle-button-4-8 {
+  display: none;
+}
+.c-toggle-4-8 .dropdown-toggle-button-4-8:checked ~ .dropdown-options-4-8 {
   display: block;
 }
 
@@ -4534,6 +4979,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-4-9 .dropdown-options-4-9 {
+  display: none;
+}
+.c-toggle-4-9 .dropdown-toggle-button-4-9 {
+  display: none;
+}
+.c-toggle-4-9 .dropdown-toggle-button-4-9:checked ~ .dropdown-options-4-9 {
+  display: block;
+}
+
 .c-toggle-4-9-1 .dropdown-options-4-9-1 {
   display: none;
 }
@@ -4631,6 +5086,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-4-9-10 .dropdown-toggle-button-4-9-10:checked ~ .dropdown-options-4-9-10 {
+  display: block;
+}
+
+.c-toggle-4-10 .dropdown-options-4-10 {
+  display: none;
+}
+.c-toggle-4-10 .dropdown-toggle-button-4-10 {
+  display: none;
+}
+.c-toggle-4-10 .dropdown-toggle-button-4-10:checked ~ .dropdown-options-4-10 {
   display: block;
 }
 
@@ -4734,6 +5199,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-5-1 .dropdown-options-5-1 {
+  display: none;
+}
+.c-toggle-5-1 .dropdown-toggle-button-5-1 {
+  display: none;
+}
+.c-toggle-5-1 .dropdown-toggle-button-5-1:checked ~ .dropdown-options-5-1 {
+  display: block;
+}
+
 .c-toggle-5-1-1 .dropdown-options-5-1-1 {
   display: none;
 }
@@ -4831,6 +5306,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-5-1-10 .dropdown-toggle-button-5-1-10:checked ~ .dropdown-options-5-1-10 {
+  display: block;
+}
+
+.c-toggle-5-2 .dropdown-options-5-2 {
+  display: none;
+}
+.c-toggle-5-2 .dropdown-toggle-button-5-2 {
+  display: none;
+}
+.c-toggle-5-2 .dropdown-toggle-button-5-2:checked ~ .dropdown-options-5-2 {
   display: block;
 }
 
@@ -4934,6 +5419,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-5-3 .dropdown-options-5-3 {
+  display: none;
+}
+.c-toggle-5-3 .dropdown-toggle-button-5-3 {
+  display: none;
+}
+.c-toggle-5-3 .dropdown-toggle-button-5-3:checked ~ .dropdown-options-5-3 {
+  display: block;
+}
+
 .c-toggle-5-3-1 .dropdown-options-5-3-1 {
   display: none;
 }
@@ -5031,6 +5526,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-5-3-10 .dropdown-toggle-button-5-3-10:checked ~ .dropdown-options-5-3-10 {
+  display: block;
+}
+
+.c-toggle-5-4 .dropdown-options-5-4 {
+  display: none;
+}
+.c-toggle-5-4 .dropdown-toggle-button-5-4 {
+  display: none;
+}
+.c-toggle-5-4 .dropdown-toggle-button-5-4:checked ~ .dropdown-options-5-4 {
   display: block;
 }
 
@@ -5134,6 +5639,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-5-5 .dropdown-options-5-5 {
+  display: none;
+}
+.c-toggle-5-5 .dropdown-toggle-button-5-5 {
+  display: none;
+}
+.c-toggle-5-5 .dropdown-toggle-button-5-5:checked ~ .dropdown-options-5-5 {
+  display: block;
+}
+
 .c-toggle-5-5-1 .dropdown-options-5-5-1 {
   display: none;
 }
@@ -5231,6 +5746,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-5-5-10 .dropdown-toggle-button-5-5-10:checked ~ .dropdown-options-5-5-10 {
+  display: block;
+}
+
+.c-toggle-5-6 .dropdown-options-5-6 {
+  display: none;
+}
+.c-toggle-5-6 .dropdown-toggle-button-5-6 {
+  display: none;
+}
+.c-toggle-5-6 .dropdown-toggle-button-5-6:checked ~ .dropdown-options-5-6 {
   display: block;
 }
 
@@ -5334,6 +5859,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-5-7 .dropdown-options-5-7 {
+  display: none;
+}
+.c-toggle-5-7 .dropdown-toggle-button-5-7 {
+  display: none;
+}
+.c-toggle-5-7 .dropdown-toggle-button-5-7:checked ~ .dropdown-options-5-7 {
+  display: block;
+}
+
 .c-toggle-5-7-1 .dropdown-options-5-7-1 {
   display: none;
 }
@@ -5431,6 +5966,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-5-7-10 .dropdown-toggle-button-5-7-10:checked ~ .dropdown-options-5-7-10 {
+  display: block;
+}
+
+.c-toggle-5-8 .dropdown-options-5-8 {
+  display: none;
+}
+.c-toggle-5-8 .dropdown-toggle-button-5-8 {
+  display: none;
+}
+.c-toggle-5-8 .dropdown-toggle-button-5-8:checked ~ .dropdown-options-5-8 {
   display: block;
 }
 
@@ -5534,6 +6079,16 @@ body.contact a.contact:link {
   display: block;
 }
 
+.c-toggle-5-9 .dropdown-options-5-9 {
+  display: none;
+}
+.c-toggle-5-9 .dropdown-toggle-button-5-9 {
+  display: none;
+}
+.c-toggle-5-9 .dropdown-toggle-button-5-9:checked ~ .dropdown-options-5-9 {
+  display: block;
+}
+
 .c-toggle-5-9-1 .dropdown-options-5-9-1 {
   display: none;
 }
@@ -5631,6 +6186,16 @@ body.contact a.contact:link {
   display: none;
 }
 .c-toggle-5-9-10 .dropdown-toggle-button-5-9-10:checked ~ .dropdown-options-5-9-10 {
+  display: block;
+}
+
+.c-toggle-5-10 .dropdown-options-5-10 {
+  display: none;
+}
+.c-toggle-5-10 .dropdown-toggle-button-5-10 {
+  display: none;
+}
+.c-toggle-5-10 .dropdown-toggle-button-5-10:checked ~ .dropdown-options-5-10 {
   display: block;
 }
 
@@ -5875,8 +6440,6 @@ body.contact a.contact:link {
 .c-header {
   display: flex;
   flex-direction: column;
-  background-color: lightblue;
-  align-items: center;
   padding: 24px 0;
 }
 
