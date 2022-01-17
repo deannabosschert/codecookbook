@@ -5,9 +5,10 @@ parent:
 ---
 {%- from "system/page.njk" import page -%}
 {%- from "system/function.njk" import function -%}
+{% set sideBar = navigation.sidebar %}
 
 <div class="categoryPage">
-    <p>dit staat er als je opstart</p>
+      <p>dit staat er als je opstart</p>
 </div>
 
 {{ page('design', 'ontwerp', {
@@ -15,10 +16,17 @@ parent:
        parent: 'design',
        page: 'ontwerp',
        description: 'Alle ontwerpen van dit project in een overzicht.',
-       figma: figma 
- }) }} <!-- remove 'dev' in prod -->
- 
- {{ page('development', 'checklists', {
-       title: 'Checklists',
-       description: 'Controleren of het project aan alle eisen voldoet.'
+       figma: figma.dev,
+       list: navigation.sidebar.design
  }) }}
+<!-- remove 'dev' in prod -->
+
+
+{% for categoryKey, category in sideBar %}{% for subcategory in category %}{% for itemKey, item in subcategory %}
+{{ page(categoryKey, itemKey, {
+      title: itemKey,
+      parent: categoryKey,
+      page: itemKey,
+      description: 'Iets van een description over deze pagina'
+}) }}
+{% endfor %}{% endfor %}{% endfor %}

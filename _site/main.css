@@ -8303,6 +8303,9 @@ h2 {
   margin: 0;
 }
 
+.categoryPage h1:first-letter, .categoryPage h2:first-letter, .categoryPage h3:first-letter, .categoryPage h4:first-letter, .categoryPage h5:first-letter, .categoryPage h6:first-letter, .categoryPage p:first-letter {
+  text-transform: capitalize;
+}
 .categoryPage h1 {
   margin-bottom: 16px;
 }

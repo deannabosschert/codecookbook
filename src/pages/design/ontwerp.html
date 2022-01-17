@@ -1,12 +1,17 @@
 {%- from "system/component.njk" import component -%}
-{% set image = 'assets/img/content/design/ontwerp/' %}
+{% set parent = params.parent %} <!--design-->
+{% set page = params.page %}  <!--ontwerp-->
+{% set subpage = 'design' %}  <!--put in array later, for now it's design-->
+{% set image = 'assets/img/content/' + parent + '/' + page + '/' %}
 <!-- <p>breadcrumbs</p> -->
 
-<section class="{{params.parent}}-{{params.page}}-subpage-design">
-    <h2>Design</h2>
+
+<section class="{{params.parent}}-{{params.page}}-subpage-{{subpage}}">
+    <h2>{{subpage | title }}</h2>
+ 
     <article class="contentSummary">
         <h3>Figma-link geheel project</h3>
-        {{ params.figma.design | safe }}
+        {{ figma.dev.design | safe }}
     </article>
     <div class="grid-2">
         <article>
@@ -27,7 +32,6 @@
     <article>
         <h3>Overzicht</h3>
         {{ params.figma.componenten | safe }}
-
     </article>
     <article>
         <h3>States</h3>
@@ -37,9 +41,7 @@
         <h3>Animaties</h3>
         {{ params.figma.animaties | safe }}
     </article>
-
 </section>
-
 
 <section>
     <h2>Fonts</h2>
@@ -64,30 +66,24 @@
         <h3>Preview</h3>
         <div class="grid-2-3">
             {% for i in range(1, 7) -%}
-                <div>
-                    {% if i == 1 or i == 3%}
-                    <h4 class="tag">Headings</h4>
-                    {% elseif i == 5 %}
-                    <h4 class="tag">Body</h4>
-                    
-                    
-                    {% endif %}
-          
-                    {{ component('atoms', '_image', {
+            <div>
+                {% if i == 1 or i == 3%}
+                <h4 class="tag">Headings</h4>
+                {% elseif i == 5 %}
+                <h4 class="tag">Body</h4>
+                {% endif %}
+                {{ component('atoms', '_image', {
                     src: image + 'font-' + i + '.png',
                     alt: 'Font ' + i + ' of 6'
                     }) }}
-                </div>
+            </div>
             {%- endfor %}
         </div>
     </article>
-
 </section>
 
 <section>
     <h2>Afbeeldingen</h2>
-
-
     <article>
         <h3>Rectangles</h3>
         <p>Binnen dit project maken we gebruik van twee verschillende shapes: vierkanten en rechthoeken.</p>
@@ -100,11 +96,9 @@
                 alt: 'rectangle ' + i + ' van 3'
                 }) }}
             </div>
-        {%- endfor %}
+            {%- endfor %}
         </div>
     </article>
-
-    
     <article>
         <h3>Squares</h3>
         <p>We maken gebruik van de vierkanten voor card-afbeeldingen. Deze zijn meestal 547x610px.</p>
@@ -116,11 +110,9 @@
                 alt: 'square ' + i + ' van 3'
                 }) }}
             </div>
-        {%- endfor %}
+            {%- endfor %}
         </div>
     </article>
-
-    
     <article>
         <h3>Headers</h3>
         <p>Verder passen we eenzelfde formaat toe voor de pagina-header background.</p>
@@ -132,10 +124,9 @@
                 alt: 'background ' + i + ' van 3'
                 }) }}
             </div>
-        {%- endfor %}
+            {%- endfor %}
         </div>
     </article>
-    
     <article>
         <h3>Iconen</h3>
         <p>Er wordt een set iconen gebruikt afkomstig van [bron], welke [uitleg]. </p>
@@ -148,10 +139,8 @@
                 alt: 'icon ' + i + ' van 8'
                 }) }}
             </div>
-        {%- endfor %}
-        {%- endfor %}
+            {%- endfor %}
+            {%- endfor %}
         </div>
     </article>
-
-
 </section>

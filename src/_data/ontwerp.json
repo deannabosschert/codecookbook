@@ -1,0 +1,14 @@
+{
+    "design": {
+        "subtitle": "",
+        "summary": {
+            "description": "yeet"
+        },
+        "list": [
+            {"mobile design": ""},
+            {"desktop design": ""}]
+    },
+    "componenten": ["overzicht", "states", "animaties"],
+    "fonts": ["preview", "license information"],
+    "afbeeldingen": ["content", "iconen", "favicon"]
+}
