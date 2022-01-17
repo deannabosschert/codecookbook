@@ -19,7 +19,7 @@
                     {"componenten": ["overzicht", "states", "animaties"]},
                     {"fonts": [ "preview", "license information"]},
                     {"afbeeldingen": ["content", "iconen", "favicon"]}
-                ]
+                      ]   
             },
             {
                 "bestanden": [
@@ -45,8 +45,7 @@
         "development": [
             {
                 "getting started": [
-                    {"development timeline": ["workflow overview", "tools overview", "todo’s"]},
-                    "GitHub/GitLab"
+                    {"development timeline": ["workflow overview", "tools overview", "todo’s"]}
                 ]
             },
             {

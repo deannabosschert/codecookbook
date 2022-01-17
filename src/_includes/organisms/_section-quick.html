@@ -1,0 +1,23 @@
+{%- from "system/component.njk" import component -%}
+{% set parent = params.parent %} <!--design-->
+{% set page = params.page %}  <!--ontwerp-->
+{% set subpage = 'design' %}  <!--put in array later, for now it's design-->
+{% set image = 'assets/img/content/' + parent + '/' + page + '/' %}
+
+<section class="{{parent}}-{{page}}-subpage-{{subpage}}">
+    <h2>{{subpage | title }}</h2>
+
+    {% for itemText in ["overzicht", "states", "animaties"] %}
+
+    <article>
+        <h3>{{itemText}}</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </article>
+    <div class="grid-3">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+    {% endfor %}
+</section>

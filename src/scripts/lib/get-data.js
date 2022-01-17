@@ -1,5 +1,5 @@
-module.exports = function getData(filename) {
-    if (filename) {
-        return require(`../../_data/styles/${filename}.json`) 
+module.exports = function getData(filepath) {
+    if (filepath) {
+        return require(`../../_data/${filepath}.json`) 
     }
 }

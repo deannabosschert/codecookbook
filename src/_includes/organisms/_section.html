@@ -1,0 +1,38 @@
+{%- from "system/component.njk" import component -%}
+{% set parent = params.parent %} <!--design-->
+{% set page = params.page %}  <!--ontwerp-->
+{% set subpage = 'design' %}  <!--put in array later, for now it's design-->
+{% set image = 'assets/img/content/' + parent + '/' + page + '/' %}
+
+<section class="{{parent}}-{{page}}-subpage-{{subpage}}">
+    <h2>{{subpage | title }}</h2>
+
+    {% if params.summary %}
+        <article class="contentSummary">
+            <h3>{{params.summary.summaryTitle}}</h3>
+            <div>{{params.summary.content}}</div>
+        </article>
+    {% endif %}
+
+    {% if params.grid2 %}
+    <div class="grid-2">
+        <article>
+            <h3>{{params.grid2.h3}}</h3>
+            {% if params.grid2.img %}
+            {{ component('atoms', '_image', {
+                src: params.grid.img.src,
+                alt: params.grid2.img.alt
+                }) }}
+            {% endif %}
+            <p>{{params.grid2.paragraph}}</p>
+        </article>
+        <article>
+            <h3>Desktop design</h3>
+            <img src="{{image}}design-desktop.png" alt="Desktop design">
+            <p>hier een ondertitel, of nuttige toelichting met betrekking tot het desktop-design.</p>
+        </article>
+    </div>
+
+    {% endif %}
+
+</section>

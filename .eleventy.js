@@ -41,7 +41,8 @@ module.exports = (eleventyConfig) => {
 
   return {
     dir: {
-      input: 'src'
+      input: 'src',
+      data: '_data'
     },
     htmlTemplateEngine: 'njk',
     passthroughFileCopy: true

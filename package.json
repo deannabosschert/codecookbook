@@ -4,7 +4,7 @@
   "description": "Boilerplate/template for a SSG with global data to be connected with a CMS",
   "scripts": {
     "predev": "rimraf _site",
-    "dev:scripts": "node src/scripts/json-to-scss.js",
+    "dev:scripts": "node src/scripts/scripts.js",
     "dev:eleventy": "npx @11ty/eleventy --formats=html,njk,ejs,gif,jpg,png,css --serve --port=3000",
     "dev:css": "sass --watch assets/css:_site/",
     "dev": "cross-env ELEVENTY_ENV=development run-p dev:*",
@@ -41,6 +41,7 @@
     "claymorphism-css": "^1.0.5",
     "fast-glob": "^3.2.4",
     "inuitcss": "^6.0.0",
+    "lorem-memesum": "^1.2.0",
     "netlify-cms-app": "^2.15.61",
     "node-sass": "^6.0.1",
     "node-sass-glob-importer": "^5.3.2",
