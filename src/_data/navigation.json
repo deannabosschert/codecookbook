@@ -1,8 +1,8 @@
 {
     "sidebar": {
-        "introduction": [
+        "overview": [
             {
-            "overview": [
+            "introduction": [
                 {"project info" : ["concept"]},
                 {"visuals" : ["screenshots"]}
              

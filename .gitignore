@@ -1,3 +1,6 @@
 node_modules
 .env
 DS_Store
+./src/pages/posts
+src/pages/posts/digitalisering.md
+src/pages/posts/posts.json
