@@ -538,13 +538,13 @@ table th:last-of-type, table td:last-of-type, table tr:last-of-type {
 table th {
   color: #67c8f2ff;
   padding-bottom: 8px;
-  border-bottom: 3px solid #313131ff;
+  border-bottom: 1px solid #C4C4C4;
   padding: 8px 16px;
 }
 table tr {
   border-bottom: 0.1px solid #f6f6f6ff;
-  border-left: 0.1px solid #878a8dff;
-  border-right: 0.1px solid #878a8dff;
+  border-left: 0.1px solid #C4C4C4;
+  border-right: 0.1px solid #C4C4C4;
 }
 table tr:first-of-type {
   border: 0;
@@ -8392,16 +8392,23 @@ body.contact a.contact:link {
 .design-variabelen-subpage-typography .flex-2 article h2 {
   margin-bottom: 32px;
 }
-.design-variabelen-subpage-typography .flex-2 article h3, .design-variabelen-subpage-typography .flex-2 article h4, .design-variabelen-subpage-typography .flex-2 article h5 {
+.design-variabelen-subpage-typography .flex-2 article h3,
+.design-variabelen-subpage-typography .flex-2 article h4,
+.design-variabelen-subpage-typography .flex-2 article h5 {
   margin-bottom: 32px;
 }
 
-.design-variabelen-subpage-distances .grid-2 article {
+.categoryPage .design-variabelen-subpage-distances .grid-2 {
+  border-left: 0;
+  width: fit-content;
+}
+.categoryPage .design-variabelen-subpage-distances .grid-2 article {
   max-width: 100%;
   width: fit-content;
 }
 
-.flex-2, .flex-3 {
+.flex-2,
+.flex-3 {
   display: flex;
   flex-direction: row;
   max-width: 100%;
@@ -8412,6 +8419,33 @@ body.contact a.contact:link {
   backdrop-filter: blur(4px);
   margin-bottom: 24px;
   padding: 16px;
+}
+
+.variable-table {
+  height: 100%;
+}
+
+.font-weight-list {
+  height: 100%;
+}
+.font-weight-list li {
+  font-size: 34px;
+  margin-bottom: 32px;
+}
+.font-weight-list li:nth-of-type(1) {
+  font-weight: 700;
+}
+.font-weight-list li:nth-of-type(2) {
+  font-weight: 600;
+}
+.font-weight-list li:nth-of-type(3) {
+  font-weight: 500;
+}
+.font-weight-list li:nth-of-type(4) {
+  font-weight: 400;
+}
+.font-weight-list li:nth-of-type(5) {
+  font-weight: 300;
 }
 
 /* ==========================================================================
@@ -8500,6 +8534,7 @@ body.contact a.contact:link {
 .categoryPage .flex-2 {
   display: flex;
   flex-direction: row;
+  align-items: flex-end;
 }
 .categoryPage .grid-2 {
   display: grid;

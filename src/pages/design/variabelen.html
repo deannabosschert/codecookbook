@@ -56,10 +56,10 @@
         </article>
     </div>
     {% include 'src/_data/pages/design/variables/color.html' %}
-
 </section>
 <section class="design-variabelen-subpage-typography">
     <h2>typography</h2>
+    <div class="grid-2">
     <article>
         <h3>font-size</h3>
         <div class="flex-2">
@@ -70,7 +70,7 @@
                 <h4>22px</h5>
                     <h5>18px</h5>
                     <p>16px</p>
-                </article>
+            </article>
             <table class="variable-table">
                 <tr>
                     <th class="tag">variable</th>
@@ -103,6 +103,48 @@
             </table>
         </div>
     </article>
+    <article>
+        <h3>font-weight</h3>
+        <div class="flex-2">
+            <article>
+               <ul class="font-weight-list">
+                   <li>700</li>
+                   <li>600</li>
+                   <li>500</li>
+                   <li>400</li>
+                   <li>300</li>
+               </ul>
+   
+            </article>
+            <table class="variable-table">
+                <tr>
+                    <th class="tag">variable</th>
+                    <th class="tag">value</th>
+                </tr>
+                <tr>
+                    <td>$weight-bold: </td>
+                    <td>700;</td>
+                <tr>
+                <tr>
+                    <td>$weight-semibold: </td>
+                    <td>600;</td>
+                <tr>
+                <tr>
+                    <td>$weight-medium: </td>
+                    <td>500;</td>
+                <tr>
+                <tr>
+                    <td>$weight-normal: </td>
+                    <td>400;</td>
+                <tr>
+                <tr>
+                    <td>$weight-light: </td>
+                    <td>300;</td>
+                <tr>
+            </table>
+        </div>
+    </article>
+</div>
     <!-- <article>
         <h3>font-family</h3>
     </article>
@@ -118,9 +160,9 @@
 </section>
 <section class="design-variabelen-subpage-distances">
     <h2>distances</h2>
-    <div class="grid-2">
-        <article>
-            <h3>spacing</h3>
+    <article>
+        <h3>spacing</h3>
+        <div class="grid-2">
             <table class="variable-table">
                 <tr>
                     <th class="tag">variable</th>
@@ -178,6 +220,11 @@
                     <td>$mobile-page:</td>
                     <td>84px;</td>
                 <tr>
+            </table>
+            <table class="variable-table">
+                <tr>
+                    <th class="tag">variable</th>
+                    <th class="tag">value</th>
                 <tr>
                     <td>$desktop-xxxs:</td>
                     <td>8px;</td>
@@ -231,9 +278,11 @@
                     <td>128px;</td>
                 <tr>
             </table>
-        </article>
-        <article>
-            <h3>layout</h3>
+        </div>
+    </article>
+    <article>
+        <h3>layout</h3>
+        <div class="grid-2">
             <table class="variable-table">
                 <tr>
                     <th class="tag">variable</th>
@@ -291,6 +340,12 @@
                     <td>$width-page:</td>
                     <td>1440px;</td>
                 <tr>
+            </table>
+            <table class="variable-table">
+                <tr>
+                    <th class="tag">variable</th>
+                    <th class="tag">value</th>
+                </tr>
                 <tr>
                     <td>$height-xxxs:</td>
                     <td>25px;</td>
@@ -344,6 +399,6 @@
                     <td>0px;</td>
                 <tr>
             </table>
-        </article>
-    </div>
+        </div>
+    </article>
 </section>
