@@ -8,27 +8,33 @@ module.exports = function writeDocs(type, data) {
 function makeHTML(type, array) {
     let table = ''
     table += `<table class="variable-table">`
-    table += `<tr><th>variable</th><th>value</th></tr>`
-    let variables = '<tr>'
-    let values = '<tr>'
+    table += `<tr><th class="tag">variable</th><th class="tag">value</th></tr>`
+    let variableArray = []
 
-//    console.log(array)
-    array.forEach(function (item) {
+   console.log(array)
+    array.sort().forEach(function (item) {
         let itemObject = JSON.parse(item)  // turn item into object
 
         for (let variable in itemObject) {
-            
-            variables += `<td>${variable}</td>`
-            values += `<td>${itemObject[variable]}</td>`
-        }     
+            let tableRow = '<tr>'
+            tableRow += `<td>${variable}: </td>`
+            tableRow += `<td>${itemObject[variable]}</td>`
+            tableRow += '</tr>'
+            table += tableRow
+
+            variableArray.push(`"${variable}": "${itemObject[variable]}"`)
+        }
     })
-    variables += '</tr>'
-    values += '</tr>'
-    table += variables
-    table += values
      table += `</table>`
         let filepath = `src/_data/pages/design/variables/${type}.html`
         writeFile(filepath, table)   
+
+        let data = {}
+        data = variableArray
+        data = `{${data.join(',')}}`
+        console.log(data) 
+        let filepath2 = `src/_data/pages/design/variables/${type}.json`
+        writeFile(filepath2, data)
 }
 
 function writeFile(filepath, data) {

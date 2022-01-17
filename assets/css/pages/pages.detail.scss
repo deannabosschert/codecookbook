@@ -1,10 +1,17 @@
 .categoryPage {
-    h1:first-letter, h2:first-letter, h3:first-letter, h4:first-letter, h5:first-letter, h6:first-letter, p:first-letter {
+
+    h1:first-letter,
+    h2:first-letter,
+    h3:first-letter,
+    h4:first-letter,
+    h5:first-letter,
+    h6:first-letter,
+    p:first-letter {
         text-transform: capitalize;
     }
 
     h1 {
-    margin-bottom: $desktop-xxs;
+        margin-bottom: $desktop-xxs;
     }
 
     h2 {
@@ -58,7 +65,7 @@
         display: flex;
         flex-direction: column;
         margin-bottom: $desktop-default;
-       
+
         // max-height: $height-l;
 
     }
@@ -83,6 +90,8 @@
         }
     }
 
+  
+
     .grid-2-small {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -90,7 +99,7 @@
         grid-template-rows: $height-default;
         max-width: fit-content;
 
-       
+
         margin-left: -$desktop-xxxs;
 
         border-radius: 5px;
@@ -131,7 +140,7 @@
         }
 
         img {
-          width: calc(100% - 24px);
+            width: calc(100% - 24px);
         }
     }
 
@@ -156,12 +165,12 @@
     .grid-6 {
         display: flex;
         flex-direction: row;
-        flex-wrap:wrap;
-    justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-between;
         max-width: 90%;
         margin-left: -$desktop-xxxs;
 
-    
+
         border-radius: 5px;
         box-shadow: inset 0px 0 1px 1px rgb(31 38 135 / 10%);
         backdrop-filter: blur(4px);
