@@ -65,6 +65,7 @@ function makeHTML(parent, data) {
         articles.forEach(function (h3) {
             section += `<article>`
             section += `<h3>${h3}</h3>`
+            section += `<p>${sentenceWords}</p>`
             section += `</article>`
         })
         section += `</section>`
