@@ -21,15 +21,22 @@ module.exports = async function mapToScss(type, output, data) {
 // map array of objects to list of ready-to-use scss variables
 function toScssVariables(type, data) {
     let scss = ''
+    let scssArray = []
     data.forEach(item => {
         for (let key in item) {
             let selector = sanitizeString(key)
             let properties = item[key]
 
             scss += `$${selector}: ${properties[type]};\n`
+            scssArray.push(`{"$${selector}":"${properties[type]};"}`)
         }
     })
-    return scss
+
+    let scssData = {
+        scss: scss,
+        scssArray: scssArray
+    }
+    return scssData
 }
 
 // map array of objects to list of assigned properties to heading in scss

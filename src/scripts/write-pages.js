@@ -36,8 +36,8 @@ function lekkerLoopen(data) {
 }
 
 function makeHTML(parent, data) {
-    const lm = require('lorem-memesum')
-    let sentenceWords = lm.sentence.randomSentence()
+    // const lm = require('lorem-memesum')
+    // let sentenceWords = lm.sentence.randomSentence()
     let html = ''
     let pageName = data.h1
     data.content.forEach(function (item) {
@@ -49,7 +49,7 @@ function makeHTML(parent, data) {
         articles.forEach(function (h3) {
             section += `<article>`
             section += `<h3>${h3}</h3>`
-            section += `<p>${sentenceWords}</p>`
+            // section += `<p>${sentenceWords}</p>`
             section += `</article>`
         })
         section += `</section>`
