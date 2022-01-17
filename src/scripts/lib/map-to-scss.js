@@ -42,7 +42,11 @@ function toScssVariables(type, data) {
 // map array of objects to list of assigned properties to heading in scss
 async function toScssSelectors(data) {
     let scss = ''
-    data.forEach(item => {
+    let scssArray = []
+    let array1 = data.array
+    let array2 = data.arrayTwee
+
+    array1.forEach(item => {
         for (let key in item) {
             let selector = sanitizeString(key)
             let properties = item[key]
@@ -54,7 +58,25 @@ async function toScssSelectors(data) {
             }
         }
     })
-    return scss
+
+    array2.forEach(item => {
+        for (let key in item) {
+            let selector = sanitizeString(key)
+            let properties = item[key]
+
+            if (htmlElementsArray.includes(selector) == true) { // if it's an html element
+                scssArray.push(`${properties}`)
+            } else {
+                scssArray.push(`${properties}`) // add class-prefix
+            }
+        }
+    })
+    console.log(scssArray)
+    let scssData = {
+        scss: scss,
+        scssArray: scssArray
+    }
+    return scssData
 }
 
 
