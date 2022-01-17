@@ -1,3 +1,11 @@
 <header class="c-header">
+    {% if params.title %}
+    <h1 class="header__title">{{ params.title }}</h1>
+    {% endif %}
+
+    {% if params.description %}
+    <p class="header__description">{{ params.description }}</p>
+    {% endif %}
+
 
 </header>

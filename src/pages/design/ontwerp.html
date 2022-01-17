@@ -1,0 +1,157 @@
+{%- from "system/component.njk" import component -%}
+{% set image = 'assets/img/content/design/ontwerp/' %}
+<!-- <p>breadcrumbs</p> -->
+
+<section class="{{params.parent}}-{{params.page}}-subpage-design">
+    <h2>Design</h2>
+    <article class="contentSummary">
+        <h3>Figma-link geheel project</h3>
+        {{ params.figma.design | safe }}
+    </article>
+    <div class="grid-2">
+        <article>
+            <h3>Mobile design</h3>
+            <img src="{{image}}design-mobile.png" alt="Mobile design">
+            <p>hier een ondertitel, of nuttige toelichting met betrekking tot het mobile-design.</p>
+        </article>
+        <article>
+            <h3>Desktop design</h3>
+            <img src="{{image}}design-desktop.png" alt="Desktop design">
+            <p>hier een ondertitel, of nuttige toelichting met betrekking tot het desktop-design.</p>
+        </article>
+    </div>
+</section>
+
+<section>
+    <h2>Componenten</h2>
+    <article>
+        <h3>Overzicht</h3>
+        {{ params.figma.componenten | safe }}
+
+    </article>
+    <article>
+        <h3>States</h3>
+        {{ params.figma.states | safe }}
+    </article>
+    <article>
+        <h3>Animaties</h3>
+        {{ params.figma.animaties | safe }}
+    </article>
+
+</section>
+
+
+<section>
+    <h2>Fonts</h2>
+    <div class="grid-2">
+        <article>
+            <h3>Figma-embed</h3>
+            {{ params.figma.fonts | safe }}
+        </article>
+        <article class="license-info">
+            <h3>License information</h3>
+            <p>This font is protected and not to be used by others as it's simply used for a graduation project here.
+            </p>
+            <ul>
+                <li>Neue Helvetica® W05 45 Light</li>
+                <li>Neue Helvetica® W05 55 Roman</li>
+                <li>Neue Helvetica® W05 65 Medium</li>
+                <li>Neue Helvetica® W05 75 Bold</li>
+            </ul>
+        </article>
+    </div>
+    <article>
+        <h3>Preview</h3>
+        <div class="grid-2-3">
+            {% for i in range(1, 7) -%}
+                <div>
+                    {% if i == 1 or i == 3%}
+                    <h4 class="tag">Headings</h4>
+                    {% elseif i == 5 %}
+                    <h4 class="tag">Body</h4>
+                    
+                    
+                    {% endif %}
+          
+                    {{ component('atoms', '_image', {
+                    src: image + 'font-' + i + '.png',
+                    alt: 'Font ' + i + ' of 6'
+                    }) }}
+                </div>
+            {%- endfor %}
+        </div>
+    </article>
+
+</section>
+
+<section>
+    <h2>Afbeeldingen</h2>
+
+
+    <article>
+        <h3>Rectangles</h3>
+        <p>Binnen dit project maken we gebruik van twee verschillende shapes: vierkanten en rechthoeken.</p>
+        <p>We maken gebruik van de rechthoeken voor content-afbeeldingen. Deze zijn meestal 1100x300px.</p>
+        <div class='grid-3'>
+            {% for i in range(1, 4) -%}
+            <div>
+                {{ component('atoms', '_image', {
+                src: image + 'afbeeldingen/rectangle-' + i + '.jpg',
+                alt: 'rectangle ' + i + ' van 3'
+                }) }}
+            </div>
+        {%- endfor %}
+        </div>
+    </article>
+
+    
+    <article>
+        <h3>Squares</h3>
+        <p>We maken gebruik van de vierkanten voor card-afbeeldingen. Deze zijn meestal 547x610px.</p>
+        <div class='grid-2-small'>
+            {% for i in range(1, 3) -%}
+            <div>
+                {{ component('atoms', '_image', {
+                src: image + 'afbeeldingen/square-' + i + '.jpg',
+                alt: 'square ' + i + ' van 3'
+                }) }}
+            </div>
+        {%- endfor %}
+        </div>
+    </article>
+
+    
+    <article>
+        <h3>Headers</h3>
+        <p>Verder passen we eenzelfde formaat toe voor de pagina-header background.</p>
+        <div class='grid-3'>
+            {% for i in range(1, 4) -%}
+            <div>
+                {{ component('atoms', '_image', {
+                src: image + 'afbeeldingen/background-' + i + '.jpg',
+                alt: 'background ' + i + ' van 3'
+                }) }}
+            </div>
+        {%- endfor %}
+        </div>
+    </article>
+    
+    <article>
+        <h3>Iconen</h3>
+        <p>Er wordt een set iconen gebruikt afkomstig van [bron], welke [uitleg]. </p>
+        <div class='grid-6'>
+            {% for i in range(1, 9) -%}
+            {% for i in range(1, 3) -%}
+            <div>
+                {{ component('atoms', '_image', {
+                src: image + 'icons/icon-' + i + '.png',
+                alt: 'icon ' + i + ' van 8'
+                }) }}
+            </div>
+        {%- endfor %}
+        {%- endfor %}
+        </div>
+    </article>
+
+
+</section>

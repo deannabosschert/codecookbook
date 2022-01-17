@@ -1,0 +1,115 @@
+{
+    "sidebar": {
+        "introduction": [
+            {
+            "overview": [
+                {"project info" : ["concept"]},
+                {"visuals" : ["screenshots"]}
+             
+            ]},
+            {
+            "progress": [
+                {"current": ["milestones","requirements", "system overview"]},
+                {"to do": ["now", "future"]}
+            ]}
+        ],
+        "design": [{
+                "ontwerp": [
+                    {"design": ["mobile design", "desktop design"]},
+                    {"componenten": ["overzicht", "states", "animaties"]},
+                    {"fonts": [ "preview", "license information"]},
+                    {"afbeeldingen": ["content", "iconen", "favicon"]}
+                ]
+            },
+            {
+                "bestanden": [
+                    {"fonts": ["files", "license information", "embed-links"]},
+                    {"afbeeldingen": ["content", "iconen", "favicon"]}
+                ]
+            },
+            {
+                "variabelen": [
+                    {"colors": ["primary", "secondary", "highlight"]},
+                    {"typography": ["font-size", "font-family", "font-weight", "letter-spacing", "line-height"]},
+                    {"distances": ["grid", "spacing", "layout"]}
+                ]
+            },
+            {
+                "projectinformatie": [
+                    {"visie": [ "visie", "doelgroep", "testscenario's"]},
+                    {"outlines": ["functioneel ontwerp", "technisch ontwerp", "testscenario's"]},
+                    {"componenten": ["definities", "complexiteit", "notities"]}
+                ]
+            }
+        ],
+        "development": [
+            {
+                "getting started": [
+                    {"development timeline": ["workflow overview", "tools overview", "todo’s"]},
+                    "GitHub/GitLab"
+                ]
+            },
+            {
+                "checklists": [
+                {"generic": ["Definition of Done"]},
+                {"audits": [
+                    "Lighthouse",
+                    "SEranking"
+                ]}]
+            },
+            {
+                "coding guidelines": [
+                    {"programming principles": ["KISS", "DRY", "YAGNI", "SOLID", "SoC", "APO", "LoD"]},
+                    {"naming conventions": ["casing", "file names"]},
+                    {"formatting": ["ESlint", "code comments", "commented out code", "documentation"]},
+                    {"html": ["semantics", "accessibility"]},
+                    {"css": ["scss", "selectors", "z-index"]},
+                    {"JavaScript": ["pure functions", "arrow functions"]}
+                ]
+            },
+            {
+                "git": [
+                   {"project management": ["flow overview", "issues"]},
+                   {"version control": ["branches", "commit messaging", "gitignore"]},
+                   {"collaboration": ["GitHub/GitLab", "pull requests", "code reviews"]}
+                ]
+            },
+            {
+                "deployment": [
+                    {"environments": ["acceptatie/productie"]},
+                    {"CI/CD": ["continuous integration", "continuous delivery", "continuous deployment"]},
+                    {"connection met server": ["server", "database", "authentication", "commands"]}
+                ]
+            }
+        ],
+        "resources": [
+            {
+                "examples": [
+                    {"templates": ["11ty-Netlify", "Vue.js"]},
+                    {"projects": ["Holiday Rentals Curacao", "Active Collective"]}
+                ]
+            },
+            {
+                "code snippets": [
+                    {"html/css": ["navigation", "forms", "animations"]},
+                    {"javaScript": ["sign-up", "login", "sockets"]},
+                    {"node.js": ["api", "authentication", "database"]}
+                ]
+            },
+            {
+                "tools": [
+                    {"applications": ["cleanshot", "bettertouchtool", "postman-app"]},
+                    {"text editors": ["visual studio code", "intellj idea", "atom"]},
+                    {"useful websites/articles": ["design", "development", "updates"]}
+                ]
+            },
+            {
+                "libraries": [
+                    {"frameworks": ["react", "vue", "angular"]},
+                    {"libraries": ["axios", "lodash", "moment"]},
+                    {"other": ["fontawesome", "bootstrap"]}
+                ]
+            }
+        ]     
+    }
+}

@@ -2,10 +2,12 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  // justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   align-content: center;
   // margin-bottom: 1.25rem;
+  height: 100%;
   width: 100%;
   max-width: 1075px;
 
@@ -19,9 +21,6 @@
   }
 }
 
-.header-nav__logo__img {
-  max-width: 50vw;
-}
 
 .menu-btn {
   visibility: hidden;
@@ -50,7 +49,7 @@ body.contact a.contact:link {
 }
 
 // HAMBURGER MENU
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 400px) {
   .Home .c-header-nav .menu-icon .navicon {
     background: $white;
     color: $black;

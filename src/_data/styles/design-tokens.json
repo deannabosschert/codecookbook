@@ -44,6 +44,17 @@
         }
       }
     },
+     "brand-transparent": {
+      "description": "",
+      "type": "color",
+      "value": "rgba(105, 201, 242, 0.1)",
+      "extensions": {
+        "org.lukasoppermann.figmaDesignTokens": {
+          "styleId": "S:a03c810d7a4dbacb689a640f694ee374ba9a4c7b,",
+          "exportKey": "color"
+        }
+      }
+    },
     "gray 3": {
       "description": "",
       "type": "color",
@@ -65,6 +76,16 @@
           "exportKey": "color"
         }
       }
+    },
+    "body-gray": {
+      "description": "",
+      "type": "color",
+      "value": "#C4C4C4"
+    },
+    "body-highlight": {
+      "description": "body highlight blue",
+      "type": "color",
+      "value": "#67C8F2"
     }
   },
   "gradient": {
@@ -74,8 +95,7 @@
       "value": {
         "gradientType": "linear",
         "rotation": 180,
-        "stops": [
-          {
+        "stops": [{
             "position": 0,
             "color": "#000000a6"
           },

@@ -6,11 +6,22 @@ pagePath: "{{parent}}/{{pageName}}"
 
 <head>
   {% include "sections/_head.html" %}
+  <link rel="stylesheet" href="https://unpkg.com/claymorphism-css/dist/clay.css" />
 </head>
 
 <body>
   {%- from "system/component.njk" import component -%}
-  {% include "sections/_header.html" %}
+  {{ component("atoms", "_logo", {
+        src: "/assets/img/logos/active-collective_logo_black.svg",
+        alt: "Active Collective in black letters",
+        text: "Home: Code Cookbook",
+        link: "/"
+     })}}
+  {{ component('sections', '_header', {
+    title: '🍽️ Code Cookbook',
+    description: 'Guide to the best practices for building and deploying web applications.'
+    }) }}
+  {% include "sections/_sideBar.html" %}
   <main>
     {{ content | safe }}
   </main>

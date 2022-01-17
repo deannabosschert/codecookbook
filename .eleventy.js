@@ -6,7 +6,7 @@ module.exports = (eleventyConfig) => {
   // Assets
   eleventyConfig.addPassthroughCopy('assets/fonts')
   eleventyConfig.addPassthroughCopy('assets/img')
-  eleventyConfig.addPassthroughCopy({'src/js': 'assets/js'})
+  eleventyConfig.addPassthroughCopy('assets/js')
   eleventyConfig.addPassthroughCopy("./src/favicon.ico")
 
   // Config for CMS

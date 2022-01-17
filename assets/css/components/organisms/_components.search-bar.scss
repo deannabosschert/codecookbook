@@ -1,0 +1,50 @@
+// todo:search bar stylen, dan de rest snel stylen, sidebar committen
+//   dan: pageheader stylen en committen
+// dan: content erin gooien en stylen
+.c-search-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 100%;
+
+  align-items: center;
+  align-content: center;
+
+  margin-top: $desktop-xs;
+  margin-bottom: $desktop-xs;
+
+  label {
+    max-width: 100%;
+  }
+
+  &__input {
+    max-width: 85%;
+    // padding: 0.2rem 0.5rem;
+    // margin: 0.5rem;
+    padding: $mobile-xxxs $desktop-xxs;
+  }
+
+  &__button {
+    width: 100%;
+    min-width: $width-xxxs;
+    max-width: 20px;
+    height: 100%;
+    margin-left: 10px;
+    background-image: url("https://cdn2.iconfinder.com/data/icons/font-awesome/1792/search-512.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:hover {}
+
+    &:active {}
+
+    &:focus {}
+  }
+}
+
+.c-search-bar__input {
+  max-width: calc(100% - 40px);
+  padding: $mobile-xxxs $desktop-xxs;
+
+}

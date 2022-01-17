@@ -1,9 +1,24 @@
 ---
 layout: templates/_base.html
 pageName: /
-parent: 
-
+parent:
 ---
-{%- from "system/component.njk" import component -%} <!-- todo: figure out to put this in _base layout-->
+{%- from "system/page.njk" import page -%}
+{%- from "system/function.njk" import function -%}
 
-<h1>tests</h1>
+<div class="categoryPage">
+    <p>dit staat er als je opstart</p>
+</div>
+
+{{ page('design', 'ontwerp', {
+       title: 'Ontwerp',
+       parent: 'design',
+       page: 'ontwerp',
+       description: 'Alle ontwerpen van dit project in een overzicht.',
+       figma: figma 
+ }) }} <!-- remove 'dev' in prod -->
+ 
+ {{ page('development', 'checklists', {
+       title: 'Checklists',
+       description: 'Controleren of het project aan alle eisen voldoet.'
+ }) }}

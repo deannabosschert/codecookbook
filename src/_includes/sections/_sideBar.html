@@ -1,0 +1,36 @@
+    <nav class="c-sidebar">
+        {% include 'organisms/_searchBar.html' %}
+        {% set sideBar = navigation.sidebar %}
+        {% for categoryKey, category in sideBar %}
+        {% set idCategory = loop.index %}
+
+        <section>
+            <h2 class="tag">{{categoryKey | title}}</h2>
+            <ul>
+                {% for subcategory in category %}
+                {% set idSubcategory = loop.index %}
+
+            
+                {% for itemKey, item in subcategory %}
+
+                <li>
+
+                    {{ component('organisms', '_toggle', {
+                        id: idCategory + '-' + idSubcategory,
+                        openPageID: categoryKey + '-' + itemKey,
+                        text: itemKey,
+                        item: item
+                    }) }}
+
+         
+
+                    
+                </li>
+
+
+                {% endfor%}
+                {% endfor %}
+            </ul>
+        </section>
+        {% endfor %}
+    </nav>
