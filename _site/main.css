@@ -527,6 +527,7 @@ img {
 table {
   border-collapse: collapse;
   height: fit-content;
+  width: fit-content;
 }
 table th:first-of-type, table td:first-of-type, table tr:first-of-type {
   text-align: right;
@@ -8309,85 +8310,108 @@ body.contact a.contact:link {
   margin-bottom: 1rem;
 }
 
-#design-variabelen-page .design-variabelen-subpage-colors {
+.design-variabelen-subpage-colors {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-#design-variabelen-page .design-variabelen-subpage-colors h2 {
+.design-variabelen-subpage-colors h2 {
   width: 100%;
 }
-#design-variabelen-page .design-variabelen-subpage-colors table {
+.design-variabelen-subpage-colors table {
   margin-right: 128px;
   margin-top: 20px;
 }
-#design-variabelen-page .design-variabelen-subpage-colors .flex-3 {
-  display: flex;
-  flex-direction: row;
-  max-width: 100%;
-  margin-left: -8px;
-  border-radius: 5px;
-  box-shadow: inset 0px 0 1px 1px rgba(31, 38, 135, 0.1);
-  backdrop-filter: blur(4px);
-  margin-bottom: 24px;
-  padding: 16px;
-}
-#design-variabelen-page .design-variabelen-subpage-colors .flex-3 li,
-#design-variabelen-page .design-variabelen-subpage-colors .flex-3 .color-box {
+.design-variabelen-subpage-colors .flex-3 li,
+.design-variabelen-subpage-colors .flex-3 .color-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-#design-variabelen-page .design-variabelen-subpage-colors .flex-3 li:nth-of-type(2) {
+.design-variabelen-subpage-colors .flex-3 li:nth-of-type(2) {
   margin: 0 24px;
 }
-#design-variabelen-page .design-variabelen-subpage-colors .flex-3 .color-box {
+.design-variabelen-subpage-colors .flex-3 .color-box {
   width: 200px;
   max-width: 100%;
   height: 161px;
   margin-bottom: 8px;
   border: 2px solid #f6f6f6ff;
 }
-#design-variabelen-page .design-variabelen-subpage-colors article:nth-of-type(1) li:nth-child(1) .color-box {
+.design-variabelen-subpage-colors article:nth-of-type(1) li:nth-child(1) .color-box {
   background-color: #202020ff;
   color: #ffffffff;
 }
-#design-variabelen-page .design-variabelen-subpage-colors article:nth-of-type(1) li:nth-child(2) .color-box {
+.design-variabelen-subpage-colors article:nth-of-type(1) li:nth-child(2) .color-box {
   background-color: #ffffffff;
   color: #202020ff;
 }
-#design-variabelen-page .design-variabelen-subpage-colors article:nth-of-type(1) li:nth-child(3) .color-box {
+.design-variabelen-subpage-colors article:nth-of-type(1) li:nth-child(3) .color-box {
   background-color: #67c8f2ff;
   color: #ffffffff;
 }
-#design-variabelen-page .design-variabelen-subpage-colors article:nth-of-type(2) li:nth-child(1) .color-box {
+.design-variabelen-subpage-colors article:nth-of-type(2) li:nth-child(1) .color-box {
   background-color: #313131ff;
   color: #ffffffff;
 }
-#design-variabelen-page .design-variabelen-subpage-colors article:nth-of-type(2) li:nth-child(2) .color-box {
+.design-variabelen-subpage-colors article:nth-of-type(2) li:nth-child(2) .color-box {
   background-color: #878a8dff;
   text-shadow: 0 0 20px #ffffffff;
   color: #202020ff;
 }
-#design-variabelen-page .design-variabelen-subpage-colors article:nth-of-type(2) li:nth-child(3) .color-box {
+.design-variabelen-subpage-colors article:nth-of-type(2) li:nth-child(3) .color-box {
   background-color: #f6f6f6ff;
   color: #202020ff;
 }
-#design-variabelen-page .design-variabelen-subpage-colors article:nth-of-type(3) li:nth-child(1) .color-box {
+.design-variabelen-subpage-colors article:nth-of-type(3) li:nth-child(1) .color-box {
   background-color: #C4C4C4;
   text-shadow: 0 0 20px #ffffffff;
   color: #202020ff;
 }
-#design-variabelen-page .design-variabelen-subpage-colors article:nth-of-type(3) li:nth-child(2) .color-box {
+.design-variabelen-subpage-colors article:nth-of-type(3) li:nth-child(2) .color-box {
   background-color: #67C8F2;
   color: #202020ff;
 }
-#design-variabelen-page .design-variabelen-subpage-colors article:nth-of-type(3) li:nth-child(3) .color-box {
+.design-variabelen-subpage-colors article:nth-of-type(3) li:nth-child(3) .color-box {
   background-color: #69c9f21a;
   color: #202020ff;
+}
+
+.design-variabelen-subpage-typography .flex-2 article {
+  max-width: 100%;
+  width: fit-content;
+  margin-right: 128px;
+  margin-top: 24px;
+}
+.design-variabelen-subpage-typography .flex-2 article h1 {
+  margin-bottom: 32px;
+}
+.design-variabelen-subpage-typography .flex-2 article h2 {
+  margin-bottom: 32px;
+}
+.design-variabelen-subpage-typography .flex-2 article h3, .design-variabelen-subpage-typography .flex-2 article h4, .design-variabelen-subpage-typography .flex-2 article h5 {
+  margin-bottom: 32px;
+}
+
+.design-variabelen-subpage-distances .grid-2 article {
+  max-width: 100%;
+  width: fit-content;
+}
+
+.flex-2, .flex-3 {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  width: fit-content;
+  margin-left: -8px;
+  border-radius: 5px;
+  box-shadow: inset 0px 0 1px 1px rgba(31, 38, 135, 0.1);
+  backdrop-filter: blur(4px);
+  margin-bottom: 24px;
+  padding: 16px;
 }
 
 /* ==========================================================================
@@ -8472,6 +8496,10 @@ body.contact a.contact:link {
   display: flex;
   flex-direction: column;
   margin-bottom: 32px;
+}
+.categoryPage .flex-2 {
+  display: flex;
+  flex-direction: row;
 }
 .categoryPage .grid-2 {
   display: grid;

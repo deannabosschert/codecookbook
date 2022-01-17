@@ -1,4 +1,4 @@
-#design-variabelen-page {
+
     .design-variabelen-subpage-colors {
         display: flex;
         flex-direction: row;
@@ -16,19 +16,7 @@
         }
 
         .flex-3 {
-            display: flex;
-            flex-direction: row;
-
-            max-width: 100%;
-            margin-left: -$desktop-xxxs;
-
-            border-radius: 5px;
-            box-shadow: inset 0px 0 1px 1px rgb(31 38 135 / 10%);
-            backdrop-filter: blur(4px);
-
-
-            margin-bottom: $desktop-s;
-            padding: $desktop-xxs;
+       
 
 
             li,
@@ -133,4 +121,58 @@
             }
         }
     }
+
+.design-variabelen-subpage-typography {
+    .flex-2 {
+        article {
+            max-width: 100%;
+            width: fit-content;
+            margin-right: $desktop-page;
+            margin-top: $desktop-s;
+
+
+             h1 {
+                margin-bottom: $desktop-default;
+            }
+
+             h2 {
+                margin-bottom: $desktop-default;
+            }
+             
+             h3, h4, h5 {
+                margin-bottom: $desktop-default;
+            }
+        }
+    }
+}
+
+.design-variabelen-subpage-distances {
+    .grid-2 {
+        article {
+            max-width: 100%;
+            width: fit-content;
+
+        }
+    }
+}
+
+.flex-2, .flex-3 {
+    display: flex;
+    flex-direction: row;
+
+    max-width: 100%;
+    width: fit-content;
+    margin-left: -$desktop-xxxs;
+
+    border-radius: 5px;
+    box-shadow: inset 0px 0 1px 1px rgb(31 38 135 / 10%);
+    backdrop-filter: blur(4px);
+
+
+    margin-bottom: $desktop-s;
+    padding: $desktop-xxs;
+}
+
+.flex-3 {
+  
 }
