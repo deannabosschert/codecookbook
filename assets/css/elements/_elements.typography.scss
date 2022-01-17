@@ -58,16 +58,21 @@ h1 {
   max-width: 62rem;
 }
 
-h2 {}
+
+
+h2 {
+  color: $gray-1;
+}
 
 h3 {}
 
 h4 {}
 
-p {
+p, td {
   font-size: 18px;
   line-height: 24px;
 }
+
 
 ul li {
   color: $gray-1;
