@@ -1,0 +1,28 @@
+#design-bestanden-page {
+
+    ul {
+        padding: $desktop-s;
+        grid-gap: $desktop-m;
+    }
+    li {
+    
+    }
+
+    a {
+        color: $black;
+        font-size: 18px;
+        line-height: 28px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .download-icon {
+        margin-right: $desktop-xxs;
+        background-color: $brand;
+        border-radius: 5px;
+        padding: 8px;
+        width: 36px;
+        height: 34px;
+    }
+}

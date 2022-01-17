@@ -4,7 +4,7 @@
 @import "generic/generic.reset";
 
 // SETTINGS
-@import "settings/_settings.color";
+@import "settings/settings.color";
 @import "settings/settings.font";
 @import "settings/settings.layout";
 @import "settings/settings.spacing";
@@ -51,9 +51,15 @@
 
 
 // PAGE-SPECIFIC STYLING
-@import "pages/pages.home";
-@import "pages/pages.subpage";
-@import "pages/pages.detail";
+@import "pages/design/pages.bestanden";
+@import "pages/design/pages.ontwerp";
+@import "pages/design/pages.projectinformatie";
+@import "pages/design/pages.variabelen";
+
+
+@import "pages/templates/pages.home";
+@import "pages/templates/pages.subpage";
+@import "pages/templates/pages.detail";
 
 // CMS STYLING FOR PREVIEW
 @import "admin/admin.preview";

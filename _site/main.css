@@ -8310,6 +8310,138 @@ body.contact a.contact:link {
   margin-bottom: 1rem;
 }
 
+.flex-2,
+.flex-3 {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  width: fit-content;
+  margin-left: -8px;
+  border-radius: 5px;
+  box-shadow: inset 0px 0 1px 1px rgba(31, 38, 135, 0.1);
+  backdrop-filter: blur(4px);
+  margin-bottom: 24px;
+  padding: 16px;
+}
+
+.variable-table {
+  height: 100%;
+}
+
+.font-weight-list {
+  height: 100%;
+}
+.font-weight-list li {
+  font-size: 34px;
+  margin-bottom: 32px;
+}
+.font-weight-list li:nth-of-type(1) {
+  font-weight: 700;
+}
+.font-weight-list li:nth-of-type(2) {
+  font-weight: 600;
+}
+.font-weight-list li:nth-of-type(3) {
+  font-weight: 500;
+}
+.font-weight-list li:nth-of-type(4) {
+  font-weight: 400;
+}
+.font-weight-list li:nth-of-type(5) {
+  font-weight: 300;
+}
+
+pre {
+  height: fit-content;
+  background-color: #202020ff;
+  padding: 24px;
+  border-radius: 5px;
+  width: fit-content;
+  margin-bottom: 24px;
+}
+
+code {
+  letter-spacing: 2px;
+  color: #ffffffff;
+}
+
+/* ==========================================================================
+   #HIDE
+   ========================================================================== */
+/**
+ * Hide only visually, but have it available for screen readers:
+ */
+.u-hidden {
+  display: none;
+}
+
+.u-visible {
+  display: block;
+}
+
+.u-text-invisible {
+  font-size: 0 !important;
+  line-height: 0 !important;
+  padding: 0;
+  margin: 0;
+}
+
+.u-element-invisible {
+  visibility: hidden;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  padding: 0;
+  margin: 0;
+}
+
+#design-bestanden-page ul {
+  padding: 24px;
+  grid-gap: 40px;
+}
+#design-bestanden-page a {
+  color: #202020ff;
+  font-size: 18px;
+  line-height: 28px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#design-bestanden-page .download-icon {
+  margin-right: 16px;
+  background-color: #67c8f2ff;
+  border-radius: 5px;
+  padding: 8px;
+  width: 36px;
+  height: 34px;
+}
+
+.categoryPage .design-variabelen-subpage-distances .grid-2 {
+  border-left: 0;
+  width: fit-content;
+}
+.categoryPage .design-variabelen-subpage-distances .grid-2 article {
+  max-width: 100%;
+  width: fit-content;
+}
+
+.design-variabelen-subpage-typography .flex-2 article {
+  max-width: 100%;
+  width: fit-content;
+  margin-right: 128px;
+  margin-top: 24px;
+}
+.design-variabelen-subpage-typography .flex-2 article h1 {
+  margin-bottom: 32px;
+}
+.design-variabelen-subpage-typography .flex-2 article h2 {
+  margin-bottom: 32px;
+}
+.design-variabelen-subpage-typography .flex-2 article h3,
+.design-variabelen-subpage-typography .flex-2 article h4,
+.design-variabelen-subpage-typography .flex-2 article h5 {
+  margin-bottom: 32px;
+}
+
 .design-variabelen-subpage-colors {
   display: flex;
   flex-direction: row;
@@ -8378,103 +8510,6 @@ body.contact a.contact:link {
 .design-variabelen-subpage-colors article:nth-of-type(3) li:nth-child(3) .color-box {
   background-color: #69c9f21a;
   color: #202020ff;
-}
-
-.design-variabelen-subpage-typography .flex-2 article {
-  max-width: 100%;
-  width: fit-content;
-  margin-right: 128px;
-  margin-top: 24px;
-}
-.design-variabelen-subpage-typography .flex-2 article h1 {
-  margin-bottom: 32px;
-}
-.design-variabelen-subpage-typography .flex-2 article h2 {
-  margin-bottom: 32px;
-}
-.design-variabelen-subpage-typography .flex-2 article h3,
-.design-variabelen-subpage-typography .flex-2 article h4,
-.design-variabelen-subpage-typography .flex-2 article h5 {
-  margin-bottom: 32px;
-}
-
-.categoryPage .design-variabelen-subpage-distances .grid-2 {
-  border-left: 0;
-  width: fit-content;
-}
-.categoryPage .design-variabelen-subpage-distances .grid-2 article {
-  max-width: 100%;
-  width: fit-content;
-}
-
-.flex-2,
-.flex-3 {
-  display: flex;
-  flex-direction: row;
-  max-width: 100%;
-  width: fit-content;
-  margin-left: -8px;
-  border-radius: 5px;
-  box-shadow: inset 0px 0 1px 1px rgba(31, 38, 135, 0.1);
-  backdrop-filter: blur(4px);
-  margin-bottom: 24px;
-  padding: 16px;
-}
-
-.variable-table {
-  height: 100%;
-}
-
-.font-weight-list {
-  height: 100%;
-}
-.font-weight-list li {
-  font-size: 34px;
-  margin-bottom: 32px;
-}
-.font-weight-list li:nth-of-type(1) {
-  font-weight: 700;
-}
-.font-weight-list li:nth-of-type(2) {
-  font-weight: 600;
-}
-.font-weight-list li:nth-of-type(3) {
-  font-weight: 500;
-}
-.font-weight-list li:nth-of-type(4) {
-  font-weight: 400;
-}
-.font-weight-list li:nth-of-type(5) {
-  font-weight: 300;
-}
-
-/* ==========================================================================
-   #HIDE
-   ========================================================================== */
-/**
- * Hide only visually, but have it available for screen readers:
- */
-.u-hidden {
-  display: none;
-}
-
-.u-visible {
-  display: block;
-}
-
-.u-text-invisible {
-  font-size: 0 !important;
-  line-height: 0 !important;
-  padding: 0;
-  margin: 0;
-}
-
-.u-element-invisible {
-  visibility: hidden;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  padding: 0;
-  margin: 0;
 }
 
 .categoryPage h1:first-letter,
