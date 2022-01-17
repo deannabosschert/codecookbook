@@ -13,6 +13,14 @@
             .dropdown-toggle-button-#{$idCategory}-#{$idSubcategory}:checked~.dropdown-options-#{$idCategory}-#{$idSubcategory} {
                 display: block;
             }
+
+            .dropdown-toggle-button-#{$idCategory}-#{$idSubcategory}:checked~.dropdown-toggle-label-#{$idCategory}-#{$idSubcategory} {
+                font-weight: bold;
+
+                h3 {
+                    font-weight: bold;
+                }
+            }
         }
 
         @for $idSubitem from 1 through 10 {
@@ -28,6 +36,12 @@
 
                 .dropdown-toggle-button-#{$idCategory}-#{$idSubcategory}-#{$idSubitem}:checked~.dropdown-options-#{$idCategory}-#{$idSubcategory}-#{$idSubitem} {
                     display: block;
+                }    
+                
+                .dropdown-toggle-button-#{$idCategory}-#{$idSubcategory}-#{$idSubitem}:checked~.dropdown-toggle-label-#{$idCategory}-#{$idSubcategory}-#{$idSubitem} {
+                    font-weight: 500;
+
+                    
                 }  
                 
 

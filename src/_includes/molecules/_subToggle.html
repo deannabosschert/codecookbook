@@ -1,7 +1,7 @@
 <div class="c-toggle-{{params.id}} subtoggle">
+    <input class="dropdown-toggle-button-{{params.id}}" type="checkbox" id="dropdown-toggle-button-{{params.id}}" name="dropdown-toggle-button-{{params.id}}">
     <label class="dropdown-toggle-label-{{params.id}}" for="dropdown-toggle-button-{{params.id}}" id="{{params.openPageID}}">
        {{params.text | title}}</label>
-    <input class="dropdown-toggle-button-{{params.id}}" type="checkbox" id="dropdown-toggle-button-{{params.id}}" name="dropdown-toggle-button-{{params.id}}">
     <ul class="dropdown-options-{{params.id}}">
         {% for item in params.items %}
         <li>

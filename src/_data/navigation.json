@@ -15,19 +15,15 @@
         ],
         "design": [{
                 "ontwerp": [
-                    {"design": [
-                        "mobile design", "desktop design",
-                        "componenten",
-                        "states",
-                        "animaties"
-                    ]},
-                    {"fonts": ["license information", "embed-links", "preview"]},
+                    {"design": ["mobile design", "desktop design"]},
+                    {"componenten": ["overzicht", "states", "animaties"]},
+                    {"fonts": [ "preview", "license information"]},
                     {"afbeeldingen": ["content", "iconen", "favicon"]}
                 ]
             },
             {
                 "bestanden": [
-                    {"fonts": ["license information", "embed-links", "preview"]},
+                    {"fonts": ["files", "license information", "embed-links"]},
                     {"afbeeldingen": ["content", "iconen", "favicon"]}
                 ]
             },

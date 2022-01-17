@@ -6,14 +6,17 @@ parent:
 {%- from "system/page.njk" import page -%}
 {%- from "system/function.njk" import function -%}
 
-<div class="categoryPage pageActive">
+<div class="categoryPage">
     <p>dit staat er als je opstart</p>
 </div>
 
 {{ page('design', 'ontwerp', {
        title: 'Ontwerp',
-       description: 'Alle ontwerpen van dit project in een overzicht.'
- }) }}
+       parent: 'design',
+       page: 'ontwerp',
+       description: 'Alle ontwerpen van dit project in een overzicht.',
+       figma: figma 
+ }) }} <!-- remove 'dev' in prod -->
  
  {{ page('development', 'checklists', {
        title: 'Checklists',
