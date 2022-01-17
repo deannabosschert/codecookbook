@@ -138,7 +138,6 @@
         max-width: 100%;
         margin-left: -$desktop-xxxs;
 
-        display: flex;
         border-radius: 5px;
         box-shadow: inset 0px 0 1px 1px rgb(31 38 135 / 10%);
         backdrop-filter: blur(4px);
@@ -147,6 +146,27 @@
         img {
             min-height: 100%;
             object-fit: cover;
+        }
+    }
+
+    .grid-6 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+    justify-content: space-between;
+        max-width: 90%;
+        margin-left: -$desktop-xxxs;
+
+    
+        border-radius: 5px;
+        box-shadow: inset 0px 0 1px 1px rgb(31 38 135 / 10%);
+        backdrop-filter: blur(4px);
+        padding: $desktop-xxxs;
+
+        img {
+            min-height: 100%;
+            object-fit: cover;
+            margin-right: $desktop-xxs;
         }
     }
 }
