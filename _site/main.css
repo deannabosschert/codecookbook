@@ -8350,6 +8350,13 @@ body.contact a.contact:link {
   font-weight: 300;
 }
 
+code {
+  letter-spacing: 3px;
+  color: #202020ff;
+  background-color: #f6f6f6ff;
+  padding: 0 1px;
+}
+
 pre {
   height: fit-content;
   background-color: #202020ff;
@@ -8358,10 +8365,13 @@ pre {
   width: fit-content;
   margin-bottom: 24px;
 }
-
-code {
+pre code {
   letter-spacing: 2px;
   color: #ffffffff;
+}
+
+.categoryPage .acronym {
+  color: #67c8f2ff;
 }
 
 /* ==========================================================================
@@ -8545,28 +8555,17 @@ code {
   height: 34px;
 }
 
-#design-bestanden-page p {
-  width: 878px;
+#development-coding-guidelines-page ul {
+  margin-bottom: 32px;
 }
-#design-bestanden-page ul {
-  padding: 24px;
-  grid-gap: 40px;
+#development-coding-guidelines-page ul li:before {
+  content: url(/assets/img/icons/checkbox-checked.png);
+  color: #67c8f2ff;
+  height: inherit;
+  margin-right: 11px;
 }
-#design-bestanden-page a {
-  color: #202020ff;
-  font-size: 18px;
-  line-height: 28px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-#design-bestanden-page .download-icon {
-  margin-right: 16px;
-  background-color: #67c8f2ff;
-  border-radius: 5px;
-  padding: 8px;
-  width: 36px;
-  height: 34px;
+#development-coding-guidelines-page h4 {
+  margin-bottom: 32px;
 }
 
 #design-bestanden-page p {

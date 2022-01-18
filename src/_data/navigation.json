@@ -57,9 +57,10 @@
                 ]}]
             },
             {
-                "coding guidelines": [
+                "coding-guidelines": [
+                    {"best practices": ["list"]},
                     {"programming principles": ["KISS", "DRY", "YAGNI", "SOLID", "SoC", "APO", "LoD"]},
-                    {"naming conventions": ["casing", "file names"]},
+                    {"naming-conventions": ["casing"]},
                     {"formatting": ["ESlint", "code comments", "commented out code", "documentation"]},
                     {"html": ["semantics", "accessibility"]},
                     {"css": ["scss", "selectors", "z-index"]},

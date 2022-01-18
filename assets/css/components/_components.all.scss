@@ -51,6 +51,14 @@
     }
 }
 
+
+code {
+    letter-spacing: 3px;
+    color: $black;
+    background-color: $gray-3;
+    padding: 0 1px;
+}
+
 pre {
     height: fit-content;
     background-color: $black;
@@ -58,10 +66,14 @@ pre {
     border-radius: 5px;
     width: fit-content;
     margin-bottom: $desktop-s;
+
+    code {
+        letter-spacing: 2px;
+        color: $white;
+    }
 }
 
-code {
-    letter-spacing: 2px;
-    color: $white;
-
-}
+.categoryPage {
+.acronym {
+  color: $brand;
+}}
