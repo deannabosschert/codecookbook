@@ -410,7 +410,6 @@ address {
 
 footer address,
 a {
-  color: #ffffffff;
   font-size: 15px;
   line-height: 24px;
 }
@@ -8394,6 +8393,9 @@ code {
   margin: 0;
 }
 
+#design-bestanden-page p {
+  width: 878px;
+}
 #design-bestanden-page ul {
   padding: 24px;
   grid-gap: 40px;

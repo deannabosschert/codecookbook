@@ -1,5 +1,9 @@
 #design-bestanden-page {
 
+    p {
+        width:  $width-xxl;
+    }
+
     ul {
         padding: $desktop-s;
         grid-gap: $desktop-m;
