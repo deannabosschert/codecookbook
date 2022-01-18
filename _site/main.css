@@ -8531,28 +8531,14 @@ pre code {
   margin-right: 11px;
 }
 
-#design-bestanden-page p {
-  width: 878px;
+#development-git-page article, #development-git-page img {
+  margin-bottom: 32px;
 }
-#design-bestanden-page ul {
-  padding: 24px;
-  grid-gap: 40px;
+#development-git-page p {
+  max-width: 878px;
 }
-#design-bestanden-page a {
-  color: #202020ff;
-  font-size: 18px;
-  line-height: 28px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-#design-bestanden-page .download-icon {
-  margin-right: 16px;
-  background-color: #67c8f2ff;
-  border-radius: 5px;
-  padding: 8px;
-  width: 36px;
-  height: 34px;
+#development-git-page h4 {
+  margin-bottom: 32px;
 }
 
 #development-coding-guidelines-page ul {
@@ -8568,28 +8554,14 @@ pre code {
   margin-bottom: 32px;
 }
 
-#design-bestanden-page p {
-  width: 878px;
+#development-deployment-page article, #development-deployment-page img {
+  margin-bottom: 32px;
 }
-#design-bestanden-page ul {
-  padding: 24px;
-  grid-gap: 40px;
+#development-deployment-page p {
+  max-width: 878px;
 }
-#design-bestanden-page a {
-  color: #202020ff;
-  font-size: 18px;
-  line-height: 28px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-#design-bestanden-page .download-icon {
-  margin-right: 16px;
-  background-color: #67c8f2ff;
-  border-radius: 5px;
-  padding: 8px;
-  width: 36px;
-  height: 34px;
+#development-deployment-page h4 {
+  margin-bottom: 32px;
 }
 
 .categoryPage h1:first-letter,

@@ -1,32 +1,15 @@
-#design-bestanden-page {
+#development-deployment-page {
+    article, img {
+        margin-bottom: $desktop-default;
+        
+    }
 
     p {
-        width:  $width-xxl;
+        max-width: $width-xxl;
     }
 
-    ul {
-        padding: $desktop-s;
-        grid-gap: $desktop-m;
+    h4 {
+        margin-bottom: $desktop-default;
     }
-    li {
     
-    }
-
-    a {
-        color: $black;
-        font-size: 18px;
-        line-height: 28px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .download-icon {
-        margin-right: $desktop-xxs;
-        background-color: $brand;
-        border-radius: 5px;
-        padding: 8px;
-        width: 36px;
-        height: 34px;
-    }
 }
