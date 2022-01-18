@@ -1,0 +1,8 @@
+#development-checklists-page ul li:before {
+  content: url(/assets/img/icons/checkbox-checked.png);
+  color: #67c8f2ff;
+  height: inherit;
+  margin-right: 11px;
+}
+
+/*# sourceMappingURL=pages.checklists.css.map */

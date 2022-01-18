@@ -2,7 +2,7 @@ const jsonToScss = require('./json-to-scss.js')
 const writePages = require('./write-pages.js')
 
 
-executeAllScripts()
+// executeAllScripts()
 function executeAllScripts() {
     jsonToScss()
     writePages()

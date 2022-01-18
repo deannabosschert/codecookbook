@@ -55,11 +55,11 @@ function makeHTML(parent, data) {
         section += `</section>`
         html += section
     })
-    writePages(parent, pageName, html, true)
+    writePages(parent, pageName, html, false)
 }
 
 function writePages(parent, page, html, toGenerate) {
-    if (page == 'index' || page == 'bestanden' || page == 'ontwerp' || page == 'variabelen') {
+    if (page == 'index' || page == 'bestanden' || page == 'ontwerp' || page == 'variabelen' || page == 'checklists') {
         return
     } else if (toGenerate == false){
         return

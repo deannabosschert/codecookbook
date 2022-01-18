@@ -56,6 +56,16 @@
 @import "pages/design/pages.projectinformatie";
 @import "pages/design/pages.variabelen";
 
+@import "pages/development/pages.checklists";
+@import "pages/development/pages.git";
+@import "pages/development/pages.guidelines";
+@import "pages/development/pages.deployment";
+
+@import "pages/resources/pages.codesnippets";
+@import "pages/resources/pages.examples";
+@import "pages/resources/pages.tools";
+@import "pages/resources/pages.libraries";
+
 
 @import "pages/templates/pages.home";
 @import "pages/templates/pages.subpage";
