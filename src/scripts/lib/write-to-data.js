@@ -1,45 +1,38 @@
 const fs = require('fs')
 module.exports = function writeData(data, categories) {
     if (data && categories) {
-        makeFile(data, categories)
+        makeCategoryFile(categories)
+        makeDataFile(data)
     }
 }
 
-function makeFile(data, categories) {
+function makeCategoryFile(categories) {
+    let categoryData = JSON.stringify(categories)
     let categoryFile = ''
-    categoryFile += 'module.exports = function getCategories() {\n'
-    categoryFile += 'let categoryData = "'
-    categoryFile += categories.toString()
-    categoryFile += '"'
+    categoryFile += 'let categories = '
+    categoryFile += categoryData
     categoryFile += '\n'
-    categoryFile += 'let categories = Array.from(new Set(categoryData))'
+    categoryFile += 'export { categories }'
     categoryFile += '\n'
-    categoryFile += 'return categories'
-    categoryFile += '}\n'
-    console.log(getCategories())
+    let filepath = `assets/js/lib/ganttCategories.js`
+    writeFile(filepath, categoryFile)
+}
 
+function makeDataFile(data) {
+    let cleanData = JSON.stringify(data)
+    let dataFile = ''
+    dataFile += 'let cleanData = '
+    dataFile += cleanData
+    dataFile += '\n'
+    dataFile += 'export { cleanData }'
 
-
-    // let filepath = `assets/js/lib/ganttData.js`
-    // writeFile(filepath, data)
-
-
-    // let filepath2 = `assets/js/lib/ganttCategories.js`
-    // writeFile(filepath2, categories)
-
-
+    let filepath = `assets/js/lib/ganttData.js`
+    writeFile(filepath, dataFile)
 }
 
 function writeFile(filepath, data) {
     fs.writeFile(filepath, data, (err) => {
         if (err) throw err
-        console.log('The file has been generated from data and saved!')
+        console.log('The gantt file has been generated from data and saved!')
     })
-}
-
-function getCategories() {
-    let categoryData = "Meeting/presentatie,Klantcontact/meeting,Administratie,Intern overleg,?ux?,Design,Content,Onderzoek,Reviewen,Feedback verwerken,Security,?dev?,Development,Bugfix,Refactor/optimalisatie"
-    let categories = Array.from(new Set(categoryData))
-    console.log(categories)
-    return categories
 }
