@@ -18,7 +18,7 @@ function makeFile (data, name) {
     file += name
     file += ' }'
     file += '\n'
-    let filepath = `assets/js/lib/gantt-${name}.js`
+    let filepath = `assets/js/charts/lib/gantt-${name}.js`
     writeFile(filepath, file)
 }
 

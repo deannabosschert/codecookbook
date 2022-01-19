@@ -1,7 +1,43 @@
 ---
-layout: templates/_detailPage.html
+layout: templates/_about.html
 pageName: 'about'
 parent: '/'
 ---
-
-{%- from "system/component.njk" import component -%} 
+{%- from "system/component.njk" import component -%}
+{{ component('sections', '_pageHeader', {
+    title: "About",
+    description: "Hoe is dit project tot stand gekomen?"
+    }) }}
+<section>
+    <h2>Charts</h2>
+    <article>
+        <h3>Bar chart</h3>
+        <canvas id="barChart" width="400" height="400"></canvas>
+    </article>
+    <article>
+        <h3>Horizontal bar chart</h3>
+        <canvas id="horizontalBarChart" width="600" height="400"></canvas>
+    </article>
+    <article>
+        <h3>Stacked bar chart</h3>
+        <canvas id="stackedBarChart" width="500" height="600"></canvas>
+    </article>    
+    <article>
+        <h3>Pie chart</h3>
+        <canvas id="pieChart" width="400" height="400"></canvas>
+    </article>    
+    <article>
+        <h3>Doughnut chart</h3>
+        <canvas id="doughnutChart" width="400" height="400"></canvas>
+    </article>
+</section>
+<section>
+    <h2>Projecturen</h2>
+    <article>
+        <h3>Gantt chart</h3>
+        <div id="ganttContainer">
+            <div class="svg"></div>
+            <div id="tag"></div>
+        </div>
+    </article>
+</section>

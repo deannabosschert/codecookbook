@@ -1,0 +1,41 @@
+---
+pagePath: "/about"
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% include "sections/_head.html" %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js" integrity="sha512-SuxO9djzjML6b9w9/I07IWnLnQhgyYVSpHZx0JV97kGBfTIsUYlWflyuW4ypnvhBrslz1yJ3R+S14fdCWmSmSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.3.3/d3.min.js"></script>
+  <script src="//unpkg.com/d3fc@14.0.41"></script>
+  <link rel="stylesheet" href="../assets/js/charts/ganttgraph.css" />
+  <script type="module" src="../assets/js/charts/ganttgraph-categorical.js"></script>
+  <script type="module" src="../assets/js/charts/bar-chart.js"></script>
+  <script type="module" src="../assets/js/charts/horizontal-bar-chart.js"></script>
+  <script type="module" src="../assets/js/charts/stacked-bar-chart.js"></script>
+  <script type="module" src="../assets/js/charts/pie-chart.js"></script>
+  <script type="module" src="../assets/js/charts/doughnut-chart.js"></script>
+</head>
+
+<body>
+  {%- from "system/component.njk" import component -%}
+  {{ component("atoms", "_logo", {
+        src: "/assets/img/logos/active-collective_logo_black.svg",
+        alt: "Active Collective in black letters",
+        text: "Home: Code Cookbook",
+        link: "/"
+     })}}
+
+  {{ component('sections', '_header', {
+    title: '🍽️ Code Cookbook',
+    description: 'Guide to the best practices for building and deploying web applications.'
+    }) }}
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+</body>
+
+</html>
