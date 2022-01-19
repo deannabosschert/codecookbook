@@ -57,9 +57,10 @@
                 ]}]
             },
             {
-                "coding guidelines": [
+                "coding-guidelines": [
+                    {"best practices": ["list"]},
                     {"programming principles": ["KISS", "DRY", "YAGNI", "SOLID", "SoC", "APO", "LoD"]},
-                    {"naming conventions": ["casing", "file names"]},
+                    {"naming-conventions": ["casing"]},
                     {"formatting": ["ESlint", "code comments", "commented out code", "documentation"]},
                     {"html": ["semantics", "accessibility"]},
                     {"css": ["scss", "selectors", "z-index"]},
@@ -89,10 +90,10 @@
                 ]
             },
             {
-                "code snippets": [
-                    {"html/css": ["navigation", "forms", "animations"]},
-                    {"javaScript": ["sign-up", "login", "sockets"]},
-                    {"node.js": ["api", "authentication", "database"]}
+                "code-snippets": [
+                    {"HTML/CSS": ["navigation", "forms", "animations"]},
+                    {"JavaScript": ["sign-up", "login", "sockets"]},
+                    {"Node.js": ["api", "authentication", "database"]}
                 ]
             },
             {

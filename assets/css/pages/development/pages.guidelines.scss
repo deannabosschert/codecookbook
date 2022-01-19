@@ -1,0 +1,17 @@
+#development-coding-guidelines-page {
+    ul {
+        margin-bottom: $desktop-default;
+        li {
+            &:before {
+                content: url(/assets/img/icons/checkbox-checked.png);
+                color: #67c8f2ff;
+                height: inherit;
+                margin-right: 11px;
+            }
+        }
+    }
+
+    h4 {
+        margin-bottom: $desktop-default;
+    }
+}

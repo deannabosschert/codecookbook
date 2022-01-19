@@ -4,7 +4,7 @@
 @import "generic/generic.reset";
 
 // SETTINGS
-@import "settings/_settings.color";
+@import "settings/settings.color";
 @import "settings/settings.font";
 @import "settings/settings.layout";
 @import "settings/settings.spacing";
@@ -39,6 +39,7 @@
 
 // atoms
 @import "components/atoms/components.callToAction";
+@import "components/atoms/components.graph";
 @import "components/atoms/components.image";
 @import "components/atoms/components.logo";
 @import "components/atoms/components.pageHeaderStripe";
@@ -51,9 +52,25 @@
 
 
 // PAGE-SPECIFIC STYLING
-@import "pages/pages.home";
-@import "pages/pages.subpage";
-@import "pages/pages.detail";
+@import "pages/design/pages.bestanden";
+@import "pages/design/pages.ontwerp";
+@import "pages/design/pages.projectinformatie";
+@import "pages/design/pages.variabelen";
+
+@import "pages/development/pages.checklists";
+@import "pages/development/pages.git";
+@import "pages/development/pages.guidelines";
+@import "pages/development/pages.deployment";
+
+@import "pages/resources/pages.codesnippets";
+@import "pages/resources/pages.examples";
+@import "pages/resources/pages.tools";
+@import "pages/resources/pages.libraries";
+
+
+@import "pages/templates/pages.home";
+@import "pages/templates/pages.subpage";
+@import "pages/templates/pages.detail";
 
 // CMS STYLING FOR PREVIEW
 @import "admin/admin.preview";

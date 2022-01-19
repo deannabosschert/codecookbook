@@ -32,7 +32,7 @@ function makeHTML(type, array) {
         let data = {}
         data = variableArray
         data = `{${data.join(',')}}`
-        console.log(data) 
+
         let filepath2 = `src/_data/pages/design/variables/${type}.json`
         writeFile(filepath2, data)
 }

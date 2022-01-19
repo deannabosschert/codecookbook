@@ -1,136 +1,79 @@
-#design-variabelen-page {
-    .design-variabelen-subpage-colors {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-
-        justify-content: space-between;
-
-        h2 {
-            width: 100%;
-        }
-
-        table {
-            margin-right: $desktop-page;
-            margin-top: $desktop-xs;
-        }
-
-        .flex-3 {
-            display: flex;
-            flex-direction: row;
-
-            max-width: 100%;
-            margin-left: -$desktop-xxxs;
-
-            border-radius: 5px;
-            box-shadow: inset 0px 0 1px 1px rgb(31 38 135 / 10%);
-            backdrop-filter: blur(4px);
-
-
-            margin-bottom: $desktop-s;
-            padding: $desktop-xxs;
-
-
-            li,
-            .color-box {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-            }
-
-            li:nth-of-type(2) {
-                margin: 0 $desktop-s;
-            }
-
-            .color-box {
-                width: $height-default;
-                max-width: 100%;
-                height: $height-s;
-                margin-bottom: $desktop-xxxs;
-                border: 2px solid $gray-3;
-            }
-
-        }
 
 
 
-        article:nth-of-type(1) {
-            li {
-                &:nth-child(1) {
-                    .color-box {
-                        background-color: $black;
-                        color: $white;
-                    }
-                }
+.flex-2,
+.flex-3 {
+    display: flex;
+    flex-direction: row;
 
-                &:nth-child(2) {
-                    .color-box {
-                        background-color: $white;
-                        color: $black;
-                    }
-                }
+    max-width: 100%;
+    width: fit-content;
+    margin-left: -$desktop-xxxs;
 
-                &:nth-child(3) {
-                    .color-box {
-                        background-color: $brand;
-                        color: $white;
-                    }
-                }
-            }
-        }
+    border-radius: 5px;
+    box-shadow: inset 0px 0 1px 1px rgb(31 38 135 / 10%);
+    backdrop-filter: blur(4px);
 
-        article:nth-of-type(2) {
-            li {
-                &:nth-child(1) {
-                    .color-box {
-                        background-color: $gray-1;
-                        color: $white;
-                    }
-                }
 
-                &:nth-child(2) {
-                    .color-box {
-                        background-color: $gray-2;
-                        text-shadow: 0 0 20px $white;
-                        color: $black;
-                    }
-                }
+    margin-bottom: $desktop-s;
+    padding: $desktop-xxs;
+}
 
-                &:nth-child(3) {
-                    .color-box {
-                        background-color: $gray-3;
-                        color: $black;
-                    }
-                }
-            }
-        }
+.variable-table {
+    height: 100%;
+}
 
-        article:nth-of-type(3) {
-            li {
-                &:nth-child(1) {
-                    .color-box {
-                        background-color: $body-gray;
-                        text-shadow: 0 0 20px $white;
-                        color: $black;
-                    }
-                }
+.font-weight-list {
+    height: 100%;
 
-                &:nth-child(2) {
-                    .color-box {
-                        background-color: $body-highlight;
-                        color: $black;
-                    }
-                }
+    li {
+        font-size: 34px;
+        margin-bottom: $desktop-default;
+    }
+    li:nth-of-type(1) {
+        font-weight: 700;
+    }
 
-                &:nth-child(3) {
-                    .color-box {
-                        background-color: $brand-transparent;
-                        color: $black;
-                    }
-                }
-            }
-        }
+    li:nth-of-type(2) {
+        font-weight: 600;
+    }
+
+    li:nth-of-type(3) {
+        font-weight: 500;
+    }
+
+    li:nth-of-type(4) {
+        font-weight: 400;
+    }
+
+    li:nth-of-type(5) {
+        font-weight: 300;
     }
 }
+
+
+code {
+    letter-spacing: 3px;
+    color: $black;
+    background-color: $gray-3;
+    padding: 0 1px;
+}
+
+pre {
+    height: fit-content;
+    background-color: $black;
+    padding: $desktop-s;
+    border-radius: 5px;
+    width: fit-content;
+    margin-bottom: $desktop-s;
+
+    code {
+        letter-spacing: 2px;
+        color: $white;
+    }
+}
+
+.categoryPage {
+.acronym {
+  color: $brand;
+}}

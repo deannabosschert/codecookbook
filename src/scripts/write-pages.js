@@ -44,11 +44,11 @@ function makeHTML(parent, data) {
         let section = ''
         let h2 = item[0].h2
         let articles = item[0].content
-        section += `<section class="${parent}-${pageName}-subpage-${h2}">`
+        section += `<section id="${parent}-${pageName}-subpage-${h2}">`
         section += `<h2>${h2}</h2>`
         articles.forEach(function (h3) {
             section += `<article>`
-            section += `<h3>${h3}</h3>`
+            section += `<h3 id="${parent}-${pageName}-subpage-${h2}-${h3}">${h3}</h3>`
             // section += `<p>${sentenceWords}</p>`
             section += `</article>`
         })
@@ -59,7 +59,7 @@ function makeHTML(parent, data) {
 }
 
 function writePages(parent, page, html, toGenerate) {
-    if (page == 'ontwerp' || page == 'index') {
+    if (page == 'index' || page == 'bestanden' || page == 'ontwerp' || page == 'variabelen' || page == 'checklists') {
         return
     } else if (toGenerate == false){
         return
