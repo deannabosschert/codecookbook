@@ -1,1 +1,32 @@
-<section id="resources-examples-subpage-templates"><h2>templates</h2><article><h3 id="resources-examples-subpage-templates-11ty-Netlify">11ty-Netlify</h3></article><article><h3 id="resources-examples-subpage-templates-Vue.js">Vue.js</h3></article></section><section id="resources-examples-subpage-projects"><h2>projects</h2><article><h3 id="resources-examples-subpage-projects-Holiday Rentals Curacao">Holiday Rentals Curacao</h3></article><article><h3 id="resources-examples-subpage-projects-Active Collective">Active Collective</h3></article></section>
+{%- from "system/component.njk" import component -%}
+
+<section id="resources-examples-subpage-templates">
+    <h2>templates</h2>
+    <article>
+        <h3 id="resources-examples-subpage-templates-11ty-Netlify">11ty-Netlify</h3>
+        {{ component('atoms', '_githubCard', {
+            username: 'deannabosschert',
+            repo: '11ty-cms-boilerplate'
+            }) }}
+    </article>
+    <article>
+        <h3 id="resources-examples-subpage-templates-Vue.js">Vue.js</h3>
+    </article>
+</section>
+<section id="resources-examples-subpage-projects">
+    <h2>projects</h2>
+    <article>
+        <h3 id="resources-examples-subpage-projects-Holiday Rentals Curacao">Holiday Rentals Curacao</h3>
+        {{ component('atoms', '_githubCard', {
+            username: 'deannabosschert',
+            repo: 'CMS-template-Netlify'
+            }) }}
+    </article>
+    <article>
+        <h3 id="resources-examples-subpage-projects-Active Collective">Active Collective</h3>
+        {{ component('atoms', '_githubCard', {
+            username: 'deannabosschert',
+            repo: 'CMS-template-AC'
+            }) }}
+    </article>
+</section>

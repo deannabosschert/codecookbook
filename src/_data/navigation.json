@@ -90,10 +90,10 @@
                 ]
             },
             {
-                "code snippets": [
-                    {"html/css": ["navigation", "forms", "animations"]},
-                    {"javaScript": ["sign-up", "login", "sockets"]},
-                    {"node.js": ["api", "authentication", "database"]}
+                "code-snippets": [
+                    {"HTML/CSS": ["navigation", "forms", "animations"]},
+                    {"JavaScript": ["sign-up", "login", "sockets"]},
+                    {"Node.js": ["api", "authentication", "database"]}
                 ]
             },
             {
