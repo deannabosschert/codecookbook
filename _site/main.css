@@ -8320,28 +8320,28 @@ body.contact a.contact:link {
   max-height: 1500px;
 }
 
-.About h2 {
+.About main h2 {
   margin-bottom: 32px;
 }
-.About h3, .About p {
+.About main h3, .About main p {
   margin-bottom: 20px;
 }
-.About p {
+.About main p {
   color: #202020ff;
 }
-.About section {
+.About main section {
   margin-bottom: 70px;
 }
-.About .charts__introduction {
+.About main .charts__introduction {
   padding: 32px;
 }
-.About .chartjs-charts article {
+.About main .chartjs-charts article {
   padding: 32px;
 }
-.About .chartjs-charts article:first-of-type {
+.About main .chartjs-charts article:first-of-type {
   margin-right: 70px;
 }
-.About .chartjs-charts .flex-2 {
+.About main .chartjs-charts .flex-2 {
   justify-content: space-evenly;
   width: 90%;
   margin-bottom: 32px;
