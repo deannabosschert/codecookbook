@@ -1,38 +1,30 @@
 const fs = require('fs')
 module.exports = function writeData(data, categories) {
     if (data && categories) {
-        makeCategoryFile(categories)
-        makeDataFile(data)
+       makeFile(data, 'cleanData')
+       makeFile(categories, 'categories')
     }
 }
 
-function makeCategoryFile(categories) {
-    let categoryData = JSON.stringify(categories)
-    let categoryFile = ''
-    categoryFile += 'let categories = '
-    categoryFile += categoryData
-    categoryFile += '\n'
-    categoryFile += 'export { categories }'
-    categoryFile += '\n'
-    let filepath = `assets/js/lib/ganttCategories.js`
-    writeFile(filepath, categoryFile)
-}
-
-function makeDataFile(data) {
-    let cleanData = JSON.stringify(data)
-    let dataFile = ''
-    dataFile += 'let cleanData = '
-    dataFile += cleanData
-    dataFile += '\n'
-    dataFile += 'export { cleanData }'
-
-    let filepath = `assets/js/lib/ganttData.js`
-    writeFile(filepath, dataFile)
+function makeFile (data, name) {
+    let stringData = JSON.stringify(data)
+    let file = ''
+    file += 'let '
+    file += name
+    file += ' = '
+    file += stringData
+    file += '\n'
+    file += 'export { '
+    file += name
+    file += ' }'
+    file += '\n'
+    let filepath = `assets/js/lib/gantt-${name}.js`
+    writeFile(filepath, file)
 }
 
 function writeFile(filepath, data) {
     fs.writeFile(filepath, data, (err) => {
         if (err) throw err
-        console.log('The gantt file has been generated from data and saved!')
+        console.log('The gantt data file has been generated from data and saved!')
     })
 }
