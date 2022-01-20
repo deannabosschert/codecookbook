@@ -66,7 +66,7 @@
         flex-direction: column;
         margin-bottom: $desktop-default;
 
-        // max-height: $height-l;
+        // max-height: $height-xl;
 
     }
 
@@ -103,7 +103,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: $desktop-m;
-        grid-template-rows: $height-default;
+        grid-template-rows: $height-m;
         max-width: fit-content;
 
 
@@ -124,7 +124,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: $desktop-xs $desktop-xxs;
-        grid-template-rows: $height-l $height-l $height-l;
+        grid-template-rows: $height-xl $height-xl $height-xl;
         max-width: 100%;
 
         padding-left: $desktop-default;

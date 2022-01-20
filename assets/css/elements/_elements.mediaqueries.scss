@@ -1,128 +1,120 @@
-@media screen and (max-width: 600px) {
-    .c-header {
-        .c-header {
-            padding-left: $mobile-m;
-        }
+   body {
+       display: grid;
+       grid-template-columns: $width-xxs 1fr 1fr $width-xxs;
+       grid-template-rows: $height-xs auto $height-xs;
+       grid-template-areas:
+           "header header header header"
+           "main main main main"
+           "footer footer footer footer";
+   }
 
-        .c-sidebar {
-            display: none;
-        }
+   body>main {
+       grid-area: main;
+       padding-right: $mobile-l;
+   }
 
-        main {
-            padding-left: 0;
-        }
-    }
-}
+   .c-header {
+       grid-area: header;
+       min-width: 100%;
+    //    display: grid;
+    //    grid-template-columns: $width-default 1fr 1fr $width-s;
+    //    grid-template-areas:
+    //        "logo description description description";
+       border-bottom: 1px solid #f6f6f6ff;
+   }
 
-@media screen and (max-width: 800px) {
-    body {
-        display: grid;
-        grid-template-columns: $width-default 1fr 1fr $width-s;
-        grid-template-rows: $height-xs auto $height-xs;
-        grid-template-areas:
-        "header header header header"
-        "main main main main"
-        "footer footer footer footer";
-        padding: 0 $mobile-m;
+   .c-logo {
+       display: none;
+   }
 
-    }
-    body>main {
-        padding-right: $mobile-l;
-    }
-    .c-logo {
-        display: none;
-    }
+   .header__title {
+    //    grid-area: logo;
+   }
 
+   .header__description {
+       display: none;
+    //    grid-area: description;
+       // min-width: fit-content;
+    //    max-width: 100%;
+   }
 
- 
+   .c-sidebar {
+       display: none;
+   }
 
-    body>main {
-        grid-area: main;
-    }
+   .c-footer {
+       grid-area: footer;
+   }
 
-    .c-header {
-       
-        grid-area: header;
-        min-width: 100%;
-        display: grid;
-        grid-template-columns: $width-default 1fr 1fr $width-s;
-        grid-template-areas:
-        "logo description description description";
+   @media screen and (max-width: 400px) {
+       .c-header {}
 
-        border-bottom: 1px solid #f6f6f6ff;
-    }
+       main {}
 
-    .c-footer {
-        grid-area: footer;
-    }
+       .c-page-header {}
+   }
 
-    .c-sidebar {
-        display: none;
-    }
+   @media screen and (min-width: 400px) {}
 
-    .header__title {
-        grid-area: logo;
-    }
-
-    .header__description {
-        grid-area: description;
-        // min-width: fit-content;
-        max-width: 100%;
-    }
-}
-
-
-@media screen and (min-width: 800px) {
-    body {
-        display: grid;
-    grid-template-columns: $width-default 1fr 1fr $width-s;
-    grid-template-rows: $height-xs auto $height-xs;
-    grid-template-areas:
-      ". header header header"
-      "sidebar main main ."
-      "footer footer footer .";
-    background-color: #fff;
-    }
-  
-  .c-header {
-    grid-area: header;
-  }
-  
-  .c-sidebar {
-    grid-area: sidebar;
-  }  
-  body>main {
-      grid-area: main;
+  @media screen and (min-width: 550px) {
+      .header__description {
+          display: flex;
+      }
   }
 
-  .c-footer {
-    grid-area: footer;
-  }
-}
+   @media screen and (min-width: 600px) {}
 
+   @media screen and (min-width: 800px) {
+       body {
+           display: grid;
+           grid-template-columns: $width-default 1fr 1fr $width-s;
+           grid-template-rows: $height-xs auto $height-xs;
+           grid-template-areas:
+               ". header header header"
+               "sidebar main main ."
+               "footer footer footer .";
+           background-color: #fff;
+       }
 
-@media screen and (max-width: 1085px) {
-    .c-header {
-        .header__title {
-            min-width: max-content;
-            font-size: 18px;
-        }
+       .c-header {
+           grid-area: header;
+       }
 
-        .header__description {
-            font-size: 16px;
-        }
-    }
-}
+       .c-sidebar {
+           grid-area: sidebar;
+       }
 
-@media screen and (max-width: 1220px) {
-    .c-header {
-        .header__title {
-            min-width: max-content;
-            font-size: 18px;
-        }
+       body>main {
+           grid-area: main;
+       }
 
-        .header__description {
-            font-size: 18px
-        }
-    }
-}
+       .c-footer {
+           grid-area: footer;
+       }
+   }
+
+   @media screen and (max-width: 1085px) {
+       .c-header {
+           .header__title {
+               min-width: max-content;
+               font-size: 18px;
+           }
+
+           .header__description {
+               font-size: 16px;
+           }
+       }
+   }
+
+   @media screen and (max-width: 1220px) {
+       .c-header {
+           .header__title {
+               min-width: max-content;
+               font-size: 18px;
+           }
+
+           .header__description {
+               font-size: 18px
+           }
+       }
+   }

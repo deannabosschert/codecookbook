@@ -8796,69 +8796,50 @@ pre code {
   margin-right: 16px;
 }
 
-@media screen and (max-width: 600px) {
-  .c-header .c-header {
-    padding-left: 24px;
-  }
-  .c-header .c-sidebar {
-    display: none;
-  }
-  .c-header main {
-    padding-left: 0;
-  }
+body {
+  display: grid;
+  grid-template-columns: 25px 1fr 1fr 25px;
+  grid-template-rows: 75px auto 75px;
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
 }
-@media screen and (max-width: 800px) {
-  body {
-    display: grid;
-    grid-template-columns: 264px 1fr 1fr 100px;
-    grid-template-rows: 100px auto 100px;
-    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
-    padding: 0 24px;
-  }
 
-  body > main {
-    padding-right: 28px;
-  }
+body > main {
+  grid-area: main;
+  padding-right: 28px;
+}
 
-  .c-logo {
-    display: none;
-  }
+.c-header {
+  grid-area: header;
+  min-width: 100%;
+  border-bottom: 1px solid #f6f6f6ff;
+}
 
-  body > main {
-    grid-area: main;
-  }
+.c-logo {
+  display: none;
+}
 
-  .c-header {
-    grid-area: header;
-    min-width: 100%;
-    display: grid;
-    grid-template-columns: 264px 1fr 1fr 100px;
-    grid-template-areas: "logo description description description";
-    border-bottom: 1px solid #f6f6f6ff;
-  }
+.header__description {
+  display: none;
+}
 
-  .c-footer {
-    grid-area: footer;
-  }
+.c-sidebar {
+  display: none;
+}
 
-  .c-sidebar {
-    display: none;
-  }
+.c-footer {
+  grid-area: footer;
+}
 
-  .header__title {
-    grid-area: logo;
-  }
-
+@media screen and (min-width: 550px) {
   .header__description {
-    grid-area: description;
-    max-width: 100%;
+    display: flex;
   }
 }
 @media screen and (min-width: 800px) {
   body {
     display: grid;
     grid-template-columns: 264px 1fr 1fr 100px;
-    grid-template-rows: 100px auto 100px;
+    grid-template-rows: 75px auto 75px;
     grid-template-areas: ". header header header" "sidebar main main ." "footer footer footer .";
     background-color: #fff;
   }
