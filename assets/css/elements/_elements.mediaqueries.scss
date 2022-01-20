@@ -14,28 +14,46 @@
    }
 
    .c-header {
+    //    display: flex;
+    //    justify-content: space-between;
        grid-area: header;
        min-width: 100%;
-    //    display: grid;
-    //    grid-template-columns: $width-default 1fr 1fr $width-s;
-    //    grid-template-areas:
-    //        "logo description description description";
+       max-width: 100%;
        border-bottom: 1px solid #f6f6f6ff;
+
+       display: grid;
+       grid-template-columns: $width-xxs 1fr 1fr $width-xxs;
+       grid-template-areas:
+           ". codeCookbook hamburger .";
+           padding-left: 0;
    }
+
+   .c-header-nav {
+    width: unset;
+    grid-area: hamburger;
+    justify-self: flex-end;
+
+    .menu-icon {
+        padding: $mobile-l 0 $mobile-l $mobile-l;
+    }
+}
+
+.c-header-nav .menu-btn:checked ~ .menu-icon {
+    padding: 0;
+    padding-right: 18px;
+}
 
    .c-logo {
        display: none;
    }
 
    .header__title {
-    //    grid-area: logo;
+       grid-area: codeCookbook;
+         justify-self: flex-start;
    }
 
    .header__description {
        display: none;
-    //    grid-area: description;
-       // min-width: fit-content;
-    //    max-width: 100%;
    }
 
    .c-sidebar {
@@ -56,11 +74,30 @@
 
    @media screen and (min-width: 400px) {}
 
-  @media screen and (min-width: 550px) {
-      .header__description {
-          display: flex;
-      }
-  }
+   @media screen and (min-width: 550px) {
+       .header__description {
+           display: flex;
+           width: fit-content;
+       }
+
+       .c-header {
+           //    display: grid;
+           //    grid-template-columns: $width-default 1fr 1fr $width-s;
+           //    grid-template-areas:
+           //        "logo description description description";
+       }
+
+       .header__title {
+           //    grid-area: logo;
+       }
+
+       .header__description {
+           display: none;
+           //    grid-area: description;
+           // min-width: fit-content;
+           //    max-width: 100%;
+       }
+   }
 
    @media screen and (min-width: 600px) {}
 
@@ -82,6 +119,7 @@
 
        .c-sidebar {
            grid-area: sidebar;
+           display: flex;
        }
 
        body>main {

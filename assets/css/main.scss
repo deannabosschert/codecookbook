@@ -25,12 +25,14 @@
 @import "components/sections/components.footer";
 @import "components/sections/components.header";
 @import "components/sections/components.sidebar";
+@import "components/sections/components.sidebar-hb";
 @import "components/sections/components.page-header";
 
 // organisms
 @import "components/organisms/components.header-nav";
 @import "components/organisms/components.search-bar";
 @import "components/organisms/components.toggle";
+@import "components/organisms/components.toggle-hb";
 
 // molecules
 @import "components/molecules/components.article";

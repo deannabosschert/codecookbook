@@ -7,6 +7,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy('assets/fonts')
   eleventyConfig.addPassthroughCopy('assets/img')
   eleventyConfig.addPassthroughCopy('assets/js/toggle-page.js')
+  eleventyConfig.addPassthroughCopy('assets/js/hb-toggle-page.js')
   eleventyConfig.addPassthroughCopy('assets/js/charts')
 
 

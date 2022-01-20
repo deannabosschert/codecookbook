@@ -1,0 +1,53 @@
+// might be better off placed directly inside components/organisms/_toggle.html
+@for $idCategory from 1 through 5 {
+    @for $idSubcategory from 1 through 10 {
+        .hb-c-toggle-#{$idCategory}-#{$idSubcategory}{
+            .hb-dropdown-options-#{$idCategory}-#{$idSubcategory}{
+                display: none;
+            }
+
+            .hb-dropdown-toggle-button-#{$idCategory}-#{$idSubcategory} {
+                display: none;
+            }
+
+            .hb-dropdown-toggle-button-#{$idCategory}-#{$idSubcategory}:checked~.hb-dropdown-options-#{$idCategory}-#{$idSubcategory} {
+                display: block;
+            }
+
+            .hb-dropdown-toggle-button-#{$idCategory}-#{$idSubcategory}:checked~.hb-dropdown-toggle-label-#{$idCategory}-#{$idSubcategory} {
+                font-weight: bold;
+
+                h3 {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        @for $idSubitem from 1 through 10 {
+
+            .hb-c-toggle-#{$idCategory}-#{$idSubcategory}-#{$idSubitem} {
+                .hb-dropdown-options-#{$idCategory}-#{$idSubcategory}-#{$idSubitem} {
+                    display: none;
+                }
+
+                .hb-dropdown-toggle-button-#{$idCategory}-#{$idSubcategory}-#{$idSubitem} {
+                    display: none;
+                }
+
+                .hb-dropdown-toggle-button-#{$idCategory}-#{$idSubcategory}-#{$idSubitem}:checked~.hb-dropdown-options-#{$idCategory}-#{$idSubcategory}-#{$idSubitem} {
+                    display: block;
+                }    
+                
+                .hb-dropdown-toggle-button-#{$idCategory}-#{$idSubcategory}-#{$idSubitem}:checked~.hb-dropdown-toggle-label-#{$idCategory}-#{$idSubcategory}-#{$idSubitem} {
+                    font-weight: 500;
+
+                    
+                }  
+                
+
+            }
+
+        }
+    }
+
+}

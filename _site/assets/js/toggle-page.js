@@ -1,10 +1,31 @@
 export default function togglePage(pageID) {
- document.getElementById(`${pageID}`).addEventListener('click', event => {
-    let allePages = document.querySelectorAll('.categoryPage')
-    allePages.forEach(page => {
-        page.classList.remove('pageActive')
+    console.log(pageID)
+    selectElement(`#${pageID}`).addEventListener('click', event => {
+        removeAllClasses('.categoryPage', 'pageActive')
+        addClass(`${pageID}-page`, 'pageActive')
+        window.scrollTo(0, 0)
+
+        // resetDropdowns('.c-side-bar input')
+        // selectElement(`${pageID}-page`).scrollIntoView({behavior: "smooth", block: "start", inline: "start"});
     })
-    document.getElementById(`${pageID}-page`).classList.add('pageActive')
-    window.scrollTo(0, 0);
-})
+}
+
+function selectElement(selector) {
+    return document.querySelector(`${selector}`)
+}
+
+// function resetDropdowns(selector) {
+//     document.querySelectorAll(`${selector}`).forEach(element => {
+//         element.checked = false
+//     })
+// }
+
+function removeAllClasses(selector, classname) {
+    document.querySelectorAll(`${selector}`).forEach(element => {
+        element.classList.remove(`${classname}`)
+    })
+}
+
+function addClass(selector, classname) {
+    document.getElementById(`${selector}`).classList.add(`${classname}`)
 }
