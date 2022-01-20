@@ -6,12 +6,13 @@ module.exports = (eleventyConfig) => {
   // Assets
   eleventyConfig.addPassthroughCopy('assets/fonts')
   eleventyConfig.addPassthroughCopy('assets/img')
-  eleventyConfig.addPassthroughCopy('assets/js')
+  eleventyConfig.addPassthroughCopy('assets/js/toggle-page.js')
+  eleventyConfig.addPassthroughCopy('assets/js/charts')
+
+
   eleventyConfig.addPassthroughCopy('assets/files')
   eleventyConfig.addPassthroughCopy('./src/favicon.ico')
   
-  eleventyConfig.addPassthroughCopy({'src/.htaccess': 'about/.htaccess'})
-  eleventyConfig.addPassthroughCopy({'src/.htpasswd': '.htpasswd'})
 
   // Config for CMS
   eleventyConfig.addPassthroughCopy({'./src/admin/config.yml': './admin/config.yml'})

@@ -7,5 +7,5 @@ executeAllScripts()
 function executeAllScripts() {
     // jsonToScss()
     // writePages()
-    graphData()
+    // graphData()
 }
