@@ -1,0 +1,128 @@
+@media screen and (max-width: 600px) {
+    .c-header {
+        .c-header {
+            padding-left: $mobile-m;
+        }
+
+        .c-sidebar {
+            display: none;
+        }
+
+        main {
+            padding-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        display: grid;
+        grid-template-columns: $width-default 1fr 1fr $width-s;
+        grid-template-rows: $height-xs auto $height-xs;
+        grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+        padding: 0 $mobile-m;
+
+    }
+    body>main {
+        padding-right: $mobile-l;
+    }
+    .c-logo {
+        display: none;
+    }
+
+
+ 
+
+    body>main {
+        grid-area: main;
+    }
+
+    .c-header {
+       
+        grid-area: header;
+        min-width: 100%;
+        display: grid;
+        grid-template-columns: $width-default 1fr 1fr $width-s;
+        grid-template-areas:
+        "logo description description description";
+
+        border-bottom: 1px solid #f6f6f6ff;
+    }
+
+    .c-footer {
+        grid-area: footer;
+    }
+
+    .c-sidebar {
+        display: none;
+    }
+
+    .header__title {
+        grid-area: logo;
+    }
+
+    .header__description {
+        grid-area: description;
+        // min-width: fit-content;
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    body {
+        display: grid;
+    grid-template-columns: $width-default 1fr 1fr $width-s;
+    grid-template-rows: $height-xs auto $height-xs;
+    grid-template-areas:
+      ". header header header"
+      "sidebar main main ."
+      "footer footer footer .";
+    background-color: #fff;
+    }
+  
+  .c-header {
+    grid-area: header;
+  }
+  
+  .c-sidebar {
+    grid-area: sidebar;
+  }  
+  body>main {
+      grid-area: main;
+  }
+
+  .c-footer {
+    grid-area: footer;
+  }
+}
+
+
+@media screen and (max-width: 1085px) {
+    .c-header {
+        .header__title {
+            min-width: max-content;
+            font-size: 18px;
+        }
+
+        .header__description {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .c-header {
+        .header__title {
+            min-width: max-content;
+            font-size: 18px;
+        }
+
+        .header__description {
+            font-size: 18px
+        }
+    }
+}
