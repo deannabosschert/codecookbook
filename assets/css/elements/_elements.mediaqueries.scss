@@ -68,7 +68,7 @@
        .c-page-header {}
    }
 
-   @media screen and (max-width: 450px) {
+   @media screen and (max-width: 1000px) {
        .categoryPage .grid-2-small {
            grid-template-columns: 1fr 1fr;
            grid-template-rows: 1fr;
@@ -78,6 +78,12 @@
            grid-template-columns: 1fr 1fr;
 
        }
+   }
+
+   @media screen and (max-width: 500px) {
+    .categoryPage .grid-2-small {
+        grid-gap: $mobile-s;
+    }
    }
 
    @media screen and (max-width: 550px) {
@@ -137,47 +143,17 @@
            padding: $mobile-default $width-xs $mobile-default $width-xs;
        }
 
-       .categoryPage section {
-           margin-bottom: $mobile-default;
-       }
-
-       .categoryPage .c-page-header {
-           margin-bottom: $mobile-default;
-       }
-
        .categoryPage section .grid-2 {
-           border: 0;
-           border-bottom: 1px solid #67c8f2ff;
+
            padding-bottom: $mobile-default;
-           margin-bottom: $mobile-default;
        }
 
-
-       .categoryPage section .grid-2-3 div:nth-of-type(2n + 1) {
-           flex-direction: row-reverse;
-       }
-
-       // apply to 3rd, 5th, 7th etc
        #design-ontwerp-page {
 
            section:nth-of-type(3),
            section:nth-of-type(5),
            section:nth-of-type(7) {
-               background-color: $black;
-               color: $white;
-               padding-bottom: $mobile-xxl;
-               margin-bottom: $mobile-l;
-               padding-top: $mobile-xl;
 
-               h2,
-               h3,
-               h4,
-               p,
-               li,
-               a,
-               span {
-                   color: $white;
-               }
 
                .tag {
                    color: $brand;
@@ -188,33 +164,6 @@
            }
        }
 
-       #development-coding-guidelines-page {
-
-           section:nth-of-type(2),
-           section:nth-of-type(4),
-           section:nth-of-type(6) {
-               background-color: $black;
-               color: $white;
-               padding-top: $mobile-xl;
-
-               h2,
-               h3,
-               h4,
-               p,
-               li,
-               a,
-               span {
-                   color: $white;
-               }
-
-               .tag {
-                   color: $brand;
-                   //    transform: inherit;
-                   //    writing-mode: initial;
-                   //    text-orientation: initial;
-               }
-           }
-       }
    }
 
    @media screen and (max-width: 600px) {
@@ -236,11 +185,11 @@
            box-shadow: inset 0px 0 1px 1px rgb(31 38 135 / 10%);
            backdrop-filter: blur(4px);
            padding: 0;
-              margin: 0;
+           margin: 0;
 
            div {
                width: 100%;
-            padding: 0;
+               padding: 0;
                margin-bottom: $mobile-s;
            }
        }
@@ -315,6 +264,88 @@
                z-index: 2;
            }
        }
+
+       .categoryPage section .grid-2 {
+           border: 0;
+           border-bottom: 1px solid #67c8f2ff;
+           padding-bottom: $mobile-l;
+           margin-bottom: $mobile-default;
+       }
+
+
+       .categoryPage section {
+           margin-bottom: $mobile-default;
+       }
+
+       .categoryPage .c-page-header {
+           margin-bottom: $mobile-default;
+       }
+
+       // apply to 3rd, 5th, 7th etc
+       #design-ontwerp-page {
+
+           section:nth-of-type(3),
+           section:nth-of-type(5),
+           section:nth-of-type(7) {
+               background-color: $black;
+               color: $white;
+               padding-bottom: $mobile-xxl;
+               margin-bottom: $mobile-l;
+               padding-top: $mobile-xl;
+
+               h2,
+               h3,
+               h4,
+               p,
+               li,
+               a,
+               span {
+                   color: $white;
+               }
+
+           }
+       }
+
+       #development-coding-guidelines-page {
+
+           section:nth-of-type(2),
+           section:nth-of-type(4),
+           section:nth-of-type(6) {
+               background-color: $black;
+               color: $white;
+               padding-top: $mobile-xl;
+
+               h2,
+               h3,
+               h4,
+               p,
+               li,
+               a,
+               span {
+                   color: $white;
+               }
+
+               .tag {
+                   color: $brand;
+                   //    transform: inherit;
+                   //    writing-mode: initial;
+                   //    text-orientation: initial;
+               }
+           }
+       }
+
+       .categoryPage section .grid-2-3 div:nth-of-type(2n + 1) {
+           flex-direction: row-reverse;
+       }
+   }
+
+
+   @media screen and (min-width: 700px) {
+
+       .categoryPage header,
+       .categoryPage section {
+           padding: 0 $width-xs $mobile-xs $width-xs;
+       }
    }
 
    @media screen and (min-width: 800px) {
@@ -330,8 +361,7 @@
        }
 
        main {
-           padding-left: $desktop-m;
-           padding-right: $mobile-l;
+           padding: 0  $width-xs;
            // max-width: $width-page;
        }
 
@@ -357,7 +387,52 @@
        }
    }
 
-   @media screen and (max-width: 1085px) {
+   @media screen, (min-width: 700px) and (max-width: 800px) {
+       .categoryPage article .grid-2-3 {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           grid-template-rows: auto;
+           padding: 0;
+           margin: 0;
+       }
+       .header__description {
+        font-size: 18px
+    }
+       .categoryPage section article .grid-2-3 div:nth-of-type(2n + 1) {
+           flex-direction: row;
+
+           .tag {
+               transform: rotate(180deg);
+           }
+       }
+
+       #design-ontwerp-page {
+
+        section:nth-of-type(3),
+        section:nth-of-type(5),
+        section:nth-of-type(7) {
+
+
+            .tag {
+                color: $brand;
+                transform: rotate(180deg);
+                //    writing-mode: initial;
+                //    text-orientation: initial;
+            }
+        }
+    }
+   }
+
+//    @media screen and (min-width: 800) and (max-width: 820px) {
+//       body .c-header .header__description {
+//               font-size: 16px;
+//        }
+//    }
+
+   @media screen, (min-width: 800px) and (max-width: 1085px) {
+       main {
+        //    padding: 0;
+       }
        .c-header {
            .header__title {
                min-width: max-content;
@@ -368,6 +443,25 @@
                font-size: 16px;
            }
        }
+   }
+
+   @media screen and (min-width: 800px) {
+
+    .categoryPage header, .categoryPage section {
+        //  padding: 0 50px 11px 50px;
+        padding: 0 $width-xs $mobile-xs 0; 
+   }
+
+   .c-page-header {
+       margin-bottom: $desktop-default;
+   }
+   }
+
+   @media screen and (min-width: 1085px) {
+       .categoryPage section, .categoryPage header {
+           padding: 0;
+       }
+     
    }
 
    @media screen and (max-width: 1200px) {
@@ -390,6 +484,12 @@
            padding-left: 32px;
            margin-left: -40px;
        }
+
+       .c-header {
+        .header__description {
+            font-size: 18px
+        }
+       }
    }
 
    @media screen and (max-width: 1220px) {
@@ -399,8 +499,16 @@
                font-size: 18px;
            }
 
-           .header__description {
-               font-size: 18px
-           }
+        
+       }
+   }
+
+   @media screen and (min-width: 1200px) {
+    .categoryPage section, .categoryPage header {
+           padding: 0 $width-xs $desktop-xxs 0;
+       }
+
+       .c-page-header {
+              margin-bottom: $desktop-default;
        }
    }
