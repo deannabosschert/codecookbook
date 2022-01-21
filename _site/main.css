@@ -572,6 +572,10 @@ table td:first-of-type {
   margin-right: 20px;
   color: #313131ff;
 }
+.c-header .header__title a {
+  font-size: inherit;
+  line-height: inherit;
+}
 .c-header .header__description {
   font-size: 22px;
   line-height: unset;
@@ -608,7 +612,7 @@ table td:first-of-type {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 0 24px 0 40px;
+  padding: 24px 24px 0 40px;
   margin-top: 24px;
 }
 
@@ -732,7 +736,7 @@ body.contact a.contact:link {
   line-height: 24px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .Home .c-header-nav .menu-icon .navicon {
     background: #ffffffff;
     color: #202020ff;
@@ -844,39 +848,6 @@ body.contact a.contact:link {
   }
   .c-header-nav li .menu-icon {
     display: none;
-  }
-}
-@media screen and (max-width: 625px) {
-  .c-header-nav ul li a {
-    color: #f6f6f6ff;
-    font-size: 22px;
-    line-height: 40px;
-    font-weight: bold;
-  }
-  .c-header-nav .menu-btn:checked ~ body {
-    max-height: 100vh;
-  }
-  .c-header-nav .menu-btn:checked ~ .menu-icon {
-    z-index: 5;
-  }
-  .c-header-nav .menu-btn:checked ~ .menu {
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #202020ff;
-    width: 100vw;
-    min-height: 100vh;
-    height: 100vh;
-    max-height: 100vh;
-    overflow: hidden;
-    align-content: flex-start;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 5rem 3rem 3rem 1rem;
-    z-index: 2;
   }
 }
 .c-search-bar {
@@ -16213,14 +16184,73 @@ body > main {
   grid-area: footer;
 }
 
-@media screen and (min-width: 550px) {
-  .header__description {
-    display: flex;
-    width: fit-content;
+@media screen and (min-width: 650px) {
+  .c-header {
+    grid-template-columns: 25px auto auto auto 25px;
+    grid-template-areas: ". codeCookbook description hamburger .";
   }
 
   .header__description {
-    display: none;
+    display: flex;
+    width: fit-content;
+    grid-area: description;
+    min-width: fit-content;
+    max-width: 100%;
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .c-header .hb-header__title {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    height: 75px;
+    z-index: 5;
+    color: #ffffffff;
+  }
+  .c-header .hb-header__title a {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    color: inherit;
+  }
+
+  .hb-c-search-bar__input {
+    width: 100%;
+  }
+
+  .c-header-nav ul li a {
+    color: #f6f6f6ff;
+    font-size: 22px;
+    line-height: 40px;
+    font-weight: bold;
+  }
+  .c-header-nav .menu-btn:checked ~ body {
+    max-height: 100vh;
+  }
+  .c-header-nav .menu-btn:checked ~ .menu-icon {
+    z-index: 5;
+  }
+  .c-header-nav .menu-btn:checked ~ .menu {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #202020ff;
+    width: 100vw;
+    min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 55px 55px 55px 0;
+    z-index: 2;
   }
 }
 @media screen and (min-width: 800px) {
@@ -16234,6 +16264,10 @@ body > main {
 
   .c-header {
     grid-area: header;
+  }
+
+  .header-nav__menu {
+    display: none;
   }
 
   .c-sidebar {

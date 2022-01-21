@@ -18,6 +18,12 @@
       line-height: unset;
       margin-right: $desktop-xs;
       color: $gray-1;
+
+
+    a {
+      font-size: inherit;
+      line-height: inherit;
+  }
     }
 
     .header__description {

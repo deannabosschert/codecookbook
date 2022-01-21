@@ -50,6 +50,8 @@
    .header__title {
        grid-area: codeCookbook;
          justify-self: flex-start;
+        //  z-index: 5;
+
    }
 
    .header__description {
@@ -75,10 +77,7 @@
    @media screen and (min-width: 400px) {}
 
    @media screen and (min-width: 550px) {
-       .header__description {
-           display: flex;
-           width: fit-content;
-       }
+   
 
        .c-header {
            //    display: grid;
@@ -92,14 +91,94 @@
        }
 
        .header__description {
-           display: none;
-           //    grid-area: description;
-           // min-width: fit-content;
-           //    max-width: 100%;
+     
+
        }
    }
 
    @media screen and (min-width: 600px) {}
+   
+   @media screen and (min-width: 650px) {
+       .c-header {
+        grid-template-columns: $width-xxs auto auto auto $width-xxs;
+        grid-template-areas:
+            ". codeCookbook description hamburger .";
+       }
+
+    .header__description {
+        display: flex;
+        width: fit-content;
+        grid-area: description;
+        min-width: fit-content;
+           max-width: 100%;
+        padding-left: $mobile-default;
+    }
+   }
+
+
+@media screen and (max-width: 800px) {
+    .c-header .hb-header__title {
+        display: flex;
+        align-items: center;
+    position: absolute;
+    top: 0;
+    left: $width-xxs;
+    height: $height-xs;
+    z-index: 5;
+    color: $white;
+
+    a {
+        font-size: inherit;
+        line-height: inherit;
+        font-weight: inherit;
+        color: inherit;
+    }
+}
+
+.hb-c-search-bar__input {
+    width: 100%;
+}
+
+
+    .c-header-nav {
+      ul li a {
+        color: $gray-3;
+        font-size: 22px;
+        line-height: 40px;
+        font-weight: bold;
+      }
+
+      .menu-btn:checked~body {
+        max-height: 100vh;
+      }
+  
+      .menu-btn:checked~.menu-icon {
+        z-index: 5;
+      }
+  
+      .menu-btn:checked~.menu {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $black;
+        width: 100vw;
+        min-height: 100vh;
+        height: 100vh;
+        max-height: 100vh;
+        overflow: hidden;
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: flex-start;
+        // padding: 5rem 3rem 3rem 1rem;
+        padding: $mobile-xxxl $mobile-xxxl $mobile-xxxl 0;
+        z-index: 2;
+      }
+    }
+  }
+  
 
    @media screen and (min-width: 800px) {
        body {
@@ -115,6 +194,10 @@
 
        .c-header {
            grid-area: header;
+       }
+
+       .header-nav__menu {
+           display: none;
        }
 
        .c-sidebar {
