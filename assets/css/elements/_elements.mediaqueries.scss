@@ -530,6 +530,15 @@
    }
 
 
+   @media screen and (max-width: 500px) {
+       .categoryPage section {
+           padding: 0 $mobile-s $mobile-s $mobile-xs;
+       }
+       p {
+           font-size: 16px;
+           padding-right: $mobile-xxxs;
+       }
+   }
 
    @media screen and (max-width: 600px) {
     .cp_embed_iframe {
@@ -538,6 +547,8 @@
         padding-right: 10px;
         margin-bottom: $mobile-default;
     }
+
+    
 }
 
 
