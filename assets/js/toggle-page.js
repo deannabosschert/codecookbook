@@ -1,5 +1,4 @@
 export default function togglePage(pageID) {
-    console.log(pageID)
     selectElement(`#${pageID}`).addEventListener('click', event => {
         removeAllClasses('.categoryPage', 'pageActive')
         addClass(`${pageID}-page`, 'pageActive')
