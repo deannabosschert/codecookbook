@@ -72,8 +72,14 @@ iframe {
 
 .cp_embed_iframe {
   margin-bottom: $desktop-default;
+  height: $height-xl;
 }
 
 p {
-  max-width: 100%;
+  width: 100%;
+  max-width: $width-xl;
+}
+
+b {
+  font-weight: 500;
 }

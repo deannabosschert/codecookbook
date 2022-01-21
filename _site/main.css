@@ -487,10 +487,16 @@ iframe {
 
 .cp_embed_iframe {
   margin-bottom: 32px;
+  height: 450px;
 }
 
 p {
-  max-width: 100%;
+  width: 100%;
+  max-width: 739px;
+}
+
+b {
+  font-weight: 500;
 }
 
 input {
@@ -16572,7 +16578,7 @@ body > main {
 }
 @media screen and (min-width: 1200px) {
   .categoryPage section, .categoryPage header {
-    padding: 0 50px 16px 0;
+    padding: 0 0 16px 0;
   }
 
   .c-page-header {
