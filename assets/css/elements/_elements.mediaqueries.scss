@@ -531,6 +531,16 @@
 
 
 
+   @media screen and (max-width: 600px) {
+    .cp_embed_iframe {
+        max-width: 95vw;
+        margin-left: -35px;
+        padding-right: 10px;
+        margin-bottom: $mobile-default;
+    }
+}
+
+
    @media screen and (max-width: 1100px) {
        pre {
            max-width: 100%;

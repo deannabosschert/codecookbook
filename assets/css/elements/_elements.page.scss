@@ -67,9 +67,11 @@ article {
 }
 
 iframe {
-  max-width: 95vw;
-  margin-left: -35px;
-  padding-right: 10px;
+  max-width: 100%;
+}
+
+.cp_embed_iframe {
+  margin-bottom: $desktop-default;
 }
 
 p {

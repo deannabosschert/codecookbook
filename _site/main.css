@@ -385,6 +385,10 @@ h2 {
   color: #313131ff;
 }
 
+h4 {
+  margin-bottom: 16px;
+}
+
 p, td {
   font-size: 18px;
   line-height: 24px;
@@ -478,9 +482,11 @@ article {
 }
 
 iframe {
-  max-width: 95vw;
-  margin-left: -35px;
-  padding-right: 10px;
+  max-width: 100%;
+}
+
+.cp_embed_iframe {
+  margin-bottom: 32px;
 }
 
 p {
@@ -16578,6 +16584,14 @@ body > main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cp_embed_iframe {
+    max-width: 95vw;
+    margin-left: -35px;
+    padding-right: 10px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 1100px) {
