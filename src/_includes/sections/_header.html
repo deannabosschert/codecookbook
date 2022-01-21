@@ -1,11 +1,16 @@
+{%- from "system/component.njk" import component -%}
+
 <header class="c-header">
     {% if params.title %}
-    <h1 class="header__title">{{ params.title }}</h1>
+    <h1 class="header__title"><a href="/">{{ params.title }}</a></h1>
     {% endif %}
 
     {% if params.description %}
     <p class="header__description">{{ params.description }}</p>
     {% endif %}
 
+    {{ component('organisms', '_headerNavigation', {
+       logo: 'assets/img/logos/active-collective_logo_white.svg'
+    }) }}
 
 </header>

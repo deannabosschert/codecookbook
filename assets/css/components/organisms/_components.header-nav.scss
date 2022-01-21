@@ -49,7 +49,7 @@ body.contact a.contact:link {
 }
 
 // HAMBURGER MENU
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .Home .c-header-nav .menu-icon .navicon {
     background: $white;
     color: $black;
@@ -185,45 +185,6 @@ body.contact a.contact:link {
       .menu-icon {
         display: none;
       }
-    }
-  }
-}
-
-@media screen and (max-width: 625px) {
-  .c-header-nav {
-    ul li a {
-      color: $gray-3;
-      font-size: 22px;
-      line-height: 40px;
-      font-weight: bold;
-    }
-
-    .menu-btn:checked~body {
-      max-height: 100vh;
-    }
-
-    .menu-btn:checked~.menu-icon {
-      z-index: 5;
-    }
-
-    .menu-btn:checked~.menu {
-      flex-direction: column;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: $black;
-      width: 100vw;
-      min-height: 100vh;
-      height: 100vh;
-      max-height: 100vh;
-      overflow: hidden;
-      align-content: flex-start;
-      align-items: flex-start;
-      justify-content: flex-start;
-      padding: 5rem 3rem 3rem 1rem;
-      z-index: 2;
     }
   }
 }

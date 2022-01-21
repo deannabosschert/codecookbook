@@ -3,14 +3,14 @@
         "overview": [
             {
             "introduction": [
-                {"project info" : ["concept"]},
+                {"project-info" : ["concept"]},
                 {"visuals" : ["screenshots"]}
              
             ]},
             {
             "progress": [
                 {"current": ["milestones","requirements", "system overview"]},
-                {"to do": ["now", "future"]}
+                {"to-do": ["now", "future"]}
             ]}
         ],
         "design": [{
@@ -44,8 +44,8 @@
         ],
         "development": [
             {
-                "getting started": [
-                    {"development timeline": ["workflow overview", "tools overview", "todo’s"]}
+                "getting-started": [
+                    {"development-timeline": ["workflow overview", "tools overview", "todo’s"]}
                 ]
             },
             {
@@ -58,27 +58,27 @@
             },
             {
                 "coding-guidelines": [
-                    {"best practices": ["list"]},
-                    {"programming principles": ["KISS", "DRY", "YAGNI", "SOLID", "SoC", "APO", "LoD"]},
+                    {"best-practices": ["list"]},
+                    {"programming-principles": ["KISS", "DRY", "YAGNI", "SOLID", "SoC", "APO", "LoD"]},
                     {"naming-conventions": ["casing"]},
                     {"formatting": ["ESlint", "code comments", "commented out code", "documentation"]},
-                    {"html": ["semantics", "accessibility"]},
-                    {"css": ["scss", "selectors", "z-index"]},
+                    {"HTML": ["semantics", "accessibility"]},
+                    {"CSS": ["sCSS", "selectors", "z-index"]},
                     {"JavaScript": ["pure functions", "arrow functions"]}
                 ]
             },
             {
                 "git": [
-                   {"project management": ["flow overview", "issues"]},
-                   {"version control": ["branches", "commit messaging", "gitignore"]},
+                   {"project-management": ["flow overview", "issues"]},
+                   {"version-control": ["branches", "commit messaging", "gitignore"]},
                    {"collaboration": ["GitHub/GitLab", "pull requests", "code reviews"]}
                 ]
             },
             {
                 "deployment": [
                     {"environments": ["acceptatie/productie"]},
-                    {"CI/CD": ["continuous integration", "continuous delivery", "continuous deployment"]},
-                    {"connection met server": ["server", "database", "authentication", "commands"]}
+                    {"CI-CD": ["continuous integration", "continuous delivery", "continuous deployment"]},
+                    {"server-connection": ["server", "database", "authentication", "commands"]}
                 ]
             }
         ],
@@ -91,7 +91,7 @@
             },
             {
                 "code-snippets": [
-                    {"HTML/CSS": ["navigation", "forms", "animations"]},
+                    {"HTML-CSS": ["navigation", "forms", "animations"]},
                     {"JavaScript": ["sign-up", "login", "sockets"]},
                     {"Node.js": ["api", "authentication", "database"]}
                 ]
@@ -99,8 +99,8 @@
             {
                 "tools": [
                     {"applications": ["cleanshot", "bettertouchtool", "postman-app"]},
-                    {"text editors": ["visual studio code", "intellj idea", "atom"]},
-                    {"useful websites/articles": ["design", "development", "updates"]}
+                    {"text-editors": ["visual studio code", "intellj idea", "atom"]},
+                    {"useful-websites-articles": ["design", "development", "updates"]}
                 ]
             },
             {
