@@ -9,7 +9,7 @@
   {% endif %}
     {{ component('sections', '_pageHeader', {
     title: params.title,
-    description: ''
+    description: params.description
     }) }}
 
     {% include "../../pages/" + category + "/" + page + ".html" %}

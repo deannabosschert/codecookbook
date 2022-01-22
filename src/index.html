@@ -6,10 +6,14 @@ parent:
 {%- from "system/page.njk" import page -%}
 {%- from "system/function.njk" import function -%}
 {% set sideBar = navigation.sidebar %}
+{% set paginaOmschrijvingen = paginadescriptions.descriptions %}
 
 {% for categoryKey, category in sideBar %}{% for subcategory in category %}{% for itemKey, item in subcategory %}
+
+
 {{ page(categoryKey, itemKey, {
       title: itemKey,
+      description: paginaOmschrijvingen[categoryKey][itemKey],
       parent: categoryKey,
       page: itemKey,
       figma: figma,
