@@ -11,7 +11,11 @@
  
     <article class="contentSummary">
         <h3>Figma-link geheel project</h3>
-        {{ figma.dev.design | safe }}
+        {{ component('atoms', '_figmaEmbed', {
+            src: 'https%3A%2F%2Fwww.figma.com%2Ffile%2FC88x6AnvQ1SQEWzFlDod89%2FProces%3Fnode-id%3D18%253A3',
+            height: 450,
+            width: 800
+            }) }}
     </article>
     <div class="grid-2">
         <article>
@@ -48,7 +52,11 @@
     <div class="grid-2">
         <article>
             <h3>Figma-embed</h3>
-            {{ params.figma.fonts | safe }}
+            {{ component('atoms', '_figmaEmbed', {
+                src: 'https%3A%2F%2Fwww.figma.com%2Ffile%2FC88x6AnvQ1SQEWzFlDod89%2FProces%3Fnode-id%3D18%253A4',
+                height: 450,
+                width: 800
+            }) }}
         </article>
         <article class="license-info">
             <h3>License information</h3>
