@@ -83,3 +83,7 @@ p {
 b {
   font-weight: 500;
 }
+
+.page-header__description, .page-header__info__description {
+  max-width: 100%;
+}

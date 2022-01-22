@@ -3,6 +3,10 @@
         "overview": [
             {
             "introduction": [
+                {"Code Cookbook" : ["Wat", "Wie", "Hoe", "Waar", "Wanneer", "Waarom"]}             
+            ]},      
+            {
+            "project": [
                 {"project-info" : ["concept"]},
                 {"visuals" : ["screenshots"]}
              
@@ -35,7 +39,7 @@
                 ]
             },
             {
-                "projectinformatie": [
+                "context": [
                     {"visie": [ "visie", "doelgroep", "testscenario's"]},
                     {"outlines": ["functioneel ontwerp", "technisch ontwerp", "testscenario's"]},
                     {"componenten": ["definities", "complexiteit", "notities"]}

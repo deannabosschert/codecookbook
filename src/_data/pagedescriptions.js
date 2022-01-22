@@ -3,13 +3,14 @@ module.exports = function() {
       resolve({
         "overview": {
             "introduction": "test!!!!",
+            "project": "test!!!!",
             "progress": "test!!!!"
         },
         "design": {
             "ontwerp": "test!!!!",
             "bestanden": "test!!!!",
             "variabelen": "test!!!!",
-            "projectinformatie": "test!!!!"
+            "context": "test!!!!"
         },
         "development": {
             "getting-started": "test!!!!",

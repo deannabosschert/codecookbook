@@ -1,7 +1,37 @@
 #design-bestanden-page {
 
+
+.contentSummary {
+    width: max-content;
+    min-width: min-content;
+
+    h2, h3, p, a, button {
+        color: $white;
+    }
+
+    .alles-download {
+        background-color: $brand;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        border-radius: 5px;
+        a {
+            min-width: max-content;
+            color: $white;
+            font-weight: 500;
+            width: 160px;
+            padding: 10px 26px 10px 10px ;
+            
+    
+        }
+    }
+ 
+}
     p {
-        width:  $width-xxl;
+        // width:  $width-xxl;
+        max-width: 100%;
+        
     }
 
     ul {
@@ -28,5 +58,11 @@
         padding: 8px;
         width: 36px;
         height: 34px;
+    }
+
+    @media screen and (max-width: 800px) {
+        .contentSummary {
+            min-width: 100%;
+        }
     }
 }

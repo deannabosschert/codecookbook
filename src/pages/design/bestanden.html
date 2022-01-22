@@ -1,3 +1,26 @@
+{%- from "system/component.njk" import component -%}
+<article class="contentSummary">
+    <h2>Alles downloaden</h2>
+    <ul class="grid-3">
+        <li class="alles-download"><a href="/assets/alles.zip" download="alle-assets">
+                <img class="download-icon" src="/assets/img/icons/download.svg">Assets
+            </a>
+        </li>
+        {% for asset in ["fonts", "files"] -%}
+        <li class="alles-download"><a href="/assets/{{asset}}/alles.zip" download="assets-{{asset}}">
+                <img class="download-icon" src="/assets/img/icons/download.svg">{{asset | title}}
+            </a>
+        </li>
+        {%- endfor %} {% for asset in ["icons", "logos", "afbeeldingen"] -%}
+        <li class="alles-download"><a href="/assets/img/{{asset}}/alles.zip" download="assets-{{asset}}">
+                <img class="download-icon" src="/assets/img/icons/download.svg">{{asset | title}}
+            </a>
+        </li>
+        {%- endfor %}
+
+    </ul>
+</article>
+
 <section id="design-bestanden-subpage-fonts">
     <h2>fonts</h2>
     <article>

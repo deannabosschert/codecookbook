@@ -13,6 +13,7 @@ module.exports = (eleventyConfig) => {
 
 
   eleventyConfig.addPassthroughCopy('assets/files')
+  eleventyConfig.addPassthroughCopy('assets/alles.zip')
   eleventyConfig.addPassthroughCopy('./src/favicon.ico')
   
 

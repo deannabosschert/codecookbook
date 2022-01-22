@@ -1,14 +1,15 @@
 {
     "descriptions": {
         "overview": {
-            "introduction": "Een korte omschrijving van wat Code Cookbook inhoudt, wat het doet en waarvoor ingezet kan worden.",
-            "progress": "Hier kan de"
+            "introduction": "Een korte omschrijving van wat Code Cookbook inhoudt, wat het doet, waarvoor het ingezet kan worden en hoe het praktisch te gebruiken valt.",
+            "project": "test!!!!",
+            "progress": "Op deze pagina wordt de huidge stand/status van het project weergegeven. Onderstaande data is gelinkt aan de GitHub-repository en wordt dan ook live-geüpdatet."
         },
         "design": {
-            "ontwerp": "test!!!!",
-            "bestanden": "test!!!!",
-            "variabelen": "test!!!!",
-            "projectinformatie": "test!!!!"
+            "ontwerp": "Dit is het ontwerp van het project. Hierin zijn ook de basis-elementen van de pagina's die in het project gebruikt worden, vastgelegd en links naar (delen van het) design verzameld.",
+            "bestanden": "Alle assets voor dit project zijn hier verzameld en met één klik te downloaden.",
+            "variabelen": "Dit zijn alle variabelen die nodig zijn voor het ontwerp van dit project. Als ontwerper kun je zo variabelen toevoegen of verwijderen, en als developer hoef je deze waarden alleen nog maar te copy-pasten naar een SCSS-file.",
+            "context": "Overige context. Op deze pagina nog een aantal dingen die nodig zijn om te weten, zoals: wat de doelgroep is van dit product, wat de visie is in dit project en wat de testscenarios zijn."
         },
         "development": {
             "getting-started": "test!!!!",
