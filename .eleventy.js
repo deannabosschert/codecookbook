@@ -9,6 +9,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy('assets/js/toggle-page.js')
   eleventyConfig.addPassthroughCopy('assets/js/hb-toggle-page.js')
   eleventyConfig.addPassthroughCopy('assets/js/charts')
+  eleventyConfig.addPassthroughCopy('assets/js/github-api.js')
 
 
   eleventyConfig.addPassthroughCopy('assets/files')

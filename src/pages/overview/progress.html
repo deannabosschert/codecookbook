@@ -1,7 +1,17 @@
+{%- from "system/component.njk" import component -%}
+
 <section id="overview-progress-subpage-current">
     <h2>current</h2>
     <article>
         <h3 id="overview-progress-subpage-current-milestones">milestones</h3>
+    </article>
+    <article>
+        <h3 id="overview-progress-subpage-current-milestones">issues</h3>
+             {{ component('atoms', '_githubEmbed', {
+                testen: 'test'
+            }) }}
+        <!-- <iframe src="https://deannabosschert.github.io/functional-programming/?owner=efcl&repo=efcl.github.io&limit=10&state=closed"
+        allowtransparency="true" frameborder="0" scrolling="0" width="100%"></iframe> -->
     </article>
     <article>
         <h3 id="overview-progress-subpage-current-requirements">requirements</h3>

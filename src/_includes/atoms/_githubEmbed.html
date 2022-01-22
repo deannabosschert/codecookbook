@@ -1,0 +1,8 @@
+{%- from "system/function.njk" import function -%}
+
+{{ function('github-api', 'true', {
+    data: {
+        repo: '/functional-programming',
+        tag: '/issues'
+    }
+}) }}

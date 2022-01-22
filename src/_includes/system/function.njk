@@ -1,10 +1,25 @@
-
 {# function equals the file in assets/js #}
-{%- macro function(name, params) -%}
+{%- macro function(name, args, params) -%}
 
-    <script type="module">
-    import functionName from '../../../assets/js/{{name}}.js'
-    functionName('{{params.pageID}}')
-    </script>
+    {% if args == 'true' %}
+    <h1>{{params.data.repo }}</h1>
+    <h1>{{params.data.tag | dump}}</h1>
+          <script type="module">
+            import githubEmbed from '../../../assets/js/{{name}}.js'
+            githubEmbed('{{params.data.repo}}', '{{params.data.tag}}')
+       
+        </script>
+    {% elif args == 'false' %}
+        <script type="module">
+            import togglePage from '../../../assets/js/{{name}}.js'
+            togglePage('{{params.pageID}}')
+        </script>
+
+    {% else %}
+        <script type="module">
+            import functionName from '../../../assets/js/{{name}}.js'
+            functionName('{{params.pageID}}')
+        </script>
+    {% endif %}
 
 {%- endmacro -%}
