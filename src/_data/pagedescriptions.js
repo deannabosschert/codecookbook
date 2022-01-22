@@ -23,7 +23,8 @@ module.exports = function() {
             "examples": "test!!!!",
             "code-snippets": "test!!!!",
             "tools": "test!!!!",
-            "libraries": "test!!!!"
+            "libraries": "test!!!!",
+            "toffe-dingen": "test!!!!"
         }
     }
 );

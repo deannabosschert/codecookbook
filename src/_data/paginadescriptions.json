@@ -2,7 +2,7 @@
     "descriptions": {
         "overview": {
             "introduction": "Een korte omschrijving van wat Code Cookbook inhoudt, wat het doet, waarvoor het ingezet kan worden en hoe het praktisch te gebruiken valt.",
-            "project": "test!!!!",
+            "project": "Projectspecifieke informatie. Wanneer er een nieuw project wordt gemaakt, wordt deze pagina gevuld met de relevante informatie om snel een indruk te krijgen van wat het inhoudt.",
             "progress": "Op deze pagina wordt de huidge stand/status van het project weergegeven. Onderstaande data is gelinkt aan de GitHub-repository en wordt dan ook live-geüpdatet."
         },
         "design": {
@@ -12,17 +12,18 @@
             "context": "Overige context. Op deze pagina nog een aantal dingen die nodig zijn om te weten, zoals: wat de doelgroep is van dit product, wat de visie is in dit project en wat de testscenarios zijn."
         },
         "development": {
-            "getting-started": "test!!!!",
-            "checklists": "test!!!!",
-            "coding-guidelines": "test!!!!",
-            "git": "test!!!!",
-            "deployment": "test!!!!"
+            "getting-started": "Hoe wordt er te werk gegaan als developer? Hier wordt visueel weergeven hoe het project werkt en hoe je ermee moet werken.",
+            "checklists": "Kwaliteitscontrole; voldoet het project aan de Code Cookbook-standaarden? Hier wordt visueel weergegeven wat er nog niet is gedaan en wat er nog moet worden gedaan.",
+            "coding-guidelines": "Welke industriestandaarden zorgen voor een kwalitatief goede code, waarbij de technical debt wordt verlaagd en de code een betere structuur heeft? Hier een aantal afgesproken standaarden om als developer naar te werken.",
+            "git": "Voor versiebeheer van code werken we met git. Dit wordt gekoppeld aan een GUI zoals GitHub of GitLab om de code mee te beheren en in samen te werken. Er zijn hierin een aantal features die wenselijk zijn om te gebruiken aangezien het transparantie en collaboration bevordert; deze staan hieronder uitgelegd.",
+            "deployment": "Hoe wordt het project gedeployed naar een online omgeving? Onder staan de stappen om te volgen per use case."
         },
         "resources": {
-            "examples": "test!!!!",
-            "code-snippets": "test!!!!",
-            "tools": "test!!!!",
-            "libraries": "test!!!!"
+            "examples": "Met Code Cookbook zijn ook templateprojecten beschikbaar. Hierin zijn ook de basis-elementen van de pagina's die in het project gebruikt worden, vastgelegd en links naar (delen van het) design verzameld en gepresenteerd als een proof of concept. Aangezien ze re-usable zijn opgesteld, zijn deze ook beschikbaar voor andere projecten als template.",
+            "code-snippets": "Code Snippets zijn een manier om code te weergeven en op te slaan, die je als developer later snel kan gebruiken wanneer je een feature moet implementeren. Neem nou een hamburger-menu toggle; dit komt op veel verschillende sites voor en wil je graag zo vanilla mogelijk kunnen overnemen. Deze snippets zijn volgens de Code Cookbook-standaarden geschreven en zijn beschikbaar voor de verschillende use cases. Ze worden gehost op CodePen en live geüpdatet.",
+            "tools": "Welke tools worden gebruikt om een project mee te ontwikkelen, of kunnen handig zijn om te gebruiken? Onder zijn een aantal vermeld, maar deze lijst is nooit 'volledig'. Kom je handige tools tegen; voeg deze dan toe!",
+            "libraries": "Welke libraries of plugins gebruiken we in onze projecten, of kunnen in de toekomst handig zijn om te gebruiken?",
+            "toffe-dingen": "Kom je een site tegen die je nu nog niet vast kunt gebruiken of implementeren, maar wat wel interessant is voor later? Dan kun je deze ook hier plaatsen op de 'toffe dingen'-pagina. Deze pagina is een verzameling van websites die je kunt gebruiken als inspiratie, als onderzoek of als broncode."
         }
     }
 }
