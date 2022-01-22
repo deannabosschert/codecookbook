@@ -76,12 +76,13 @@ function makeHTML(data) {
             return card
         } else if (item.color && item.name) { // labels
             let card = `
-        <article class="github-embed-card">
+        <article class="github-embed-card" style="border:5px solid #${item.color}">
            <div class="github-embed-card-header">
                <h4>${item.name}</h4>
-               <p>${item.color}</p>  
+               <p>label color: <span style="color: #${item.color}">#${item.color}</span></p>  
            </div>
             <div class="card-body">
+            <b><p>Used for:</p></b>
                <p>${item.description}</p>
                <a href="${item.url}" target="_blank" >link naar label #${item.id}</a>
            </div>

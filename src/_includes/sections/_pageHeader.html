@@ -4,8 +4,11 @@
     <h1 class="page-header__title">{{ params.title }}</h1>
     {% endif %}
     <div class="page-header__info">
-      {% if params.description %}
-        <p class="page-header__info__description">{{ params.description }}</p>
-      {% endif %}
+        {% if params.subtitle %}
+        <h2 class="page-header__subtitle">{{ params.subtitle }}</h2>
+        {% endif %}
+        {% if params.description %}
+        <p class="page-header__description page-header__info__description">{{ params.description }}</p>
+        {% endif %}
     </div>
 </header>

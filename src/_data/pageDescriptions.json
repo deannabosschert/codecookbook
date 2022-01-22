@@ -1,0 +1,27 @@
+{
+    "descriptions": {
+        "overview": {
+            "introduction": "Een korte omschrijving van wat Code Cookbook inhoudt, wat het doet en waarvoor ingezet kan worden. ",
+            "progress": "Hier kan de"
+        },
+        "design": {
+            "ontwerp": "test!!!!",
+            "bestanden": "test!!!!",
+            "variabelen": "test!!!!",
+            "projectinformatie": "test!!!!"
+        },
+        "development": {
+            "getting-started": "test!!!!",
+            "checklists": "test!!!!",
+            "coding-guidelines": "test!!!!",
+            "git": "test!!!!",
+            "deployment": "test!!!!"
+        },
+        "resources": {
+            "examples": "test!!!!",
+            "code-snippets": "test!!!!",
+            "tools": "test!!!!",
+            "libraries": "test!!!!"
+        }
+    }
+}
