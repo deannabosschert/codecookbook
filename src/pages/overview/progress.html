@@ -4,28 +4,43 @@
     <h2>current</h2>
     <article>
         <h3 id="overview-progress-subpage-current-milestones">milestones</h3>
+        {{ component('atoms', '_githubEmbed', {
+            data: {
+                repo: 'functional-programming',
+                tag: 'milestones',
+                state: 'all'
+            }
+        }) }}
     </article>
-    <article>
-        <h3 id="overview-progress-subpage-current-milestones">issues</h3>
-             {{ component('atoms', '_githubEmbed', {
-                testen: 'test'
-            }) }}
-        <!-- <iframe src="https://deannabosschert.github.io/functional-programming/?owner=efcl&repo=efcl.github.io&limit=10&state=closed"
-        allowtransparency="true" frameborder="0" scrolling="0" width="100%"></iframe> -->
-    </article>
-    <article>
+    <!-- <article>
         <h3 id="overview-progress-subpage-current-requirements">requirements</h3>
     </article>
     <article>
         <h3 id="overview-progress-subpage-current-system overview">system overview</h3>
-    </article>
+    </article> -->
 </section>
 <section id="overview-progress-subpage-to-do">
     <h2>to-do</h2>
+    <p>To-do's are presented as repository issues and directly pulled from the project's GitHub repo. Developers can change the project link in 'pages'.</p>
     <article>
         <h3 id="overview-progress-subpage-to-do-now">now</h3>
+        {{ component('atoms', '_githubEmbed', {
+            data: {
+                repo: 'codecookbook',
+                tag: 'issues',
+                state: 'open'
+            }
+        }) }}
     </article>
     <article>
-        <h3 id="overview-progress-subpage-to-do-future">future</h3>
+        <h3>done</h3>
+        {{ component('atoms', '_githubEmbed', {
+            data: {
+                repo: 'functional-programming',
+                tag: 'issues',
+                state: 'closed'
+            }
+        }) }}
     </article>
+
 </section>

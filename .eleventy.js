@@ -23,9 +23,14 @@ module.exports = (eleventyConfig) => {
 
   const fg = require('fast-glob')
   const logos = fg.sync(['**/partners/*', '!**/_site'])
+  const componentenIMG = fg.sync(['**/componenten-foto/*', '!**/_site'])
   
   eleventyConfig.addCollection('partnerLogos', (collection) => {
     return logos
+  })
+  
+  eleventyConfig.addCollection('componentImages', (collection) => {
+    return componentenIMG
   })
 
 

@@ -1,8 +1,25 @@
 {%- from "system/function.njk" import function -%}
 
-{{ function('github-api', 'true', {
-    data: {
-        repo: '/functional-programming',
-        tag: '/issues'
-    }
-}) }}
+{% if params.data.state %}
+    <section id="{{params.data.repo}}-{{params.data.tag}}-{{params.data.state}}" class="grid-3 github-embed-cards"> 
+        {{ function('github-api', 'true', {
+            data: {
+                containerID: params.data.repo + '-' + params.data.tag + '-' + params.data.state,
+                repo: '/' + params.data.repo,
+                tag: '/' + params.data.tag,
+                state: params.data.state
+            }
+        }) }}
+        {% else %}
+    <section id="{{params.data.repo}}-{{params.data.tag}}" class="grid-3 github-embed-cards"> 
+        {{ function('github-api', 'true', {
+            data: {
+                containerID: params.data.repo + '-' + params.data.tag,
+                repo: '/' + params.data.repo,
+                tag: '/' + params.data.tag,
+                state: ''
+            }
+        }) }}
+{% endif %}
+
+</section>

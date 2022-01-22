@@ -2,12 +2,9 @@
 {%- macro function(name, args, params) -%}
 
     {% if args == 'true' %}
-    <h1>{{params.data.repo }}</h1>
-    <h1>{{params.data.tag | dump}}</h1>
           <script type="module">
             import githubEmbed from '../../../assets/js/{{name}}.js'
-            githubEmbed('{{params.data.repo}}', '{{params.data.tag}}')
-       
+            githubEmbed('{{params.data.containerID}}', '{{params.data.repo}}', '{{params.data.tag}}', '{{params.data.state}}')
         </script>
     {% elif args == 'false' %}
         <script type="module">

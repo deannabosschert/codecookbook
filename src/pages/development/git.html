@@ -1,3 +1,5 @@
+{%- from "system/component.njk" import component -%}
+
 <section id="development-git-subpage-project-management">
     <h2>project-management</h2>
     <article>
@@ -17,12 +19,20 @@
             alt="screenshot of our issue templates" />
             <h4 id="labels">Labels</h4>
 
-            <p>We hebben labels gebruikt om overzicht te creëren betreft wat voor soorten taken we hebben; zo kunnen we ook onze planning hierop aan laten sluiten.
+            <p>We gebruiken om overzicht te creëren betreft wat voor soorten taken we hebben; zo kunnen we ook onze planning hierop aan laten sluiten.
                 Bijvoorbeeld: <code>feature</code>, <code>bugfix</code>, <code>refactoring</code>, <code>docs</code>, <code>release</code>, <code>maintenance</code> etc.
                 Deze labels kunnen we gebruiken om issues te categoriseren.
 
             De een doet bijvoorbeeld het liefst documentatietaken achter elkaar, of codeertaken achter elkaar, en we hebben allemaal soms nogal wat moeite om van focus te switchen dus dit helpt wel met prioriteren.</p>
-            
+            {{ component('atoms', '_githubEmbed', {
+                data: {
+                    repo: 'functional-programming',
+                    tag: 'labels',
+                    state: ''
+                }
+            }) }}
+
+
             <img src="https://github.com/deannabosschert/Matcher/blob/main/src/img/documentation/workflow/issue_labels.png" alt="screenshot of our assigned labels" />
             
             <h4 id="milestones">Milestones</h4>
