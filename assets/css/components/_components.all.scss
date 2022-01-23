@@ -78,3 +78,33 @@ pre {
 .acronym {
   color: $brand;
 }}
+
+
+#overview-project-page {
+    .grid-2 {
+        grid-gap: $desktop-m $desktop-default;
+    }
+
+    .grid-3 {
+        margin-bottom: $desktop-xxxl;
+
+    
+        figcaption {
+            padding: $desktop-xs;
+        }
+    }
+
+    figure {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 5px;
+        box-shadow: inset 0px 0 1px 1px rgb(31 38 135 / 10%);
+        backdrop-filter: blur(4px);
+        padding: $desktop-xxs;
+
+        img {
+            border-bottom: 0.5px solid $brand;
+            padding-bottom: $desktop-xxs;
+        }
+    }
+}

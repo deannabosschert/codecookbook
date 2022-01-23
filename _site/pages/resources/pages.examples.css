@@ -1,3 +1,8 @@
-
+#resources-examples-page #CMS-template-Netlify-community, #resources-examples-page #CMS-template-AC-community {
+  display: flex;
+}
+#resources-examples-page h5 {
+  font-size: 18px;
+}
 
 /*# sourceMappingURL=pages.examples.css.map */

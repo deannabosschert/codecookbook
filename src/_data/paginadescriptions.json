@@ -2,6 +2,7 @@
     "descriptions": {
         "overview": {
             "introduction": "Een korte omschrijving van wat Code Cookbook inhoudt, wat het doet, waarvoor het ingezet kan worden en hoe het praktisch te gebruiken valt.",
+            "workflow": "Informatie over de werkwijze bij Active Collective. Hier kun je snel een idee mee krijgen van hoe de teams te werk gaan.",
             "project": "Projectspecifieke informatie. Wanneer er een nieuw project wordt gemaakt, wordt deze pagina gevuld met de relevante informatie om snel een indruk te krijgen van wat het inhoudt.",
             "progress": "Op deze pagina wordt de huidge stand/status van het project weergegeven. Onderstaande data is gelinkt aan de GitHub-repository en wordt dan ook live-geüpdatet."
         },

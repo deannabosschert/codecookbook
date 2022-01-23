@@ -12,4 +12,11 @@ img {
   object-fit: contain;
 }
 
-
+figure {
+  figcaption {
+    color: $black;
+    text-align: center;
+  }
+  max-width: 100%;
+  max-height: fit-content;
+}

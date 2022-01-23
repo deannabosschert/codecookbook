@@ -519,6 +519,15 @@ img {
   object-fit: contain;
 }
 
+figure {
+  max-width: 100%;
+  max-height: fit-content;
+}
+figure figcaption {
+  color: #202020ff;
+  text-align: center;
+}
+
 .btn--primary {
   box-shadow: 0 0 0 2px rgba(8, 43, 75, 0.45);
   background-image: linear-gradient(to right, #8ebafc -10%, #8eb4fc 60%, #e0eaec 99%, #8294b5 155%);
@@ -15822,6 +15831,28 @@ pre code {
   color: #67c8f2ff;
 }
 
+#overview-project-page .grid-2 {
+  grid-gap: 40px 32px;
+}
+#overview-project-page .grid-3 {
+  margin-bottom: 84px;
+}
+#overview-project-page .grid-3 figcaption {
+  padding: 20px;
+}
+#overview-project-page figure {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+  box-shadow: inset 0px 0 1px 1px rgba(31, 38, 135, 0.1);
+  backdrop-filter: blur(4px);
+  padding: 16px;
+}
+#overview-project-page figure img {
+  border-bottom: 0.5px solid #67c8f2ff;
+  padding-bottom: 16px;
+}
+
 /* ==========================================================================
    #HIDE
    ========================================================================== */
@@ -16046,17 +16077,18 @@ pre code {
 #development-deployment-page h4 {
   margin-bottom: 24px;
 }
-#development-deployment-page .grid-3 {
+
+.grid-3.stappenplan {
   max-height: 100%;
   grid-gap: 64px 56px;
   padding: 32px;
 }
-#development-deployment-page .grid-3 img {
+.grid-3.stappenplan img {
   margin-bottom: 0;
   max-height: 100%;
   max-width: 100%;
 }
-#development-deployment-page .grid-3 .step {
+.grid-3.stappenplan .step {
   display: grid;
   grid-template-columns: min-content;
   grid-template-rows: auto auto;
@@ -16069,11 +16101,11 @@ pre code {
   backdrop-filter: blur(4px);
   padding: 16px;
 }
-#development-deployment-page .step__heading {
+.grid-3.stappenplan .step__heading {
   grid-area: stepHeader;
   margin-bottom: 0;
 }
-#development-deployment-page .step__number {
+.grid-3.stappenplan .step__number {
   grid-area: stepNumber;
   width: fit-content;
   margin-right: 8px;
@@ -16090,8 +16122,15 @@ pre code {
   word-spacing: 0px;
   text-transform: none;
 }
-#development-deployment-page .step__image {
+.grid-3.stappenplan .step__image {
   grid-area: stepImage;
+}
+
+#resources-examples-page #CMS-template-Netlify-community, #resources-examples-page #CMS-template-AC-community {
+  display: flex;
+}
+#resources-examples-page h5 {
+  font-size: 18px;
 }
 
 .categoryPage h1:first-letter,
