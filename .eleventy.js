@@ -9,9 +9,11 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy('assets/js/toggle-page.js')
   eleventyConfig.addPassthroughCopy('assets/js/hb-toggle-page.js')
   eleventyConfig.addPassthroughCopy('assets/js/charts')
+  eleventyConfig.addPassthroughCopy('assets/js/github-api.js')
 
 
   eleventyConfig.addPassthroughCopy('assets/files')
+  eleventyConfig.addPassthroughCopy('assets/alles.zip')
   eleventyConfig.addPassthroughCopy('./src/favicon.ico')
   
 
@@ -22,9 +24,14 @@ module.exports = (eleventyConfig) => {
 
   const fg = require('fast-glob')
   const logos = fg.sync(['**/partners/*', '!**/_site'])
+  const componentenIMG = fg.sync(['**/componenten-foto/*', '!**/_site'])
   
   eleventyConfig.addCollection('partnerLogos', (collection) => {
     return logos
+  })
+  
+  eleventyConfig.addCollection('componentImages', (collection) => {
+    return componentenIMG
   })
 
 

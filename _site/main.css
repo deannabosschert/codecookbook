@@ -499,6 +499,10 @@ b {
   font-weight: 500;
 }
 
+.page-header__description, .page-header__info__description {
+  max-width: 100%;
+}
+
 input {
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
   border: 0.2px solid #ebecf0;
@@ -15847,8 +15851,29 @@ pre code {
   margin: 0;
 }
 
+#design-bestanden-page .contentSummary {
+  width: max-content;
+  min-width: min-content;
+}
+#design-bestanden-page .contentSummary h2, #design-bestanden-page .contentSummary h3, #design-bestanden-page .contentSummary p, #design-bestanden-page .contentSummary a, #design-bestanden-page .contentSummary button {
+  color: #ffffffff;
+}
+#design-bestanden-page .contentSummary .alles-download {
+  background-color: #67c8f2ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+#design-bestanden-page .contentSummary .alles-download a {
+  min-width: max-content;
+  color: #ffffffff;
+  font-weight: 500;
+  width: 160px;
+  padding: 10px 26px 10px 10px;
+}
 #design-bestanden-page p {
-  width: 878px;
+  max-width: 100%;
 }
 #design-bestanden-page ul {
   padding: 24px;
@@ -15869,6 +15894,11 @@ pre code {
   padding: 8px;
   width: 36px;
   height: 34px;
+}
+@media screen and (max-width: 800px) {
+  #design-bestanden-page .contentSummary {
+    min-width: 100%;
+  }
 }
 
 .categoryPage .design-variabelen-subpage-distances .grid-2 {
@@ -15968,11 +15998,14 @@ pre code {
   color: #202020ff;
 }
 
-#development-checklists-page ul li:before {
+#development-checklists-page .list-icons li:before {
   content: url(/assets/img/icons/checkbox-checked.png);
   color: #67c8f2ff;
   height: inherit;
   margin-right: 11px;
+}
+#development-checklists-page .checklist input {
+  margin-right: 8px;
 }
 
 #development-git-page article, #development-git-page img {
@@ -16678,6 +16711,29 @@ body > main {
     font-size: 24px;
     line-height: 26px;
     max-width: 100%;
+  }
+}
+.categoryPage .tldr {
+  max-width: 100%;
+  margin-bottom: 20px;
+  height: 120px;
+}
+
+@media screen and (min-width: 400px) {
+  .categoryPage .tldr {
+    max-width: 100%;
+    height: 150px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .categoryPage .tldr {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .categoryPage .tldr {
+    margin-bottom: 32px;
+    height: 300px;
   }
 }
 #preview-pane {

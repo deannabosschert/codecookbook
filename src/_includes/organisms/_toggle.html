@@ -34,6 +34,6 @@
 {%- from "system/function.njk" import function -%}
 
 
-{{ function('toggle-page', {
+{{ function('toggle-page', 'false', {
     pageID: params.openPageID
 }) }}

@@ -6,15 +6,18 @@ parent:
 {%- from "system/page.njk" import page -%}
 {%- from "system/function.njk" import function -%}
 {% set sideBar = navigation.sidebar %}
+{% set paginaOmschrijvingen = paginadescriptions.descriptions %}
 
 {% for categoryKey, category in sideBar %}{% for subcategory in category %}{% for itemKey, item in subcategory %}
+
+
 {{ page(categoryKey, itemKey, {
       title: itemKey,
+      description: paginaOmschrijvingen[categoryKey][itemKey],
       parent: categoryKey,
       page: itemKey,
-      description: 'Iets van een description over deze pagina',
       figma: figma,
-       list: navigation.sidebar.design 
+      list: navigation.sidebar.design 
 }) }}
 <!-- remove 'dev' in prod -->
 {% endfor %}{% endfor %}{% endfor %}

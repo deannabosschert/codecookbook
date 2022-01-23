@@ -3,6 +3,10 @@
         "overview": [
             {
             "introduction": [
+                {"Code Cookbook" : ["Wat", "Wie", "Hoe", "Waar", "Wanneer", "Waarom"]}             
+            ]},      
+            {
+            "project": [
                 {"project-info" : ["concept"]},
                 {"visuals" : ["screenshots"]}
              
@@ -35,7 +39,7 @@
                 ]
             },
             {
-                "projectinformatie": [
+                "context": [
                     {"visie": [ "visie", "doelgroep", "testscenario's"]},
                     {"outlines": ["functioneel ontwerp", "technisch ontwerp", "testscenario's"]},
                     {"componenten": ["definities", "complexiteit", "notities"]}
@@ -99,15 +103,23 @@
             {
                 "tools": [
                     {"applications": ["cleanshot", "bettertouchtool", "postman-app"]},
-                    {"text-editors": ["visual studio code", "intellj idea", "atom"]},
-                    {"useful-websites-articles": ["design", "development", "updates"]}
+                    {"text-editors": ["visual studio code", "intellj idea", "atom"]}
                 ]
             },
             {
                 "libraries": [
                     {"frameworks": ["react", "vue", "angular"]},
                     {"libraries": ["axios", "lodash", "moment"]},
+                    {"plugins": ["css-blob", "design-tokens"]},
                     {"other": ["fontawesome", "bootstrap"]}
+                ]
+            }, 
+            {
+                "toffe-dingen": [
+                    {"generic": ["newsletters"]},
+                    {"design": ["miro", "pudding.cool"]},
+                    {"development": ["css-tricks"]},
+                    {"personal": ["timemator", "trello"]}
                 ]
             }
         ]     
