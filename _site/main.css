@@ -16035,7 +16035,8 @@ pre code {
   margin-bottom: 32px;
 }
 #development-deployment-page .grid-2 {
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 #development-deployment-page p {
   max-width: 878px;
@@ -16043,6 +16044,9 @@ pre code {
 }
 #development-deployment-page h4 {
   margin-bottom: 24px;
+}
+#development-deployment-page .grid-3 {
+  max-height: 100%;
 }
 
 .categoryPage h1:first-letter,
