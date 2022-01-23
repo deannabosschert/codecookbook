@@ -581,7 +581,9 @@
    }
 
    @media screen and (max-width: 600px) {
-       #design-ontwerp-subpage-design .contentSummary {
+
+       #design-ontwerp-subpage-design .contentSummary,
+       .About .contentSummary {
            width: 100vw;
            max-width: 100vw;
            margin-left: -50px;
@@ -623,29 +625,57 @@
    }
 
    .categoryPage .tldr {
-    max-width: 100%;
-    margin-bottom: $mobile-default;
-    height: 120px;
-}
+       max-width: 100%;
+       margin-bottom: $mobile-default;
+       height: 120px;
+   }
 
    @media screen and (min-width: 400px) {
        .categoryPage .tldr {
            max-width: 100%;
-            height: 150px;
+           height: 150px;
        }
    }
 
 
    @media screen and (min-width: 500px) {
-    .categoryPage .tldr {
-        margin-bottom: $desktop-default;
-    }
-}   
+       .categoryPage .tldr {
+           margin-bottom: $desktop-default;
+       }
+   }
 
-@media screen and (min-width: 800px) {
-    .categoryPage .tldr {
-        margin-bottom: $desktop-default;
-        height: 300px;
-    }
-}
+   @media screen and (min-width: 800px) {
+       .categoryPage .tldr {
+           margin-bottom: $desktop-default;
+           height: 300px;
+       }
+   }
 
+
+
+   #overview-workflow-subpage-werkwijze-overview {
+       margin-top: $desktop-l;
+   }
+
+   .image-card-smaller {
+       max-width: 700px;
+       width: 100%;
+   }
+
+   .call-out {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       align-items: center;
+       max-width: 100%;
+       width: fit-content;
+       max-width: fit-content;
+       border-radius: 5px;
+       box-shadow: inset 0px 0 1px 1px rgb(31 38 135 / 10%);
+       backdrop-filter: blur(4px);
+       margin-bottom: 24px;
+       margin-top: 14px;
+       padding: 16px;
+       max-width: 700px;
+       border: 1px solid $brand-transparent;
+   }

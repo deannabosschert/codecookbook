@@ -1,0 +1,24 @@
+#about {
+
+    #reddit-embed {
+        margin-bottom: $desktop-m;
+    }
+
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: $desktop-m;
+        margin-bottom: $desktop-m;
+
+        p {
+            padding-top: 24px;
+        }
+
+        @media screen and (max-width: 600px) {
+           display: flex;
+              flex-direction: row;
+                flex-wrap: wrap;
+        }
+            
+        }
+    }
