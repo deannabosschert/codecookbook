@@ -503,6 +503,19 @@ b {
   max-width: 100%;
 }
 
+#overview-introduction-subpage-code-cookbook li::before {
+  content: "•";
+  color: #67c8f2ff;
+  margin-right: 24px;
+}
+#overview-introduction-subpage-code-cookbook .code-cookbook-waar li {
+  font-weight: 500;
+}
+
+#overview-progress-subpage-current-milestones .grid-3 {
+  grid-template-columns: 1fr 1fr;
+}
+
 input {
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
   border: 0.2px solid #ebecf0;

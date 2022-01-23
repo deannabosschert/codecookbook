@@ -87,3 +87,26 @@ b {
 .page-header__description, .page-header__info__description {
   max-width: 100%;
 }
+
+#overview-introduction-subpage-code-cookbook {
+  li {
+    &::before {
+      // content: dot
+      content: "•";
+      color: $brand;
+      margin-right: $desktop-s;
+    }
+  }
+
+  .code-cookbook-waar {
+    li {
+      font-weight: 500;
+    }
+  }
+}
+
+#overview-progress-subpage-current-milestones {
+  .grid-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
