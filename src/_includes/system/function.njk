@@ -4,7 +4,7 @@
     {% if args == 'true' %}
           <script type="module">
             import githubEmbed from '../../../assets/js/{{name}}.js'
-            githubEmbed('{{params.data.containerID}}', '{{params.data.repo}}', '{{params.data.tag}}', '{{params.data.state}}')
+            githubEmbed('{{params.data.containerID}}','{{params.data.api}}', '{{params.data.repo}}', '{{params.data.tag}}', '{{params.data.state}}')
         </script>
     {% elif args == 'false' %}
         <script type="module">

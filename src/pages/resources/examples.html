@@ -1,14 +1,29 @@
 {%- from "system/component.njk" import component -%}
-
 <section id="resources-examples-subpage-templates">
     <h2>templates</h2>
     <article>
         <h3 id="resources-examples-subpage-templates-11ty-Netlify">11ty-Netlify boilerplate</h3>
-        {{ component('atoms', '_githubCard', {
+        <!-- {{ component('atoms', '_githubCard', {
             username: 'deannabosschert',
             repo: '11ty-cms-boilerplate'
             }) }}
-            <p>This example contains a basic setup for developing a static site with Eleventy and using NetlifyCMS as a content management system.</p>
+            {{ component('atoms', '_githubEmbed', {
+                data: {
+                    api: 'repos',
+                    repo: '11ty-cms-boilerplate',
+                    classtag: 'community',
+                    tag: 'community/profile',
+                    state: ''
+                }
+            }) }} -->
+        {{ component('atoms', '_image', {
+                    src: 'assets/img/content/resources/screenshot-boilerplate.png',
+                    alt: 'screenshot of 11ty-cms-boilerplate repo',
+                    width: '500',
+                    height: '500'
+            }) }}
+        <p>This example contains a basic setup for developing a static site with Eleventy and using NetlifyCMS as a
+            content management system.</p>
     </article>
     <article>
         <h3 id="resources-examples-subpage-templates-Vue.js">Vue.js</h3>
@@ -16,13 +31,38 @@
 </section>
 <section id="resources-examples-subpage-projects">
     <h2>projects</h2>
+    <p>Met het ontwikkelen van Code Cookbook zijn er ook twee implementaties van deze werkwijze uitgewerkt; twee proof
+        of concepts.</p>
+    <p>Hiermee wordt bewezen dat het prima mogelijk is om volgens industriestandaarden te werken, en ook door middel van
+        <i>global data files</i> te koppelen aan een Content Management System.</p>
+    <p>Deze projecten zijn in alle volledigheid door de ontwerper/developer van Code Cookbook ontwikkeld; er is dus
+        zeker geen sprake geweeest van knip-en-plakwerk, maar letterlijk het <i>from scratch</i> onderzoeken en testen
+        van data-structuren, componenten en omzetten tot code.</p>
+    <p>Er is alleen visueel gekeken naar de 'echte' website zoals voor ieder ander ook te bekijken is op het internet,
+        en aan de hand daarvan de website ontwikkeld.</p>
     <article>
         <h3 id="resources-examples-subpage-projects-Holiday Rentals Curacao">Holiday Rentals Curacao</h3>
         {{ component('atoms', '_githubCard', {
             username: 'deannabosschert',
             repo: 'CMS-template-Netlify'
             }) }}
-        <p>This example is Holiday Rentals Curacao's current website, but fully remade in Code-Cookbook style and standards.</p>
+        {{ component('atoms', '_githubEmbed', {
+                data: {
+                    api: 'repos',
+                    repo: 'CMS-template-Netlify',
+                    classtag: 'community',
+                    tag: 'community/profile',
+                    state: ''
+                }
+            }) }}
+            {{ component('atoms', '_image', {
+                src: 'assets/img/content/resources/screenshot-hrc.png',
+                alt: 'screenshot of hrc website rebuilt',
+                width: '500',
+                height: '500'
+        }) }}
+        <p>This example is Holiday Rentals Curacao's current website, but fully remade in Code-Cookbook style and
+            standards.</p>
     </article>
     <article>
         <h3 id="resources-examples-subpage-projects-Active Collective">Active Collective</h3>
@@ -30,6 +70,22 @@
             username: 'deannabosschert',
             repo: 'CMS-template-AC'
             }) }}
-        <p>This example is Active Collective's current website, but fully remade in Code-Cookbook style and standards.</p>
+        {{ component('atoms', '_githubEmbed', {
+                data: {
+                    api: 'repos',
+                    repo: 'CMS-template-AC',
+                    classtag: 'community',
+                    tag: 'community/profile',
+                    state: ''
+                }
+            }) }}
+            {{ component('atoms', '_image', {
+                src: 'assets/img/content/resources/screenshot-ac.png',
+                alt: 'screenshot of ac website rebuilt',
+                width: '500',
+                height: '500'
+        }) }}
+        <p>This example is Active Collective's current website, but fully remade in Code-Cookbook style and standards.
+        </p>
     </article>
 </section>

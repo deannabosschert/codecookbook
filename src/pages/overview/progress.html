@@ -6,6 +6,7 @@
         <h3 id="overview-progress-subpage-current-milestones">milestones</h3>
         {{ component('atoms', '_githubEmbed', {
             data: {
+                api: 'repos',
                 repo: 'functional-programming',
                 tag: 'milestones',
                 state: 'all'
@@ -26,6 +27,7 @@
         <h3 id="overview-progress-subpage-to-do-now">now</h3>
         {{ component('atoms', '_githubEmbed', {
             data: {
+                api: 'repos',
                 repo: 'codecookbook',
                 tag: 'issues',
                 state: 'open'
@@ -36,6 +38,7 @@
         <h3>done</h3>
         {{ component('atoms', '_githubEmbed', {
             data: {
+                api: 'repos',
                 repo: 'functional-programming',
                 tag: 'issues',
                 state: 'closed'

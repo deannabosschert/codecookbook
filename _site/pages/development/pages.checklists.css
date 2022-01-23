@@ -1,8 +1,11 @@
-#development-checklists-page ul li:before {
+#development-checklists-page .list-icons li:before {
   content: url(/assets/img/icons/checkbox-checked.png);
   color: #67c8f2ff;
   height: inherit;
   margin-right: 11px;
+}
+#development-checklists-page .checklist input {
+  margin-right: 8px;
 }
 
 /*# sourceMappingURL=pages.checklists.css.map */
