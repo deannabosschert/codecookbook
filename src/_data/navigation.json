@@ -108,14 +108,6 @@
                 ]
             },
             {
-                "libraries": [
-                    {"frameworks": ["react", "vue", "angular"]},
-                    {"libraries": ["axios", "lodash", "moment"]},
-                    {"plugins": ["css-blob", "design-tokens"]},
-                    {"other": ["fontawesome", "bootstrap"]}
-                ]
-            }, 
-            {
                 "toffe-dingen": [
                     {"generic": ["newsletters"]},
                     {"design": ["miro", "pudding.cool"]},
