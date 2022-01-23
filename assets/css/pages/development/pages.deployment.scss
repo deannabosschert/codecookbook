@@ -1,15 +1,19 @@
 #development-deployment-page {
     article, img {
         margin-bottom: $desktop-default;
-        
+    }
+
+    .grid-2 {
+        padding: $desktop-s 0;
     }
 
     p {
         max-width: $width-xxl;
+        margin-bottom: $desktop-xs;
     }
 
     h4 {
-        margin-bottom: $desktop-default;
+        margin-bottom: $desktop-s;
     }
     
 }

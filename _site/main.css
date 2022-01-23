@@ -16034,11 +16034,15 @@ pre code {
 #development-deployment-page article, #development-deployment-page img {
   margin-bottom: 32px;
 }
+#development-deployment-page .grid-2 {
+  padding: 24px 0;
+}
 #development-deployment-page p {
   max-width: 878px;
+  margin-bottom: 20px;
 }
 #development-deployment-page h4 {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .categoryPage h1:first-letter,
