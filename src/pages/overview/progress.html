@@ -1,13 +1,15 @@
 {%- from "system/component.njk" import component -%}
 
 <section id="overview-progress-subpage-current">
-    <h2>current</h2>
+    <h2>current status</h2>
     <article>
         <h3 id="overview-progress-subpage-current-milestones">milestones</h3>
+        <p>Binnen een GitHub-repository kan projectvoortgang worden bijgehouden. Je kun hierbij, naast het invoeren van taken, ook 'milestones' toevoegen. Dit zijn de 'hoofddoelen' die gesteld worden voor de planning van een project.</p>
+        <p>In Code Cookbook zijn deze by default direct gelinkt aan de repository 'codecookbok', maar worden bij gebruik voor een project aangepast naar de desbetreffende repo:</p>
         {{ component('atoms', '_githubEmbed', {
             data: {
                 api: 'repos',
-                repo: 'functional-programming',
+                repo: 'codecookbook',
                 tag: 'milestones',
                 state: 'all'
             }
@@ -25,6 +27,7 @@
     <p>To-do's are presented as repository issues and directly pulled from the project's GitHub repo. Developers can change the project link in 'pages'.</p>
     <article>
         <h3 id="overview-progress-subpage-to-do-now">now</h3>
+        <p>Dit zijn de issues die nu openstaan op de repository <i>codecookbook</i>.</p>
         {{ component('atoms', '_githubEmbed', {
             data: {
                 api: 'repos',
@@ -36,6 +39,7 @@
     </article>
     <article>
         <h3>done</h3>
+        <p>Aangezien er nog geen lijst met afgesloten <i>issues</i> is op de repository van <i>codecookbook</i>, zijn ter illustratie de issues van een andere repository hieronder getoond.</p>
         {{ component('atoms', '_githubEmbed', {
             data: {
                 api: 'repos',

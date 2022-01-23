@@ -2,23 +2,29 @@
     <h2>best practices</h2>
     <article>
         <ul>
-            <li>Work in branches, even if it's a one-man project. It helps staying focused on one feature until it's finished, and keeps your from doing 10 different things at the same time. Saves you merge conflicts, too. In this project you can only collaborate via Pull Requests anyways, so branches are mandatory.</li>
-            <li>^ also helps with 'closing' a feature, so you are more likely to move on to the next. Too little time, too much ideas.</li>
+            <li>Work in branches, even if it's a one-man project. It helps staying focused on one feature until it's
+                finished, and keeps your from doing 10 different things at the same time. Saves you merge conflicts,
+                too. In this project you can only collaborate via Pull Requests anyways, so branches are mandatory.</li>
+            <li>^ also helps with 'closing' a feature, so you are more likely to move on to the next. Too little time,
+                too much ideas.</li>
             <li>Commit early, commit often.</li>
             <li>Make single-purpose commits, following our commit guidelines</li>
             <li>Always fix your .gitignore-contents asap; node_modules or the like won't ever be pushed that way.</li>
-            <li>Styling comes last. It's gonna change anyways so most of the time, it's better to fix the technical stuff first.</li>
+            <li>Styling comes last. It's gonna change anyways so most of the time, it's better to fix the technical
+                stuff first.</li>
             <li>Don't use declarations in the global scope.</li>
             <li>Start your project with writing down the future function names (pre-actors, basically).</li>
             <li>Google, google, google. 99% of the time, it'll get you to the solution of your problem.</li>
-            <li>Set timers for solving problems that aren't super relevant in the current sprint but you do would like to work on; 25 mins tops, otherwise you'll be stuck with this for too long.</li>
+            <li>Set timers for solving problems that aren't super relevant in the current sprint but you do would like
+                to work on; 25 mins tops, otherwise you'll be stuck with this for too long.</li>
             <li>Make an actor diagram halfway through, it's a great reminder to refactor the code.</li>
             <li>Explicitly limit the scope of your functions</li>
             <li>Remember that most problems/features that have to do with the UI, can be fixed with mainly CSS.</li>
             <li>Do not use .innerHTML</li>
-            <li>If there's an error, walk through your code from the top/beginning; explain it to your rubber ducky and state where certain data is passed.</li>
+            <li>If there's an error, walk through your code from the top/beginning; explain it to your rubber ducky and
+                state where certain data is passed.</li>
             <li>Implement useful error handling.</li>
-            </ul>
+        </ul>
     </article>
 </section>
 <section id="development-coding-guidelines-subpage-programming principles">
@@ -31,7 +37,8 @@
     <article>
         <h3 id="development-coding-guidelines-subpage-programming principles-DRY">DRY</h3>
         <p class="acronym">Don't Repeat Yourself</p>
-        <p>DRY stands for Don't Repeat Yourself. It's the acronym for the principle that says: Don't repeat yourself, just do it.</p>
+        <p>DRY stands for Don't Repeat Yourself. It's the acronym for the principle that says: Don't repeat yourself,
+            just do it.</p>
     </article>
     <article>
         <h3 id="development-coding-guidelines-subpage-programming principles-YAGNI">YAGNI</h3>
@@ -76,7 +83,7 @@
         <p>Variable names: <code>someThingsAndStuff</code></p>
     </article>
 </section>
-<section id="development-coding-guidelines-subpage-formatting">
+<!-- <section id="development-coding-guidelines-subpage-formatting">
     <h2>formatting</h2>
     <article>
         <h3 id="development-coding-guidelines-subpage-formatting-ESlint">ESlint</h3>
@@ -90,19 +97,26 @@
     <article>
         <h3 id="development-coding-guidelines-subpage-formatting-documentation">documentation</h3>
     </article>
-</section>
-<section id="development-coding-guidelines-subpage-HTML">
+</section> -->
+<!-- <section id="development-coding-guidelines-subpage-HTML">
     <h2>HTML</h2>
+    <p>Wat zijn </p>
     <article>
+    </article>
+    <!-- <article>
         <h3 id="development-coding-guidelines-subpage-HTML-semantics">semantics</h3>
     </article>
     <article>
         <h3 id="development-coding-guidelines-subpage-HTML-accessibility">accessibility</h3>
-    </article>
-</section>
+    </article> -->
+</section> -->
 <section id="development-coding-guidelines-subpage-CSS">
     <h2>CSS</h2>
     <article>
+        <p>Wat zijn interessante tools, technieken of methodologies om te gebruiken?</p>
+        <img src="assets/img/content/development/coding-guidelines/css-inspiration.jpg" alt="CSS board">
+    </article>
+    <!-- <article>
         <h3 id="development-coding-guidelines-subpage-CSS-sCSS">sCSS</h3>
     </article>
     <article>
@@ -110,14 +124,116 @@
     </article>
     <article>
         <h3 id="development-coding-guidelines-subpage-CSS-z-index">z-index</h3>
-    </article>
+    </article> -->
 </section>
 <section id="development-coding-guidelines-subpage-JavaScript">
     <h2>JavaScript</h2>
     <article>
-        <h3 id="development-coding-guidelines-subpage-JavaScript-pure functions">pure functions</h3>
+        <h3>Functional programming</h3>
+        <div>
+            <h4>Object-oriented programming</h4>
+            <p>Er werd voorheen vooral gebruik gemaakt van OOP. Dit was top om zo met meerdere programmeurs samen te
+                kunnen werken aan een programma.</p>
+            <p>Werd alleen steeds minder efficient naarmate de applicatie groter wordt.</p>
+        </div>
+        <div>
+            <h4>Functional Programming daarentegen: </h4>
+            <ul>
+                <li> Bugproof
+                </li>
+                <li> Geautomatiseerd testen
+                </li>
+                <li> Maakt gebruik van recursie
+                </li>
+                <li> inFInItEloOps
+                </li>
+                <li> Er bestaat geen state
+                </li>
+                <li> Kost dan ook geen werkgeheugen (behalve bij het parsen)
+                </li>
+                <li> Bij page refresh moet de hele f*****g structuur weer worden doorlopen bij OOP
+                </li>
+                <li> Als je programma klaar is, is het klaar.
+                </li>
+                <li> Functies doen in principe maar 1 ding en da's herbruikbaar
+                </li>
+                <li> Doet niets buiten hun eigen scope
+                </li>
+                <li> Makkelijk te begrijpen wat er gebeurt
+                </li>
+                <li> Soort fabrieksstraat;lopendebandwerk waarbij elk machientje een functie is </li>
+            </ul>
+        </div>
     </article>
     <article>
-        <h3 id="development-coding-guidelines-subpage-JavaScript-arrow functions">arrow functions</h3>
+        <h3>Currying</h3>
+        <p>Het deels invullen van een formule zodat je ‘m later volledig kan invullen (—> re-usable)</p>
+        <ul>
+            <li>
+                Bij declareren variabele: <i>unbound</i>
+            </li>
+            <li>
+                Bij gebruiken variabele (invullen): <i>bound</i>.
+            </li>
+        </ul>
+    </article>
+    <article>
+        <h3 id="development-coding-guidelines-subpage-JavaScript-pure functions">pure functions</h3>
+        <div>
+            <h4>Impure functions</h4>
+            <p>Een impure function pakt externe data</p>
+            <pre>
+                <code>
+function magSpelen(leeftijd) {
+    return leeftijd >= PEGI
+} 
+                </code>
+            </pre>
+        </div>
+        <div>
+            <h4>Pure functions</h4>
+            <p>Een pure function houdt alles binnen de eigen scope. Dit neemt minder risico's met zich mee en behoudt
+                overzicht.</p>
+            <pre>
+                <code>
+function makeAdder(a) {
+    return function (b) {
+       return a + b
+    }
+}
+const add42 = makeAdder(42)
+console.log(add42(4))
+                </code>
+            </pre>
+        </div>
+    </article>
+    <article>
+        <h3 id="development-coding-guidelines-subpage-JavaScript-arrow functions">higher order functions</h3>
+        <p>Dit is een functional pattern waarbij je een een functie als variabele gebruikt (en ook direct kan returnen).
+        </p>
+        <p> Als je bijv over een array heen mapt en daar een transformatie op loslaat, hoef je niet eerst iets te doen
+            als:</p>
+<pre>
+    <code>
+function removeWhitespace(data, variable) {
+    const getrimdeVariabele = data.map((item) => {
+      const trimmed = item[variabele].trim()
+      return {[variable]: trimmed}
+    })
+    return getrimdeVariabele
+  }
+    </code>
+</pre>
+<p>maar kun je dat gewoon als volgt doen:
+</p>
+<pre>
+    <code>
+function removeWhitespace(data, variable) {
+    return data.map((item) => {
+      return {[variable]: item[variable].trim()}
+    })
+  }
+    </code>
+</pre>
     </article>
 </section>

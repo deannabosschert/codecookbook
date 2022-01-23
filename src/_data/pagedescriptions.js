@@ -3,6 +3,7 @@ module.exports = function() {
       resolve({
         "overview": {
             "introduction": "test!!!!",
+            "workflow": "test!!!!",
             "project": "test!!!!",
             "progress": "test!!!!"
         },

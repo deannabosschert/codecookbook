@@ -1,15 +1,87 @@
 #development-deployment-page {
-    article, img {
+
+    article,
+    img {
         margin-bottom: $desktop-default;
-        
+    }
+
+    .grid-2 {
+        padding-top: $desktop-s;
+        padding-bottom: $desktop-s;
     }
 
     p {
         max-width: $width-xxl;
+        margin-bottom: $desktop-xs;
     }
 
     h4 {
-        margin-bottom: $desktop-default;
+        margin-bottom: $desktop-s;
     }
-    
+
+
+}
+
+
+.grid-3.stappenplan {
+    max-height: 100%;
+    grid-gap: $desktop-xl $desktop-l;
+    padding: $desktop-default;
+
+    img {
+        margin-bottom: 0;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .step {
+        display: grid;
+        grid-template-columns: min-content;
+        grid-template-rows: auto auto;
+        grid-gap: $desktop-xxs $mobile-xxxs;
+        grid-template-areas:
+            "stepNumber stepHeader"
+            "stepImage stepImage";
+        max-width: 100%;
+        max-height: 100%;
+
+        border-radius: 5px;
+        box-shadow: inset 0px 0 1px 1px rgb(31 38 135 / 10%);
+        backdrop-filter: blur(4px);
+
+
+        // margin-bottom: $desktop-s;
+        padding: $desktop-xxs;
+
+
+    }
+
+
+    .step__heading {
+        grid-area: stepHeader;
+        margin-bottom: 0;
+    }
+
+    .step__number {
+        grid-area: stepNumber;
+        width: fit-content;
+        margin-right: $desktop-xxxs;
+        color: $brand;
+        font-size: 22px;
+        text-decoration: none;
+        font-family: Helvetica Neue;
+        font-weight: 700;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        line-height: 26.4px;
+        text-indent: 0;
+        word-spacing: 0px;
+        text-transform: none;
+
+    }
+
+    .step__image {
+        grid-area: stepImage;
+    }
 }

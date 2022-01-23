@@ -5,6 +5,12 @@
             "introduction": [
                 {"Code Cookbook" : ["Wat", "Wie", "Hoe", "Waar", "Wanneer", "Waarom"]}             
             ]},      
+         {
+            "workflow": [
+                {"overview" : ["ontwerpproces", "wie", "tools"]},
+                {"handoff": ["design"]} ,
+                {"development": ["proces"]}           
+            ]},      
             {
             "project": [
                 {"project-info" : ["concept"]},
@@ -47,11 +53,6 @@
             }
         ],
         "development": [
-            {
-                "getting-started": [
-                    {"development-timeline": ["workflow overview", "tools overview", "todo’s"]}
-                ]
-            },
             {
                 "checklists": [
                 {"generic": ["Definition of Done"]},
