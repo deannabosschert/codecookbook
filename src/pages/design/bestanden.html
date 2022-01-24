@@ -11,7 +11,7 @@
                 <img class="download-icon" src="/assets/img/icons/download.svg">{{asset | title}}
             </a>
         </li>
-        {%- endfor %} {% for asset in ["icons", "logos", "afbeeldingen"] -%}
+        {%- endfor %} {% for asset in ["icons", "logos", "images"] -%}
         <li class="alles-download"><a href="/assets/img/{{asset}}/alles.zip" download="assets-{{asset}}">
                 <img class="download-icon" src="/assets/img/icons/download.svg">{{asset | title}}
             </a>
@@ -103,7 +103,7 @@
             </li>
         </ul>
     </article>
-    <article>
+    <article class="single-download">
         <h3>favicon</h3>
         <a href="/assets/img/icons/favicon.png" download="icon-favicon">
             <img class="download-icon" src="/assets/img/icons/download.svg">Download: favicon-icon

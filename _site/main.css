@@ -16987,6 +16987,142 @@ body > main {
   .categoryPage .about-link-row > p {
     margin-bottom: 16px;
   }
+
+  body {
+    grid-template-columns: 28px 1fr 1fr 28px;
+  }
+
+  #design-ontwerp-subpage-design .contentSummary {
+    margin-left: -28px;
+  }
+
+  .categoryPage .grid-2 {
+    grid-gap: 8px;
+  }
+
+  #design-ontwerp-subpage-fonts .figmaEmbed {
+    margin-left: -28px;
+    margin-bottom: 34px;
+  }
+  #design-ontwerp-subpage-fonts .license-info li {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  #design-ontwerp-subpage-fonts .grid-2-3 {
+    min-width: calc(100% + 48px);
+    margin-left: -22px;
+  }
+  #design-ontwerp-subpage-fonts .grid-2-3 div {
+    margin-bottom: 0;
+  }
+  #design-ontwerp-subpage-fonts .grid-2-3 div h4 {
+    margin-bottom: 0;
+  }
+
+  #design-bestanden-page .contentSummary .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin: 0;
+    grid-gap: 8px;
+  }
+  #design-bestanden-page .contentSummary .grid-3 li,
+#design-bestanden-page .contentSummary .grid-3 a {
+    font-size: 16px;
+    line-height: 28px;
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+  #design-bestanden-page .contentSummary .grid-3 li img,
+#design-bestanden-page .contentSummary .grid-3 a img {
+    margin-right: 4px;
+  }
+  #design-bestanden-page .single-download {
+    padding: 16px;
+  }
+
+  #design-variabelen-page div {
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+  #design-variabelen-page article {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #design-variabelen-page article .flex-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    min-width: calc(100% + 28px);
+    margin-left: -14px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  #design-variabelen-page article .flex-3 li:nth-of-type(2) {
+    margin: 0;
+  }
+  #design-variabelen-page .design-variabelen-subpage-colors article:last-of-type .flex-3 {
+    align-items: flex-start;
+  }
+  #design-variabelen-page .design-variabelen-subpage-colors article:last-of-type .tag {
+    font-size: 11px;
+    line-height: 15px;
+  }
+  #design-variabelen-page .variable-table {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+  }
+  #design-variabelen-page .variable-table th,
+#design-variabelen-page .variable-table td,
+#design-variabelen-page .variable-table tr {
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #design-variabelen-page .variable-table td {
+    padding: 16px;
+    vertical-align: middle;
+  }
+  #design-variabelen-page .variable-table th:first-of-type {
+    padding-right: 16px;
+  }
+  #design-variabelen-page .variable-table th:last-of-type {
+    padding-left: 16px;
+  }
+  #design-variabelen-page .design-variabelen-subpage-typography .flex-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 28px;
+  }
+  #design-variabelen-page .design-variabelen-subpage-typography .flex-2 article {
+    width: 100%;
+    margin-bottom: 16px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #f6f6f6ff;
+  }
+  #design-variabelen-page .design-variabelen-subpage-distances .grid-2 {
+    grid-gap: 24px;
+  }
+
+  #design-context-page iFrame {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    background-color: #f6f6f6ff;
+    box-shadow: inset 0px 1px 2px 1px #878a8dff;
+  }
 }
 @media screen and (max-width: 400px) {
   #about h2 {
