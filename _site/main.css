@@ -17123,6 +17123,238 @@ body > main {
     background-color: #f6f6f6ff;
     box-shadow: inset 0px 1px 2px 1px #878a8dff;
   }
+
+  #development-checklists-subpage-generic-codereviewchecklist {
+    font-size: 21px;
+    margin-bottom: 0;
+  }
+
+  .categoryPage .list-source {
+    color: #878a8dff;
+  }
+  .categoryPage .list-source:after {
+    margin-left: 4px;
+  }
+  .categoryPage .list-source::first-letter {
+    text-transform: none;
+  }
+
+  #development-checklists-subpage-generic {
+    padding-bottom: 0;
+  }
+  #development-checklists-subpage-generic .codereviewchecklist {
+    margin-bottom: 16px;
+  }
+  #development-checklists-subpage-generic .grid-2 {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+  #development-checklists-subpage-generic .checklist ul {
+    margin-bottom: 11px;
+  }
+  #development-checklists-subpage-generic .checklist li {
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #development-checklists-subpage-generic .checklist li input,
+#development-checklists-subpage-generic .checklist li label {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  #development-checklists-subpage-generic .checklist li input {
+    height: 24px;
+  }
+
+  #development-checklists-subpage-audits iframe {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    background-color: #f6f6f6ff;
+    box-shadow: inset 0px 1px 2px 1px #878a8dff;
+  }
+
+  #development-coding-guidelines-page ul li {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 11px;
+  }
+
+  #development-coding-guidelines-page section > article .acronym {
+    color: #67c8f2ff;
+  }
+  #development-coding-guidelines-page h4 {
+    margin-bottom: 11px;
+  }
+  #development-coding-guidelines-page p {
+    width: fit-content;
+    line-height: 28px;
+  }
+
+  #development-coding-guidelines-page .naming-list li {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    grid-gap: 4px 0;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  #development-coding-guidelines-page .naming-list li:before {
+    content: none;
+    margin: 0;
+    height: 0;
+  }
+  #development-coding-guidelines-page .naming-list li span {
+    content: url(/assets/img/icons/checkbox-checked.png);
+    color: #67c8f2ff;
+    height: inherit;
+    margin-right: 11px;
+  }
+  #development-coding-guidelines-page .naming-list li code {
+    width: max-content;
+    grid-column-start: 2;
+  }
+
+  #development-coding-guidelines-subpage-CSS {
+    margin-bottom: 34px;
+  }
+  #development-coding-guidelines-subpage-CSS img {
+    margin-bottom: 28px;
+  }
+
+  #development-coding-guidelines-subpage-JavaScript h4 {
+    font-size: 18px;
+  }
+  #development-coding-guidelines-subpage-JavaScript .fp-list li {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 4px 0;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+  #development-coding-guidelines-subpage-JavaScript .fp-list li:before {
+    content: none;
+    margin: 0;
+    height: 0;
+  }
+  #development-coding-guidelines-subpage-JavaScript .fp-list li span {
+    content: url(/assets/img/icons/checkbox-checked.png);
+    color: #67c8f2ff;
+    height: inherit;
+    margin-right: 8px;
+    margin-top: 4px;
+  }
+  #development-coding-guidelines-subpage-JavaScript .fp-list li code {
+    width: max-content;
+    grid-column-start: 2;
+  }
+
+  #development-git-page figure {
+    margin-bottom: 28px;
+  }
+  #development-git-page figure img {
+    margin-bottom: 8px;
+  }
+  #development-git-page h4 {
+    margin-bottom: 16px;
+  }
+
+  #development-deployment-page h2 {
+    font-size: 25px;
+  }
+  #development-deployment-page h4 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 4px;
+  }
+  #development-deployment-page .grid-3 {
+    grid-gap: 8px;
+  }
+  #development-deployment-page .stappenplan {
+    margin: 0;
+    padding: 0;
+  }
+  #development-deployment-page .stappenplan .step {
+    grid-gap: 8px 4px;
+    min-width: calc(100% + 8px);
+    width: calc(100% + 8px);
+    max-width: calc(100% + 8px);
+    margin-left: -4px;
+  }
+  #development-deployment-page .stappenplan .step__number,
+#development-deployment-page .stappenplan .step__heading {
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  #development-deployment-page .non-client p {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  #development-deployment-page .non-client .grid-2 {
+    padding-top: 16px;
+  }
+
+  #resources-examples-subpage-templates-11ty-Netlify {
+    margin-bottom: 0;
+  }
+
+  #resources-examples-page .stappenplan {
+    margin: 0;
+    padding: 0;
+  }
+  #resources-examples-page .stappenplan .step {
+    grid-gap: 8px 4px;
+    min-width: calc(100% + 8px);
+    width: calc(100% + 8px);
+    max-width: calc(100% + 8px);
+    margin-left: -4px;
+  }
+  #resources-examples-page .stappenplan .step__number,
+#resources-examples-page .stappenplan .step__heading {
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .cp_embed_wrapper {
+    max-width: 100vw;
+    width: 100vw;
+    width: calc(100vw - 1px - 1px);
+    margin-left: -48px;
+    padding: 0 8px;
+    margin-left: -28px;
+    margin-bottom: 34px;
+  }
+  .cp_embed_wrapper iframe {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    background-color: #f6f6f6ff;
+    padding: 0;
+    margin: 0;
+  }
+
+  #resources-code-snippets-page h4 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 4px;
+    color: #878a8dff;
+  }
+
+  #resources-tools-subpage-applications h2 {
+    margin-bottom: 16px;
+  }
+  #resources-tools-subpage-applications div {
+    margin-top: 28px;
+  }
+
+  #resources-toffe-dingen-page section {
+    margin-bottom: 40px;
+  }
+  #resources-toffe-dingen-page article {
+    margin-bottom: 28px;
+  }
 }
 @media screen and (max-width: 400px) {
   #about h2 {
