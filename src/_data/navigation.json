@@ -114,6 +114,11 @@
                     {"development": ["css-tricks"]},
                     {"personal": ["timemator", "trello"]}
                 ]
+            },
+            {
+                "hacks": [
+                    {"oplossingen": ["hacky oplossingen"]}
+                ]
             }
         ]     
     }

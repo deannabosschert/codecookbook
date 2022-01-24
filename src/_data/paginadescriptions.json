@@ -24,7 +24,8 @@
             "code-snippets": "Code Snippets zijn een manier om code te weergeven en op te slaan, die je als developer later snel kan gebruiken wanneer je een feature moet implementeren. Neem nou een hamburger-menu toggle; dit komt op veel verschillende sites voor en wil je graag zo vanilla mogelijk kunnen overnemen. Deze snippets zijn volgens de Code Cookbook-standaarden geschreven en zijn beschikbaar voor de verschillende use cases. Ze worden gehost op CodePen en live geüpdatet.",
             "tools": "Welke tools worden gebruikt om een project mee te ontwikkelen, of kunnen handig zijn om te gebruiken? Onder zijn een aantal vermeld, maar deze lijst is nooit 'volledig'. Kom je handige tools tegen; voeg deze dan toe!",
             "libraries": "Welke libraries of plugins gebruiken we in onze projecten, of kunnen in de toekomst handig zijn om te gebruiken?",
-            "toffe-dingen": "Kom je een site tegen die je nu nog niet vast kunt gebruiken of implementeren, maar wat wel interessant is voor later? Dan kun je deze ook hier plaatsen op de 'toffe dingen'-pagina. Deze pagina is een verzameling van websites die je kunt gebruiken als inspiratie, als onderzoek of als broncode."
+            "toffe-dingen": "Kom je een site tegen die je nu nog niet vast kunt gebruiken of implementeren, maar wat wel interessant is voor later? Dan kun je deze ook hier plaatsen op de 'toffe dingen'-pagina. Deze pagina is een verzameling van websites die je kunt gebruiken als inspiratie, als onderzoek of als broncode.",
+            "hacks": "Zijn er in dit project dingen opgelost opn een manier die niet helemaal de Code Cookbook-standaarden voldoet of überhaupt niet zo toekomstbestendig zijn? Dan kun je deze hier plaatsen op de 'hacks'-pagina. Wanneer een ander dan met dit project aan de slag moet, kan diegene ook direct hiervan op de hoogte worden gesteld."
         }
     }
 }

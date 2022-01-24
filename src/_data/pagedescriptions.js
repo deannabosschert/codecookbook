@@ -25,7 +25,8 @@ module.exports = function() {
             "code-snippets": "test!!!!",
             "tools": "test!!!!",
             "libraries": "test!!!!",
-            "toffe-dingen": "test!!!!"
+            "toffe-dingen": "test!!!!",
+            "hacks": "test!!!!"
         }
     }
 );
