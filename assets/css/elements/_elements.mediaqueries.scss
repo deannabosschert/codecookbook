@@ -679,3 +679,149 @@
        max-width: 700px;
        border: 1px solid $brand-transparent;
    }
+
+   @media screen and (max-width: 400px) {
+
+       .categoryPage>section,
+       .categoryPage>header {
+           padding-left: $mobile-l;
+           padding-right: $mobile-l;
+       }
+
+       p {
+           padding-right: 0;
+       }
+
+       h3 {
+           // margin-top: $desktop-xxs;
+       }
+
+       h4 {
+           margin-bottom: $mobile-xxs;
+       }
+
+       .c-header {
+           grid-template-columns: $mobile-l 1fr 1fr $mobile-l;
+       }
+
+       .code-cookbook-waar {
+           li {
+               font-size: 16px;
+               line-height: 28px;
+           }
+       }
+
+       .categoryPage .about-link-row {
+           >p {
+               margin-bottom: $mobile-s;
+           }
+       }
+   }
+
+   @media screen and (max-width: 400px) {
+
+       #about {
+           h2 {
+               margin-bottom: $mobile-default;
+           }
+
+           h3 {
+               margin-bottom: $mobile-xs;
+           }
+
+           section {
+               margin-bottom: $mobile-default;
+           }
+
+           .c-page-header,
+           main>section,
+           .contentSummary {
+               padding-left: $mobile-l;
+               padding-right: $mobile-l;
+           }
+
+           .c-page-header {
+               margin-bottom: $mobile-xl;
+           }
+
+           .contentSummary {
+               margin-left: 0;
+               border-radius: 0;
+
+               li {
+                   display: flex;
+
+                   span {
+                       margin-right: $mobile-xs;
+                   }
+               }
+           }
+
+   
+           .grid-2 {
+
+               >p {
+                   padding-top: 0;
+                //    padding-right: 56px;
+               }
+
+            
+           }
+        }
+      
+       
+
+       #visualisaties {
+           
+        .grid-2 {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            min-width: 100%;
+            // min-width: 100vw;
+            // width: 100vw;
+            article {
+                //   margin-left: -$mobile-l;
+                //   margin-right: 0;
+
+                &:first-of-type
+                {
+                    margin: 0;
+                }
+            }
+        }
+
+            .flex-2 {
+                min-width: 100%;
+                max-width: 100%;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                box-shadow: none;
+
+                flex-direction: column;
+                // min-width: 100vw;
+
+                article {
+                    padding: 0;
+                    width: 100%;
+                    min-width: 100%;
+                    max-width: 100%;
+
+                    canvas {
+                        width: calc(100vw - 20px);
+                        max-width: calc(100vw - 20px);
+                        height: fit-content;
+                        max-height: fit-content;
+                        margin-left: -$mobile-xs;
+                        object-fit: contain;
+                        object-position: top;
+                        // height: 300px;
+                        max-height: 370px;
+                        // padding: 0 $mobile-xs;
+                    }
+                }
+            } 
+        }
+       
+   }

@@ -90,9 +90,9 @@ b {
 
 #overview-introduction-subpage-code-cookbook {
   li {
-    &::before {
-      // content: dot
-      content: "•";
+    display: flex;
+    
+    span{
       color: $brand;
       margin-right: $desktop-s;
     }
