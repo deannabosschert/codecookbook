@@ -10,6 +10,8 @@ pagePath: "{{parent}}/{{pageName}}"
 </head>
 
 <body>
+  {% include "../sections/_serviceworker.html" %}
+
   {%- from "system/component.njk" import component -%}
   {{ component("atoms", "_logo", {
         src: "/assets/img/logos/active-collective_logo_black.svg",
