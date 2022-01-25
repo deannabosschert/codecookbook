@@ -1,0 +1,47 @@
+{%- from "system/function.njk" import function -%}
+{% if params.data.state %}
+
+{% if params.data.classtag %}
+<section id="{{params.data.repo}}-{{params.data.classtag}}-{{params.data.state}}" class="grid-3 github-embed-cards">
+   
+    {% else %}
+    <section id="{{params.data.repo}}-{{params.data.tag}}-{{params.data.state}}" class="grid-3 github-embed-cards">
+     
+        {% endif %}
+    
+    {{ function('github-api', 'true', {
+            data: {
+                containerID: params.data.repo + '-' + params.data.tag + '-' + params.data.state,
+                api: '/' + params.data.api,
+                repo: '/' + params.data.repo,
+                tag: '/' + params.data.tag,
+                state: params.data.state
+            }
+        }) }}
+    {% else %}
+    {% if params.data.classtag %}
+    <section id="{{params.data.repo}}-{{params.data.classtag}}" class="grid-3 github-embed-cards">
+        {{ function('github-api', 'true', {
+            data: {
+                containerID: params.data.repo + '-' + params.data.classtag,
+                api: '/' + params.data.api,
+                repo: '/' + params.data.repo,
+                tag: '/' + params.data.tag,
+                state: ''
+            }
+        }) }}
+        {% else %}
+        <section id="{{params.data.repo}}-{{params.data.tag}}" class="grid-3 github-embed-cards">
+            {{ function('github-api', 'true', {
+                data: {
+                    containerID: params.data.repo + '-' + params.data.tag,
+                    api: '/' + params.data.api,
+                    repo: '/' + params.data.repo,
+                    tag: '/' + params.data.tag,
+                    state: ''
+                }
+            }) }}
+            {% endif %}
+           
+            {% endif %}
+        </section>
