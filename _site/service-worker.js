@@ -28,7 +28,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [
   {
     "url": "about/index.html",
-    "revision": "783da31996a53b84e3d493b0f099f9be"
+    "revision": "a973295a855ba2aedfaad1e0435dc003"
   },
   {
     "url": "admin/index.html",
@@ -740,7 +740,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "11db7d8fd0d63a6c5b01dedb7ed0d66d"
+    "revision": "fdcf18f5966e9384846e1c0d8718ebb2"
   },
   {
     "url": "main.css",
@@ -752,7 +752,7 @@ self.__precacheManifest = [
   },
   {
     "url": "manifest.json",
-    "revision": "f130a838d41e2b8d62c7a1d92464997e"
+    "revision": "3987f83dcaadbd242abf64cdae884cff"
   },
   {
     "url": "pages/about.css",
