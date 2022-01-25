@@ -1,6 +1,6 @@
 {% if params.icon %}
 {% set icon as params.icon %}
-<a href="{{icon.link}}" target="_blank" rel="noopener">
+<a rel="noreferrer" href="{{icon.link}}" target="_blank" rel="noopener">
 {% endif %}
 
     <img src="/assets/img/{{icon.img}}" alt="{{icon.alt}}" width="{{icon.width}}" height="{{icon.height}}">

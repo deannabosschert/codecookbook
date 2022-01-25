@@ -85,8 +85,8 @@ function makeHTML(data) {
             card += `<p>${data.license.name}</p>`
         }
         card += `
-                        <a href="${data.documentation}" target="_blank">link naar documentation</a>
-                        <a href="${data.readme}" target="_blank">link naar readme</a>
+                        <a rel="noreferrer" href="${data.documentation}" target="_blank">link naar documentation</a>
+                        <a rel="noreferrer" href="${data.readme}" target="_blank">link naar readme</a>
                     </div>
                 </article>
         `
@@ -104,7 +104,7 @@ function makeHTML(data) {
                     <div class="card-body">
                         <p>${item.created_at}</p>
                         <p>${item.body}</p>
-                        <a href="${item.url}" target="_blank">link naar issue #${item.number}</a>
+                        <a rel="noreferrer" href="${item.url}" target="_blank">link naar issue #${item.number}</a>
                     </div>
                 </article>
                 `
@@ -119,7 +119,7 @@ function makeHTML(data) {
                         <div class="card-body">
                             <b><p>Used for:</p></b>
                             <p>${item.description}</p>
-                            <a href="${item.url}" target="_blank">link naar label #${item.id}</a>
+                            <a rel="noreferrer" href="${item.url}" target="_blank">link naar label #${item.id}</a>
                         </div>
                     </article>
                     `
@@ -136,7 +136,7 @@ function makeHTML(data) {
                             <p>created: ${item.created_at}</p>
                             <p>open issues: ${item.open_issues}</p>
                             <p>closed issues: ${item.closed_issues}</p>
-                            <a href="${item.url}" target="_blank">link naar milestone #${item.number}</a>
+                            <a rel="noreferrer" href="${item.url}" target="_blank">link naar milestone #${item.number}</a>
                         </div>
                     </article>
               `
@@ -155,7 +155,7 @@ function makeHTML(data) {
                     card += `<p>${item.body}</p>`
                 }
                 if (item.url) {
-                    card += `<a href="${item.url}" target="_blank" >link naar milestone #${item.number}</a>`
+                    card += `<a rel="noreferrer" href="${item.url}" target="_blank" >link naar milestone #${item.number}</a>`
                 }
                 card += `</div></article>`
                 return card
