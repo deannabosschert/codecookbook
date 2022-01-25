@@ -1,4 +1,5 @@
 const htmlmin = require("html-minifier");
+// const pluginPWA = require("eleventy-plugin-pwa")
 
 
 module.exports = (eleventyConfig) => {
@@ -10,6 +11,8 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy('assets/js/hb-toggle-page.js')
   eleventyConfig.addPassthroughCopy('assets/js/charts')
   eleventyConfig.addPassthroughCopy('assets/js/github-api.js')
+  // eleventyConfig.addPassthroughCopy('manifest.json')
+  // eleventyConfig.addPlugin(pluginPWA)
 
 
   eleventyConfig.addPassthroughCopy('assets/files')
