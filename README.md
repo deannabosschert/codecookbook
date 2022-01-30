@@ -2,6 +2,9 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/817f5d6e-e0e5-4400-aa9d-5e2c7fbac983/deploy-status)](https://app.netlify.com/sites/code-cookbook/deploys)
 
  ... [link to live demo](https://code-cookbook.netlify.app/)-->
+ 
+Compliant with the WCAG 2.1 level AA.
+ 
 ![screenshot of website](https://cleanshot-cloud-fra.s3.eu-central-1.amazonaws.com/media/8774/23gg2Rk7FiUtF9gcPvtaVvBh9kF1iOIBwSHHTQ3o.jpeg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDGV1LWNlbnRyYWwtMSJHMEUCIQC8BaROlXwnEepMXp13iqXKA8K34OwDHnxJruUL26JZ6gIgGnUhnQo%2BRK2rnE22PyONnBilCbwHfSKOt5M6cvs%2FL2UqoQIIHRAAGgw5MTk1MTQ0OTE2NzQiDAWOHF%2BThWmJTBG8xSr%2BAarTg2ZA3qcN%2Bp%2BDoTaYNY5JfJMc6rMilL%2BeW%2FMURWQUla5bxrDbOaUJwFKqTICh2aPEuniq3piNa5uulcVMe%2BwRzVV%2FGApBEwnnNC%2FWtRmtNTfuwx%2BpPsdqpOHyiG%2BsTVjL%2FesgaqRtQAB6Y3DQI4n37HoucTKlu07S2UbXccwsAxTXBroa2fnmpKD%2BjBNae9fVQlqbfah6O1jsyUzZL9BxFeFRob3JKYfCCR1qE9ZWy87zIzz39SQGRybR21aQEanuhGhCQomEh9KtwKmAerLtO3GbUwb46o9Yj4bZ0wx%2FCxGSy2fuIDu22KcTP60P06EgN0P9RzMTWCcxxR0tMJnV248GOpoBoC5J8N%2BnclRGEQ1lpQdjw72pFEsCS3WUy2iZ8sBYWBGIGmyP6fykpMazrXpc7WRcYz%2FLvA568oyzjFM5etpeaC7N41NPLFh8m4dxxgyJD93yfF%2F5uBMgLYQjvZraR8s6ig3BXbpL%2BTzmd5DzvjavnYzQyqDyKpDrSkBxI51BwajxW4KOl3g4D1nJHp4Vvr%2F%2BGDLOpGS6gJUr3Q%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIA5MF2VVMNLI5GBWVE%2F20220130%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20220130T211845Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Signature=017ef5bb59bcb32ec8c115b78384284f1568e5e6ef6a734489fed7d58dfc41c7)
 
 ## Table of Contents
